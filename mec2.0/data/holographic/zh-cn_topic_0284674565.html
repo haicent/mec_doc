@@ -1,0 +1,69 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="出口道斑马线附近车辆轨迹部分消失">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0272267372.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0284674567.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0284674565">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>出口道斑马线附近车辆轨迹部分消失</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0284674565"></a><a name="ZH-CN_TOPIC_0284674565"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">出口道斑马线附近车辆轨迹部分消失</h1>
+<div id="body1603093301195"><div class="section" id="ZH-CN_TOPIC_0284674565__section1114117517420"><h4 class="sectiontitle">现象描述</h4><p id="ZH-CN_TOPIC_0284674565__p1823615105428">如<a href="#ZH-CN_TOPIC_0284674565__fig1453913417442">图1</a>和<a href="#ZH-CN_TOPIC_0284674565__fig159438388454">图2</a>所示，车辆轨迹在斑马线附近部分消失。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0284674565__fig1453913417442"><a name="ZH-CN_TOPIC_0284674565__fig1453913417442"></a><a name="fig1453913417442"></a><span class="figcap"><b>图1 </b>车辆轨迹消失前</span><br><span><img id="ZH-CN_TOPIC_0284674565__image0539203474420" src="zh-cn_image_0284675955.png" width="523.6875" height="335.860245" title="点击放大" class="imgResize"></span></div>
+<div class="fignone" id="ZH-CN_TOPIC_0284674565__fig159438388454"><a name="ZH-CN_TOPIC_0284674565__fig159438388454"></a><a name="fig159438388454"></a><span class="figcap"><b>图2 </b>车辆轨迹消失后</span><br><span><img id="ZH-CN_TOPIC_0284674565__image11943538124516" src="zh-cn_image_0284676618.png" width="523.6875" height="334.98816400000004" title="点击放大" class="imgResize"></span></div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0284674565__section65255127461"><h4 class="sectiontitle">可能原因</h4><ul id="ZH-CN_TOPIC_0284674565__ul1140320156489"><li id="ZH-CN_TOPIC_0284674565__li154031315104813">第三方应用平台或雷达数据异常。</li><li id="ZH-CN_TOPIC_0284674565__li193591735144818">摄像机或者雷达标定不准确，导致同一时刻车辆的视频定位差距过大、不能衔接上雷达。如果某方向出口道车辆大概率消失，可以推断是相机或雷达标定不准。</li><li id="ZH-CN_TOPIC_0284674565__li16688850124920">在完成标定、生成配置文件时，视频与雷达的衔接距离参数值设置不合理。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0284674565__section16538011478"><h4 class="sectiontitle">解决方法</h4><p id="ZH-CN_TOPIC_0284674565__p828353784710">上述三种可能的原因，对应的解决方法如下：</p>
+<ul id="ZH-CN_TOPIC_0284674565__ul9283193716471"><li id="ZH-CN_TOPIC_0284674565__li56212468520">对比第三方应用平台轨迹界面与雷达上位机界面。如果雷达上位机界面中有目标轨迹正常，请联系平台支持人员排查问题；如果雷达上位机界面中目标轨迹中断或消失，请联系雷达厂商支持人员排查故障。</li><li id="ZH-CN_TOPIC_0284674565__li177810141518">对该方向的雷达重新标定并验证标定精度。</li><li id="ZH-CN_TOPIC_0284674565__li899204815597">根据路口实际情况调整视频与雷达衔接参数值。</li></ul>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0272267372.html">全息路口问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0284674567.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

@@ -1,0 +1,270 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置摄像机GB/T 28181协议参数">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238297615.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001242108795.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001160339787.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001193537658">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>配置摄像机GB/T 28181协议参数</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001193537658"></a><a name="ZH-CN_TOPIC_0000001193537658"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置摄像机GB/T 28181协议参数</h1>
+<div id="body0000001193537658"><p id="ZH-CN_TOPIC_0000001193537658__p1996311114255">当SDC通过GB/T 28181协议对接平台时需要配置对应的协议参数。</p>
+<div class="section" id="ZH-CN_TOPIC_0000001193537658__section1662210233263"><h4 class="sectiontitle">背景信息</h4><p id="ZH-CN_TOPIC_0000001193537658__p1099615271269">GB/T 28181协议只支持主动接入方式。</p>
+<div class="caution" id="ZH-CN_TOPIC_0000001193537658__note95661832161812"><span class="cautiontitle"><img src="public_sys-resources/caution_3.0-zh-cn.png"> </span><div class="cautionbody"><p id="ZH-CN_TOPIC_0000001193537658__p14566032141820">若使用GB/T 28181协议，请将摄像机部署在专网环境下。支持双网口的摄像机，需要分别针对两个网口配置GB/T 28181协议。</p>
+</div></div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001193537658__section28707127"><h4 class="sectiontitle">前提条件</h4><ul id="ZH-CN_TOPIC_0000001193537658__ul18315606"><li id="ZH-CN_TOPIC_0000001193537658__li30622727">T28181协议使用MD5摘要认证，MD5属于弱算法，存在安全风险。且信令流和媒体流均未加密，请在可信网络内使用该协议，否则可能存在安全风险。</li><li id="ZH-CN_TOPIC_0000001193537658__li64521851">使用GB/T 28181协议与平台对接时，需要获取平台侧添加SDC时的参数，如设备ID。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001193537658__section26531316195418"><h4 class="sectiontitle">设置系统时间</h4><p id="ZH-CN_TOPIC_0000001193537658__p103929111127">通过该协议与平台对接，需确保摄像机的系统时间采用的是NTP校时。</p>
+<ol id="ZH-CN_TOPIC_0000001193537658__ol17637174681220"><li id="ZH-CN_TOPIC_0000001193537658__li559133132118"><span id="ZH-CN_TOPIC_0000001193537658__"><span><span><span>登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0000001193537658__i61312467297">IP地址</em>）。</span></span></span></span></li><li id="ZH-CN_TOPIC_0000001193537658__li31255344"><span id="ZH-CN_TOPIC_0000001193537658__">选择“配置 &gt; 系统配置 &gt; 时间设置”页签，进入“时间设置”配置页面。</span><p><p id="ZH-CN_TOPIC_0000001193537658__p12862641">系统显示“时间设置”页面，如<a href="#ZH-CN_TOPIC_0000001193537658__ipc_cfgg_001390_c20_mmccppss_fig_01">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001193537658__ipc_cfgg_001390_c20_mmccppss_fig_01"><a name="ZH-CN_TOPIC_0000001193537658__ipc_cfgg_001390_c20_mmccppss_fig_01"></a><a name="ipc_cfgg_001390_c20_mmccppss_fig_01"></a><span class="figcap"><b>图1 </b>设置时间</span><p id="ZH-CN_TOPIC_0000001193537658__p9274259191212"><span><img id="ZH-CN_TOPIC_0000001193537658__image181122015137" src="zh-cn_image_0000001222201658.png"></span></p>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001193537658__li26059146"><span id="ZH-CN_TOPIC_0000001193537658__">配置系统时间。如<a href="#ZH-CN_TOPIC_0000001193537658__ipc_cfgg_001390_c20_mmccppss_fig_01">图1</a>所示。</span><p><ol type="a" id="ZH-CN_TOPIC_0000001193537658__ol0942459124616"><li id="ZH-CN_TOPIC_0000001193537658__li321510476461">在“时区”中选择对应的城市时区。</li><li id="ZH-CN_TOPIC_0000001193537658__li12216104754619">选择校时方式为<span class="parmvalue" id="ZH-CN_TOPIC_0000001193537658__parmvalue7252173313469">“NTP校时”</span></li><li id="ZH-CN_TOPIC_0000001193537658__li1985607104717">设置NTP服务器，此处填写对应ITS800的IP地址。</li></ol>
+</p></li><li id="ZH-CN_TOPIC_0000001193537658__li61852963"><span id="ZH-CN_TOPIC_0000001193537658__">单击“保存”。</span></li></ol>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001193537658__section4659161625412"><h4 class="sectiontitle">配置GB/T 28181协议参数</h4><ol id="ZH-CN_TOPIC_0000001193537658__ol58887443"><li id="ZH-CN_TOPIC_0000001193537658__li359574132111"><span id="ZH-CN_TOPIC_0000001193537658__"><span><span>登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0000001193537658__zh-cn_topic_0176661643_i1093752272">IP地址</em>）。</span></span></span></li><li id="ZH-CN_TOPIC_0000001193537658__li46382330"><span id="ZH-CN_TOPIC_0000001193537658__">选择“配置 &gt; 网络 &gt; 平台对接参数 &gt; 第二协议参数 &gt; T28181”。</span><p><div class="note" id="ZH-CN_TOPIC_0000001193537658__note193336304315"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p933211304313">如果需要进行双平台注册，则选择“第二协议参数 &gt; T28181-2”，配置另外一个平台的相关信息。仅T28181页签支持设置GB35114协议参数，T28181-2页签不支持设置GB35114协议参数。</p>
+</div></div>
+<p id="ZH-CN_TOPIC_0000001193537658__p15316111283">配置GB/T 28181参数，如<a href="#ZH-CN_TOPIC_0000001193537658__fig1619125112316">图2</a>所示，参数说明如<a href="#ZH-CN_TOPIC_0000001193537658__table1063510234332">表1</a>所示，不同款型的web界面参数略有差异，请以实际界面为准。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001193537658__fig1619125112316"><a name="ZH-CN_TOPIC_0000001193537658__fig1619125112316"></a><a name="fig1619125112316"></a><span class="figcap"><b>图2 </b>GB/T 28181协议参数页面</span><br><span><img id="ZH-CN_TOPIC_0000001193537658__image46191051143114" src="zh-cn_image_0000001266441749.png" height="603.4875000000001" width="523.6875" title="点击放大" class="imgResize"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001193537658__table1063510234332"></a><a name="table1063510234332"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001193537658__table1063510234332" frame="border" border="1" rules="all"><caption><b>表1 </b>GB/T 28181协议参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001193537658__row1063613232332"><th align="left" class="cellrowborder" colspan="2" valign="top" id="mcps1.3.5.2.2.2.4.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193537658__p67412008416">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" id="mcps1.3.5.2.2.2.4.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193537658__p7021986">如何配置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001193537658__row1563692315335"><td class="cellrowborder" colspan="2" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p37418016417">GB/T 28181</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p10228633111710">勾选，表示启用GB/T 28181协议。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note7725181724816"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p157251617104817">勾选后，可以显示使用该协议对接的平台连接状态。状态类型有：在线、下线-注册超时等。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row9636162310331"><td class="cellrowborder" colspan="2" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p2074160204115">协议</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p83128285312">下拉框选择协议类型。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note116629521451"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p36629522457">当选择TCC-VMS-2020协议时，支持配置主备服务器。当主（备）服务器出现故障时，支持自动切换到备（主）服务进行重连注册。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row56362238331"><td class="cellrowborder" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p3601348113519">28181协议高级参数配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p2602448113513">录像查询个数</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p822415489393">28181协议对接中，录像查询时，报文单次携带的录像个数。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p86021948103519">输入1~20的整数，默认为10。如果平台对报文大小有限制，可以适当进行调整。调整此配置会影响录像查询的速度，请根据实际需要进行调整。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row763652319339"><td class="cellrowborder" rowspan="4" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p8722630144212">兼容参数</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p12304142320251">H.265</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p10967123213485">勾选，表示通过GB/T 28181协议对接平台时，摄像机发送的视频流支持H.265和H.264两种编码协议。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p5305823202510">不勾选，表示通过GB/T 28181协议对接平台时，摄像机发送的视频流仅支持H.264编码协议。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row4636172363318"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1271035425518">相同Subject标识媒体流清理</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p588720011717">勾选：表示平台使用相同的SubjectID只能获取一股视频流。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p988717014171">不勾选：表示平台使用相同的SubjectID可以获取多股视频流。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row116361523103314"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1484124310292">上海地标</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1584154312294">勾选，表示支持上海地标协议。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1463612239333"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p864815249338">视频流类型</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p56482024183311">下拉框选择视频流类型。</p>
+<ul id="ZH-CN_TOPIC_0000001193537658__ul5648324103317"><li id="ZH-CN_TOPIC_0000001193537658__li20648152483312">自动：根据平台的请求发送。</li><li id="ZH-CN_TOPIC_0000001193537658__li1649122453310">视频流：只发送视频流。</li><li id="ZH-CN_TOPIC_0000001193537658__li6649102414339">复合流：发送视频流和音频流。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1636122313331"><td class="cellrowborder" rowspan="4" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p3321191410442">业务参数</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p26491324193316">语音对讲下行语音流</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p1764922423315">语音对讲下行语音流的协议类型，可以选择UDP或TCP。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note15649224153315"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p1864962443319">当摄像机与平台不在同一网段时，建议使用TCP。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1963622313316"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p587375183520">最大超时次数</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1087312514356">心跳信息连续超时达到“最大超时次数”，则认为摄像机无法与平台建立连接。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p6873135111355">系统默认最大超时次数为3次，建议采用默认值。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note68731451113511"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p1873751203512">SDC与平台需配置统一的最大超时次数。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row106361023133314"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p144611392434">注册有效期</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p2446113954319">设备单次注册到平台的有效期限。默认为“86400s（一天）”。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note344615393433"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193537658__ul1744623984315"><li id="ZH-CN_TOPIC_0000001193537658__li154464397432">设备86400s（一天）内没有注册成功，表示本次注册失败，建议采用默认值。</li><li id="ZH-CN_TOPIC_0000001193537658__li124461939174312">设备在有效期到来前会重新向平台发起注册。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row76371023193315"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p12447143974311">心跳周期</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1744710397431">设备发送心跳信息的时间间隔。系统默认心跳周期为60s，建议采用默认值。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note20447143924312"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p24474398436">SDC与平台需配置统一的心跳周期。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row46371923163314"><td class="cellrowborder" rowspan="4" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1961995915455">服务器参数</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p43915719">服务器IP</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><ul id="ZH-CN_TOPIC_0000001193537658__ul119121290293"><li id="ZH-CN_TOPIC_0000001193537658__li13912122912920">摄像机接入到IVS1800平台时，输入平台IP地址。</li><li id="ZH-CN_TOPIC_0000001193537658__li6852041112917">摄像机接入到IVS3800平台时，输入MPU对应的集群浮动网关IP地址。<p id="ZH-CN_TOPIC_0000001193537658__p1513054312913"><a name="ZH-CN_TOPIC_0000001193537658__li6852041112917"></a><a name="li6852041112917"></a>如果服务器和摄像机在不同网络，且存在NAT，则配置为集群浮动网关的映射IP地址。</p>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row186371523143318"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p25734726">端口号</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p61261159576">设备使用GB/T 28181协议对接到平台，平台侦听的设备的端口号默认为<span class="parmvalue" id="ZH-CN_TOPIC_0000001193537658__parmvalue11126205125716">“5060”</span>。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p4138025">与华为ITS800对接时，请修改为<span class="parmvalue" id="ZH-CN_TOPIC_0000001193537658__parmvalue20479251145619">“5080”</span>。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p19353641141517">勾选使能按钮后，已配置的端口需要在范围内。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note1610644105315"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p21024455310">端口号可输入0~65535的整数。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1063732313316"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p91741479017">服务器编码</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p12174204716015">GB/T 28181服务器编码。输入1~64位字符（字母和数字）。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note1883374615106"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p383419468101">摄像机接入华为的ITS800时，服务器编码第11到13位必须依次为“200”。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1763722383313"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p51748473018">SIP服务器域</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p717520471407">域名，输入1~127位数字。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row16370231337"><td class="cellrowborder" rowspan="7" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p5662443195810">设备参数</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p63830905">设备ID</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p0495194115010">每台设备的ID唯一，输入1~64位字符（字母和数字），必须与平台配置的互联编码保持一致。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note1974819812106"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193537658__ul13506319155215"><li id="ZH-CN_TOPIC_0000001193537658__li168421024135216">必填，否则业务告警无法上报给平台。</li><li id="ZH-CN_TOPIC_0000001193537658__li165061719145215">摄像机接入华为的ITS800时，设备ID号的第11到13位必须依次为“132”，且设备ID和镜头ID不能相同，否则会导致平台无法查看摄像机实况。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row166371235337"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1417513479019">密码</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p81755471013">设备注册到平台的密码。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note1317514479017"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193537658__ul1417517476018"><li id="ZH-CN_TOPIC_0000001193537658__li01752047506">必须与平台配置的注册密码保持一致，以免造成对接失败。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row86371723193312"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1156723925210">名称</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p185691839205210">注册到平台时所采用的登录名，可设置数字或其他字符，包括汉字。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row363722323317"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p94721428195418">本地端口</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1247262817542">连接SIP服务器时，摄像机端的端口号。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note87581917203412"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p77588171342">本地端口可输入1024~65535的整数。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row106379234332"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p53266474">告警输入ID</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p19617131">设备告警输入的ID，输入0~64位字符（字母和数字）。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note8508202442618"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p638910104615">需要用户手动输入，要求第11到13位为“134”，否则会导致ITS800无法正常上报告警。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row2063732311339"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p111091125514">音频输出ID</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1812111116557">设备音频输出的ID，输入0~64位字符（字母和数字）。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note945419442810"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p640431144617">需要用户手动输入，要求第11到13位为“137”，否则会导致ITS800无法正常传输上行/下行音频流。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1863732333313"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p292110469295">鉴权方式</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><ul id="ZH-CN_TOPIC_0000001193537658__ul179712447552"><li id="ZH-CN_TOPIC_0000001193537658__li109713445558">SHA256：只支持SHA256鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193537658__li10807141145613">MD5/SHA256：同时支持MD5和SHA256鉴权方式。</li></ul>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note4321158132916"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193537658__ul326920103282"><li id="ZH-CN_TOPIC_0000001193537658__li267910115281">MD5存在风险，请谨慎使用，建议使用SHA256鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193537658__li6270610112815">需要与平台配置保持一致，否则会导致注册失败。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row663814239337"><td class="cellrowborder" rowspan="3" valign="top" width="10.341034103410342%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p26743357592">通道参数</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p815762783812"></p>
+</td>
+<td class="cellrowborder" valign="top" width="14.02140214021402%" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p3640105717583">通道</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.63756375637564%" headers="mcps1.3.5.2.2.2.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001193537658__p11640185785820">选择设备的通道类型。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row1863812235335"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1730919192359">码流索引</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p63090190355">码流索引的类型，可以选择主码流或子码流，默认为主码流，建议采用默认值。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193537658__row17638122363314"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p1917813471011">镜头ID</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p638405695714">通道<em id="ZH-CN_TOPIC_0000001193537658__i153848567573">X</em>镜头ID</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.2.2.2.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001193537658__p151781647207">设备镜头的ID号，输入0~64位字符（字母和数字）。</p>
+<p id="ZH-CN_TOPIC_0000001193537658__p5611102044414">针对多目摄像机，需要选择通道类型，再分别对各个镜头设置ID号，且不能相同。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193537658__note172289367111"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193537658__p3318125911384">摄像机接入ITS800时，镜头ID的第11到13位为“131”或者“132”，且镜头ID和设备ID不能相同，否则可能会导致平台无法查看实况。</p>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001193537658__li42915425"><span id="ZH-CN_TOPIC_0000001193537658__">单击“保存”。</span></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001238297615.html">摄像机接入协议介绍
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001242108795.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001160339787.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

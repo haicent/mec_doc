@@ -1,0 +1,43 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何开启SSH功能">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001139071810">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>如何开启SSH功能</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001139071810"></a><a name="ZH-CN_TOPIC_0000001139071810"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何开启SSH功能</h1>
+<div id="body0000001139071810"><div class="section" id="ZH-CN_TOPIC_0000001139071810__section169416599412"><h4 class="sectiontitle">背景信息</h4><ul id="ZH-CN_TOPIC_0000001139071810__ul127863564213"><li id="ZH-CN_TOPIC_0000001139071810__li68761511194210"><span id="ZH-CN_TOPIC_0000001139071810__ph1043935041413">ITS800</span>设备出厂默认关闭SSH功能。</li><li id="ZH-CN_TOPIC_0000001139071810__li3728111216423">出于安全考虑，建议SSH功能使用完毕后及时关闭。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001139071810__section332955074116"><h4 class="sectiontitle">操作步骤</h4><ul id="ZH-CN_TOPIC_0000001139071810__ul117581558103610"><li id="ZH-CN_TOPIC_0000001139071810__li11804115733615">方案一  短按设备reset键1秒。<p id="ZH-CN_TOPIC_0000001139071810__p198211326372"><a name="ZH-CN_TOPIC_0000001139071810__li11804115733615"></a><a name="li11804115733615"></a>该功能仅<span></span>-C<em id="ZH-CN_TOPIC_0000001139071810__i17551184883718">xx</em>系列支持；<span></span>-B<em id="ZH-CN_TOPIC_0000001139071810__i548018515389">xx</em>系列暂不支持。</p>
+</li><li id="ZH-CN_TOPIC_0000001139071810__li1754942233712">方案二  登录OMU Portal，选择<span class="menucascade" id="ZH-CN_TOPIC_0000001139071810__menucascade10879203263816">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001139071810__uicontrol2087915321386">系统管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001139071810__uicontrol18128349385">基本配置</span>”</span>，打开SSH开关。<p id="ZH-CN_TOPIC_0000001139071810__p349684814396">SSH关闭仅支持在OMU Portal上操作。</p>
+</li><li id="ZH-CN_TOPIC_0000001139071810__li122381844122010">方案三  通过串口方式开启SSH功能。<ol id="ZH-CN_TOPIC_0000001139071810__ol224191011406"><li id="ZH-CN_TOPIC_0000001139071810__li7241191018404"><span id="ZH-CN_TOPIC_0000001139071810__ph164144113914">以<strong id="ZH-CN_TOPIC_0000001139071810__zh-cn_topic_0258249723_b77551858101513">root</strong>用户登录ITS800操作系统<span>（<span><img id="ZH-CN_TOPIC_0000001139071810__zh-cn_topic_0258249723_image0755858191517" src="zh-cn_image_0000001161354630.png"></span> <span><a href="zh-cn_topic_0281346945.html">如何通过串口登录操作系统</a></span>）。</span></span></li><li id="ZH-CN_TOPIC_0000001139071810__li0979135212408">开启SSH功能。<p id="ZH-CN_TOPIC_0000001139071810__p2101156154120"><a name="ZH-CN_TOPIC_0000001139071810__li0979135212408"></a><a name="li0979135212408"></a><strong id="ZH-CN_TOPIC_0000001139071810__b1610112610412">systemctl enable sshd</strong></p>
+<p id="ZH-CN_TOPIC_0000001139071810__p2010113618415"><strong id="ZH-CN_TOPIC_0000001139071810__b1410116664112">systemctl start sshd</strong></p>
+<p id="ZH-CN_TOPIC_0000001139071810__p10990712192412"><strong id="ZH-CN_TOPIC_0000001139071810__b23381916112411">rm -rf /home/sshflag</strong></p>
+</li></ol>
+</li></ul>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+</body>
+</html>

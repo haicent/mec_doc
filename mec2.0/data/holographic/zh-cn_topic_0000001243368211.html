@@ -1,0 +1,82 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="时间同步方案介绍">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198528326.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198368356.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001243368211">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>时间同步方案介绍</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001243368211"></a><a name="ZH-CN_TOPIC_0000001243368211"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">时间同步方案介绍</h1>
+<div id="body0000001243368211"><p id="ZH-CN_TOPIC_0000001243368211__p4771814263">解决方案众多设备之间需保证时间统一，因此实施NTP（Network Time Protocol）或GPS（Global Positioning System）时间同步，保证各设备间的时间一致。</p>
+<p id="ZH-CN_TOPIC_0000001243368211__p1767445222">新建场景客户提供NTP服务器</p>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">新建场景客户提供时钟同步服务器</a></li><li><a href="#" onclick="return showCurrent($$(this));">新建场景客户无法提供时钟同步服务器</a></li><li><a href="#" onclick="return showCurrent($$(this));">利旧场景客户提供时钟同步服务器</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001243368211__section59786331011"><h4 class="sectiontitle">新建场景客户提供时钟同步服务器</h4><p id="ZH-CN_TOPIC_0000001243368211__p1016910591332">客户提供NTP Server或GPS（Global Positioning System）场景，部署原则如<a href="#ZH-CN_TOPIC_0000001243368211__fig322945773610">图1</a>所示。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001243368211__p31695591536">该场景下，ITS800对于一级NTP Server或GPS来说，作为NTP Client向NTP Server进行时间同步。对于雷达和摄像机来说，作为二级NTP Server的ITS800需要同步时间给雷达和摄像机。<ul id="ZH-CN_TOPIC_0000001243368211__ul1516985919318"><li id="ZH-CN_TOPIC_0000001243368211__li016918593317">由ITS800向NTP Server或GPS进行时间同步。<ul id="ZH-CN_TOPIC_0000001243368211__ul1416965913312"><li id="ZH-CN_TOPIC_0000001243368211__li212817613108">ITS800进行NTP时间同步的方式请参见<a href="zh-cn_topic_0000001198368356.html#ZH-CN_TOPIC_0000001198368356__section1691917140378">ITS800向NTP服务器同步</a>。</li><li id="ZH-CN_TOPIC_0000001243368211__li1038091517716">ITS800进行GPS同步的方式请参见<a href="zh-cn_topic_0000001198368356.html#ZH-CN_TOPIC_0000001198368356__section65071822125310">ITS800向GPS同步</a>。</li></ul>
+</li><li id="ZH-CN_TOPIC_0000001243368211__li20169125917310">雷达、摄像机向ITS800进行时间同步。<ul id="ZH-CN_TOPIC_0000001243368211__ul111695591311"><li id="ZH-CN_TOPIC_0000001243368211__li1016945911319">雷达配置时间同步方式请参见<a href="zh-cn_topic_0000001198893836.html">配置雷达时间</a>。</li><li id="ZH-CN_TOPIC_0000001243368211__li131695591439">开启HWSDK/ONVIF协议的摄像机配置时间同步方式请参见<a href="mk:@MSITStore:D:/01.work/01.全息路口/文档修改/解决方案9.0.0产品文档（全息路口）二轮评审.chm::/zh-cn_topic_0000001238204321.html#ZH-CN_TOPIC_0000001238204321__zh-cn_topic_0000001205923215_zh-cn_topic_0000001198255947_zh-cn_topic_0257399267_section179413104811">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</a>。</li><li id="ZH-CN_TOPIC_0000001243368211__li161695599317">开启T28181协议的摄像机配置时间同步方式请参见<a href="mk:@MSITStore:D:/01.work/01.全息路口/文档修改/解决方案9.0.0产品文档（全息路口）二轮评审.chm::/zh-cn_topic_0000001238204321.html#ZH-CN_TOPIC_0000001238204321__zh-cn_topic_0000001205923215_zh-cn_topic_0000001198255947_zh-cn_topic_0257399267_section579683116485">配置步骤（适用T28181协议接入摄像机）</a>。</li></ul>
+</li></ul>
+</div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001243368211__fig322945773610"><a name="ZH-CN_TOPIC_0000001243368211__fig322945773610"></a><a name="fig322945773610"></a><span class="figcap"><b>图1 </b>客户提供时钟同步服务器部署示意图</span><br><span><img id="ZH-CN_TOPIC_0000001243368211__image10757223157" src="zh-cn_image_0000001198538494.png"></span></div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001243368211__section166161196451"><h4 class="sectiontitle">新建场景客户无法提供时钟同步服务器</h4><p id="ZH-CN_TOPIC_0000001243368211__p19145113144516">客户无法提供时钟同步服务器时，使用ITS800作为时钟同步服务器，部署原则如<a href="#ZH-CN_TOPIC_0000001243368211__fig95021730174610">图2</a>所示。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001243368211__p214553174519">该场景下，ITS800作为NTP Server对雷达和摄像机进行授时。<ul id="ZH-CN_TOPIC_0000001243368211__ul0145431134513"><li id="ZH-CN_TOPIC_0000001243368211__li99901536155018">ITS800时间配置参考<a href="zh-cn_topic_0000001198368356.html#ZH-CN_TOPIC_0000001198368356__section1772115213012">ITS800作为时钟同步服务器</a></li><li id="ZH-CN_TOPIC_0000001243368211__li1314583114510">通过HWSDK和ONVIF协议与ITS800对接的摄像机，参考<a href="zh-cn_topic_0000001243128215.html#ZH-CN_TOPIC_0000001243128215__section943121917340">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</a>。</li><li id="ZH-CN_TOPIC_0000001243368211__li1371230145018">通过T28181协议与ITS800对接的摄像机，参考<a href="zh-cn_topic_0000001243128215.html#ZH-CN_TOPIC_0000001243128215__section1543320199345">配置步骤（适用T28181协议接入摄像机）</a></li><li id="ZH-CN_TOPIC_0000001243368211__li176171814135216">雷达配置时间同步方式请参见<a href="zh-cn_topic_0000001198893836.html">配置雷达时间</a>。<div class="fignone" id="ZH-CN_TOPIC_0000001243368211__fig95021730174610"><a name="ZH-CN_TOPIC_0000001243368211__fig95021730174610"></a><a name="fig95021730174610"></a><span class="figcap"><b>图2 </b>ITS800作为时钟同步服务器部署示意图</span><br><span><img id="ZH-CN_TOPIC_0000001243368211__image115021530154611" src="zh-cn_image_0000001198900608.png"></span></div>
+</li></ul>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001243368211__section3565125475219"><h4 class="sectiontitle">利旧场景客户提供时钟同步服务器</h4><p id="ZH-CN_TOPIC_0000001243368211__p203445115415">客户提供时钟同步服务器，并且第三方摄像机必须和客户提供时钟同步服务器同步场景下。部署原则如图<a href="#ZH-CN_TOPIC_0000001243368211__fig68117186554">图3</a>。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001243368211__p0116153112568">该场景下，客户提供时钟同步服务器作为NTP Server对ITS800、第三方服务器、雷达和摄像机进行授时。<ul id="ZH-CN_TOPIC_0000001243368211__ul4116113125612"><li id="ZH-CN_TOPIC_0000001243368211__li811617316567">ITS800时间配置参考<a href="zh-cn_topic_0000001198368356.html#ZH-CN_TOPIC_0000001198368356__section1691917140378">ITS800向NTP服务器同步</a></li><li id="ZH-CN_TOPIC_0000001243368211__li2783163814573">第三方摄像机时钟配置不变。</li><li id="ZH-CN_TOPIC_0000001243368211__li14116163155617">雷达配置时间同步方式请参见<a href="zh-cn_topic_0000001198893836.html">配置雷达时间</a>。</li></ul>
+</div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001243368211__fig68117186554"><a name="ZH-CN_TOPIC_0000001243368211__fig68117186554"></a><a name="fig68117186554"></a><span class="figcap"><b>图3 </b>利旧场景部署示意图</span><br><span><img id="ZH-CN_TOPIC_0000001243368211__image681161865519" src="zh-cn_image_0000001243421187.png"></span></div>
+</div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001243368211__section7236135419"><h4 class="sectiontitle"><strong id="ZH-CN_TOPIC_0000001243368211__b1164305714016">背景信息</strong></h4><ul id="ZH-CN_TOPIC_0000001243368211__ul2643205717018"><li id="ZH-CN_TOPIC_0000001243368211__li116430571303">HWSDK/ONVIF协议摄像机支持自动向ITS800进行时间同步。</li></ul>
+<ul id="ZH-CN_TOPIC_0000001243368211__ul7643457105"><li id="ZH-CN_TOPIC_0000001243368211__li18643557507">T28181协议摄像机需单个配置向ITS800进行时间同步。</li><li id="ZH-CN_TOPIC_0000001243368211__li8643657907">如果接入的摄像机为非华为摄像机，且摄像机需要用于动向拟合特性，则摄像机需要满足如下要求：<ul id="ZH-CN_TOPIC_0000001243368211__ul1464335718014"><li id="ZH-CN_TOPIC_0000001243368211__li86437571501">摄像机必须支持NTP功能。</li><li id="ZH-CN_TOPIC_0000001243368211__li764315571106">摄像机系统时间误差1小时不超过500毫秒。</li><li id="ZH-CN_TOPIC_0000001243368211__li76431657709">摄像机需要使用同一种协议接入。支持的协议包括ONVIF和T28181。</li></ul>
+</li></ul>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001198528326.html">配置时钟同步
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001198368356.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

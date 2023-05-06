@@ -1,0 +1,47 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="向导式添加摄像机验证失败">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0204804123">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>向导式添加摄像机验证失败</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0204804123"></a><a name="ZH-CN_TOPIC_0204804123"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">向导式添加摄像机验证失败</h1>
+<div id="body31118786"><div class="section" id="ZH-CN_TOPIC_0204804123__section23814038"><h4 class="sectiontitle">现象描述</h4><p id="ZH-CN_TOPIC_0204804123__p37593705">通过向导式添加摄像机，反复验证设备后，设备验证失败。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0204804123__section12999751"><h4 class="sectiontitle">可能原因</h4><ul id="ZH-CN_TOPIC_0204804123__ul1067117551732"><li id="ZH-CN_TOPIC_0204804123__li26719551536">向导式添加摄像机配置的用户名/密码和实际摄像机的用户名/密码不一致。<p id="ZH-CN_TOPIC_0204804123__p040215192014"><a name="ZH-CN_TOPIC_0204804123__li26719551536"></a><a name="li26719551536"></a>如果摄像机用户名/密码连续校验错误超过5次，系统自动锁定该用户，默认为5分钟；锁定状态下无法完成设备添加。</p>
+<p id="ZH-CN_TOPIC_0204804123__p134421315211">导致用户名/密码不一致的原因有以下两类：</p>
+<ul id="ZH-CN_TOPIC_0204804123__ul787194542119"><li id="ZH-CN_TOPIC_0204804123__li15876455219">摄像机的用户名/密码未被人修改，在向导式添加摄像机时<strong id="ZH-CN_TOPIC_0204804123__b1246026112519">由于手误</strong>导致用户名/密码校验失败。</li><li id="ZH-CN_TOPIC_0204804123__li7980637142319">摄像机的用户名/密码已经被人修改，在向导式添加摄像机时<strong id="ZH-CN_TOPIC_0204804123__b1800182872520">由于不知道真实密码</strong>导致用户名/密码校验失败。</li></ul>
+</li><li id="ZH-CN_TOPIC_0204804123__li02691445415">摄像机软件版本较早，使用的HWSDK协议采用了非安全RSA加密套，而设备默认不支持非安全RSA加密套的HWSDK协议设备接入。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0204804123__section49888896"><h4 class="sectiontitle">处理步骤</h4><ul id="ZH-CN_TOPIC_0204804123__ul598143218284"><li id="ZH-CN_TOPIC_0204804123__li8595134512913">等待5分钟，然后重新输入用户名/密码重新进行添加。<ul id="ZH-CN_TOPIC_0204804123__ul1234610501995"><li id="ZH-CN_TOPIC_0204804123__li1998153217281">如果添加成功，则结束。</li><li id="ZH-CN_TOPIC_0204804123__li7225740172820">如果多次添加仍失败，则可能摄像机密码已被人修改。建议登录摄像机Web界面重新设置密码后再重新添加。<p id="ZH-CN_TOPIC_0204804123__p525372618293"><a name="ZH-CN_TOPIC_0204804123__li7225740172820"></a><a name="li7225740172820"></a>由于前面多次尝试添加失败可能又已经导致帐号被锁定，建议修改摄像机密码后再等一个密码锁定周期后再重新添加。</p>
+</li></ul>
+</li><li id="ZH-CN_TOPIC_0204804123__li159941746165511">登录<span id="ZH-CN_TOPIC_0204804123__ph1172318599515">OMU Portal</span>禁止非安全RSA加密套。<div class="p" id="ZH-CN_TOPIC_0204804123__p1938501813209">不禁止非安全RSA加密套存在安全风险，建议禁止非安全RSA加密套。<ol id="ZH-CN_TOPIC_0204804123__ol116791422141213"><li id="ZH-CN_TOPIC_0204804123__li1767932271216"><span id="ZH-CN_TOPIC_0204804123__ph114393920508">以<strong id="ZH-CN_TOPIC_0204804123__zh-cn_topic_0203265088_b8624101631310">admin</strong>用户登录OMU Portal（<span><img id="ZH-CN_TOPIC_0204804123__zh-cn_topic_0203265088_zh-cn_topic_0203265088_image13678257365" src="zh-cn_image_0257331811.png"></span> <a href="zh-cn_topic_0215538442.html">如何登录OMU Portal</a>）。</span></li><li id="ZH-CN_TOPIC_0204804123__li61087266122">选择<span class="menucascade" id="ZH-CN_TOPIC_0204804123__menucascade562943501211">“<span class="uicontrol" id="ZH-CN_TOPIC_0204804123__uicontrol831313276269">系统管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0204804123__uicontrol15988203312613">高级配置</span>”</span>。</li><li id="ZH-CN_TOPIC_0204804123__li79221844131211">将<span class="parmname" id="ZH-CN_TOPIC_0204804123__parmname1440132461919">“HW_INIT_FORBID_RSA”</span>设置为<span class="parmvalue" id="ZH-CN_TOPIC_0204804123__parmvalue1111133661915">“0”</span>，如<a href="#ZH-CN_TOPIC_0204804123__fig56451126165019">图1</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0204804123__fig56451126165019"><a name="ZH-CN_TOPIC_0204804123__fig56451126165019"></a><a name="fig56451126165019"></a><span class="figcap"><b>图1 </b>启用非安全RSA加密套</span><br><span><img class="vsd" id="ZH-CN_TOPIC_0204804123__image1984176111313" src="zh-cn_image_0232387867.png"></span></div>
+</li></ol>
+</div>
+</li></ul>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#!env sh
+cd /Users/fy/doc/mec/
+rm index.html
+mv 汉鑫MEC研发资料.html index.html
+scp -r /Users/fy/doc/mec/index.html root@172.18.100.84:/usr/share/nginx/html/
+scp -r /Users/fy/doc/mec/readme.html root@172.18.100.84:/usr/share/nginx/html/
+ssh root@172.18.100.84 "cd /usr/share/nginx/html;sudo chmod -R 777 *;find ./ -name index.html |xargs sed -i s#file:////Users/fy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/#../#g;"
+ssh root@172.18.100.84 "cd /usr/share/nginx/html;sudo chmod -R 777 *;find ./ -name readme.html |xargs sed -i s#file:////Users/fy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/#../#g;python3 dingtalk.py"
+# ssh root@172.18.100.84 "cd /usr/share/nginx/html;sudo chmod -R 777 *;cd mec1.0;find ./ -name index.html |xargs sed -i s#file:////Users/fy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/#../#g;"
+
+ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome  http://doc.hiacent.info/index.html

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置摄像机时间">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198528326.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198368356.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198893836.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001243128215">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>配置摄像机时间</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001243128215"></a><a name="ZH-CN_TOPIC_0000001243128215"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置摄像机时间</h1>
+<div id="body0000001243128215"><div class="section" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_section102014312108"><h4 class="sectiontitle">背景信息</h4><ul id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ul788911512114"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li184491745117"><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p1544934161114"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li184491745117"></a><a name="zh-cn_topic_0257399267_li184491745117"></a>HWSDK/ONVIF协议摄像机支持自动向<span>ITS800</span>进行时间同步。</p>
+</li></ul>
+<ul id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ul44498411111"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li1944910416112"><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p5449441112"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li1944910416112"></a><a name="zh-cn_topic_0257399267_li1944910416112"></a>T28181协议摄像机需单个配置向<span>ITS800</span>进行时间同步。</p>
+</li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li9306165771116">如果接入的摄像机为非华为摄像机，且摄像机需要用于动向拟合特性，则摄像机需要满足如下要求：<ul id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0257399312_ul9552163391615"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0257399312_li193371341395">摄像机必须支持NTP功能。</li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0257399312_li365182515911">摄像机系统时间误差1小时不超过500毫秒。<a href="#ZH-CN_TOPIC_0000001243128215__section943121917340">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</a></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0257399312_li76325486164">摄像机需要使用同一种协议接入。支持的协议包括ONVIF和T28181。</li></ul>
+</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_section1648924964612"><h4 class="sectiontitle">重要说明</h4><ul id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ul24631957104610"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li1846415579463">如果摄像机采用HWSDK/ONVIF协议接入到设备，请参考<a href="#ZH-CN_TOPIC_0000001243128215__section943121917340">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</a>章节配置时间同步。</li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li3459111917473">如果摄像机采用T28181协议接入到设备，请参考<a href="#ZH-CN_TOPIC_0000001243128215__section1543320199345">配置步骤（适用T28181协议接入摄像机）</a>章节配置时间同步。</li></ul>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</a></li><li><a href="#" onclick="return showCurrent($$(this));">配置步骤（适用T28181协议接入摄像机）</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001243128215__section943121917340"><a name="ZH-CN_TOPIC_0000001243128215__section943121917340"></a><a name="section943121917340"></a><h4 class="sectiontitle">配置步骤（适用HWSDK/ONVIF协议接入摄像机）</h4><ol id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ol1390184181616"><li id="ZH-CN_TOPIC_0000001243128215__li1280623243614"><span id="ZH-CN_TOPIC_0000001243128215__">以<strong id="ZH-CN_TOPIC_0000001243128215__b18551395368">admin</strong>用户登录OMU Portal（<span><span><span><img id="ZH-CN_TOPIC_0000001243128215__image1198993084120" src="zh-cn_image_0000001243420141.png"></span></span></span><a href="zh-cn_topic_0000001113819874.html">登录OMU Portal</a>）</span></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li1330033982011"><span id="ZH-CN_TOPIC_0000001243128215__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_menucascade1569122312515">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol194206401498">系统管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol54311451092">高级配置</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li78063382516"><span id="ZH-CN_TOPIC_0000001243128215__">配置NTPIPC的参数值为1，如<a href="#ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig99217484259">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig99217484259"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig99217484259"></a><a name="zh-cn_topic_0257399267_fig99217484259"></a><span class="figcap"><b>图1 </b>配置SCU参数</span><br><span><img id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_image14921174817257" src="zh-cn_image_0000001243419525.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p14549164162916">开启摄像机NTP同步后，摄像机会自动向<span>ITS800</span>进行时间同步。</p>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001243128215__section1543320199345"><a name="ZH-CN_TOPIC_0000001243128215__section1543320199345"></a><a name="section1543320199345"></a><h4 class="sectiontitle">配置步骤（适用T28181协议接入摄像机）</h4><ol id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ol06038538812"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li983084916257"><span id="ZH-CN_TOPIC_0000001243128215__">设置NTP时间同步，如<a href="#ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig116441345122813">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig116441345122813"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig116441345122813"></a><a name="zh-cn_topic_0257399267_fig116441345122813"></a><span class="figcap"><b>图2 </b>NTP时间同步</span><br><span><img id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_image1464514510286" src="zh-cn_image_0000001198899606.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p137085322914">参数解释如<a href="#ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_table1999601617305">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_table1999601617305"></a><a name="zh-cn_topic_0257399267_table1999601617305"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_table1999601617305" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row17997016143012"><th align="left" class="cellrowborder" valign="top" width="29.98%" id="mcps1.3.4.2.1.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p1428653116302">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="70.02000000000001%" id="mcps1.3.4.2.1.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p1128613120304">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row9997201616307"><td class="cellrowborder" valign="top" width="29.98%" headers="mcps1.3.4.2.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p13286131193014">时区</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.02000000000001%" headers="mcps1.3.4.2.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p14286931183018">选择<span>ITS800</span>所在的时区。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row59974169306"><td class="cellrowborder" valign="top" width="29.98%" headers="mcps1.3.4.2.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p13286193113011">校时方式</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.02000000000001%" headers="mcps1.3.4.2.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p122861831183018">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol163041225446">“NTP校时”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row399771623018"><td class="cellrowborder" valign="top" width="29.98%" headers="mcps1.3.4.2.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p2286173113019">NTP服务器</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.02000000000001%" headers="mcps1.3.4.2.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p12286133115304">请根据实际情况填写<span>ITS800</span>的IP地址。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row12608194518446"><td class="cellrowborder" valign="top" width="29.98%" headers="mcps1.3.4.2.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p11608245154414">检测NTP服务器</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.02000000000001%" headers="mcps1.3.4.2.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p12608945124414">检测当前摄像机网络环境与NTP服务器是否能通。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_row179978167308"><td class="cellrowborder" valign="top" width="29.98%" headers="mcps1.3.4.2.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p1628653153018">同步时间间隔（min）</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.02000000000001%" headers="mcps1.3.4.2.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p1628623123015">请根据需求设置摄像机向<span>ITS800</span>进行时间同步的间隔。</p>
+<p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p62862317307">摄像机将按照设置的时间间隔自动向<span>ITS800</span>同步时间。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001243128215__section0434181993417"><h4 class="sectiontitle">结果验证</h4><ol id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_ol55668599"><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li510510592401"><span id="ZH-CN_TOPIC_0000001243128215__"><span>以<strong id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0203265088_b29318126255">admin</strong>用户登录摄像机Web页面<span>（<span><img id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_zh-cn_topic_0203265088_image11931171232510" src="zh-cn_image_0000001198419672.png"></span> <span><a href="zh-cn_topic_0000001152299586.html">如何登录摄像机Web页面</a></span>）。</span></span></span></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li66841720204618"><span id="ZH-CN_TOPIC_0000001243128215__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_menucascade1961700182812">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol66178002818">高级配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol68364418288">系统配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_uicontrol1564401102812">时间配置</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li26059146"><span id="ZH-CN_TOPIC_0000001243128215__">查看摄像机当前时间，如<a href="#ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig13951237175714">图3</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig13951237175714"><a name="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_fig13951237175714"></a><a name="zh-cn_topic_0257399267_fig13951237175714"></a><span class="figcap"><b>图3 </b>查看时间</span><br><span><img id="ZH-CN_TOPIC_0000001243128215__image93059184418" src="zh-cn_image_0000001198900430.png" width="488.77500000000003" height="277.022641" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_li1468417352169"><span id="ZH-CN_TOPIC_0000001243128215__">查看设备时间是否与<span>ITS800</span>时间一致。</span><p><p id="ZH-CN_TOPIC_0000001243128215__zh-cn_topic_0257399267_p37208287176">如果当前设备时间与<span>ITS800</span>不一致，请重新配置摄像机NTP时间同步。</p>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001198528326.html">配置时钟同步
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001198368356.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001198893836.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

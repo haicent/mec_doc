@@ -1,0 +1,73 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="对比度">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744897.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744899.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744900.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0279516302">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>对比度</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0279516302"></a><a name="ZH-CN_TOPIC_0279516302"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">对比度</h1>
+<div id="body8662426"><p id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_p8060118">车牌字符和周边环境的亮度差应大于20。如<a href="#ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig6683114915113">图1</a>所示，画面对比度较为合适；如<a href="#ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig164863118214">图2</a>所示，画面对比度过低，导致车牌无法被清晰识别。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig6683114915113"><a name="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig6683114915113"></a><a name="zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig6683114915113"></a><span class="figcap"><b>图1 </b>对比度满足要求</span><br><span><img id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_image2352142621813" src="zh-cn_image_0283616691.png" width="498.75" height="408.975" title="点击放大" class="imgResize"></span></div>
+<div class="fignone" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig164863118214"><a name="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig164863118214"></a><a name="zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig164863118214"></a><span class="figcap"><b>图2 </b>对比度不满足要求</span><br><span><img id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_image15350133983012" src="zh-cn_image_0283616692.png" width="429.91212600000006" height="518.7" title="点击放大" class="imgResize"></span></div>
+<div class="section" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_section106551256779"><h4 class="sectiontitle">对比度检查方法</h4><p id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_p13815154611499">衡量当前车牌字符和环境底色亮度差的办法，以<span class="wintitle" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_wintitle1128031118593">“画图”</span>软件为例。</p>
+<ol id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_ol2816134613498"><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li16816124684917"><span id="ZH-CN_TOPIC_0279516302__">登录摄像机Web界面，在<span class="wintitle" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_wintitle811052512517">“预览配置”</span>页面抓拍一张车辆图片。</span></li><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li13816104618499"><span id="ZH-CN_TOPIC_0279516302__">使用Windows系统中的<span class="wintitle" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_wintitle8767615135913">“画图”</span>软件打开该图片，获取车牌字符和周边环境的亮度值，如<a href="#ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig1652010211003">图3</a>所示。</span><p><ol type="a" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_ol28043995410"><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li10599236195410">放大车牌图片，单击<span class="wintitle" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_wintitle3208026105919">“工具”</span>的<span class="uicontrol" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_uicontrol2016415515314">“颜色选取器”</span>，放到车牌字符上，获取车牌字符的颜色。</li><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li98986715713">单击<span class="uicontrol" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_uicontrol124422002317">“编辑颜色”</span>。<p id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_p1535113975712">弹出<span class="wintitle" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_wintitle1186175535919">“编辑颜色”</span>窗口。</p>
+</li><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li175503236568">获取到车牌字符的<span class="parmname" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_parmname547645875619">“亮度”</span>。</li><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li10577431175714">采用同样的方法获取车牌字符周边的颜色亮度值。<div class="fignone" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig1652010211003"><a name="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig1652010211003"></a><a name="zh-cn_topic_0252597738_zh-cn_topic_0128175987_fig1652010211003"></a><span class="figcap"><b>图3 </b>获取图片亮度</span><br><span><img id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_image69061052165412" src="zh-cn_image_0283616694.png" width="523.6875" height="266.07448000000005" title="点击放大" class="imgResize"></span></div>
+</li></ol>
+</p></li><li id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_li13824114613491"><span id="ZH-CN_TOPIC_0279516302__">计算车牌字符和字符周边的亮度差，判定亮度差是否大于20。</span></li></ol>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_section118331414744"><h4 class="sectiontitle">提高对比度</h4><p id="ZH-CN_TOPIC_0279516302__zh-cn_topic_0252597738_zh-cn_topic_0128175987_p52971127534">如果发现车牌字符和周边环境的对比度小于20，影响到车牌字符的识别，调整摄像机图像参数中的对比度数值。</p>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252744897.html">图像要求
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252744899.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0252744900.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

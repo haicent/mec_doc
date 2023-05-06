@@ -1,0 +1,80 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置网络参数">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001192618470.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001197763098.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198528326.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001193244392">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>配置网络参数</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001193244392"></a><a name="ZH-CN_TOPIC_0000001193244392"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置网络参数</h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_section11368051178"><h4 class="sectiontitle">场景说明</h4><ul id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_ul14895304266"><li id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_li1889518010265">ITS800暂仅支持通过GE光口（GE1~GE4）或者GE电口（GE5~GE12）连接摄像机或者交换机；GE0(Combo) 接口为预留接口（默认IP地址为192.168.0.120），不建议使用。</li><li id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_li1707051269">设备组网中，ITS800、摄像机、<span id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_ph83932962517">iClient ME</span>客户端及VMS平台需要处于网络可通，如<a href="#ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig129089181614">图1</a>所示。<p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p990611442911">GE光口或者GE电口可以直接连接摄像机、<span>iClient ME</span>客户端等；也可以先连接到交换机，然后再连接到摄像机、<span>iClient ME</span>客户端等。</p>
+</li></ul>
+<div class="fignone" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig129089181614"><a name="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig129089181614"></a><a name="zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig129089181614"></a><span class="figcap"><b>图1 </b>设备组网</span><br><span><img id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_image890820183611" src="zh-cn_image_0000001151361212.png"></span></div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_section9806262116"><h4 class="sectiontitle">配置网络模式</h4><ol id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_ol1515883118501"><li id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_li4205850165319"><span id="ZH-CN_TOPIC_0000001193244392__"><span>以<strong id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_zh-cn_topic_0203265088_b8624101631310">admin</strong>用户登录OMU Portal（<span><img id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_zh-cn_topic_0203265088_zh-cn_topic_0203265088_image13678257365" src="zh-cn_image_0257331811.png"></span> <a href="zh-cn_topic_0000001113819874.html">如何登录OMU Portal</a>）。</span></span></li><li id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_li2345758115019"><span id="ZH-CN_TOPIC_0000001193244392__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_menucascade13312437165110">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_uicontrol1133063517017">系统管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_uicontrol163211238902"> 网络配置</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_li145781330899"><span id="ZH-CN_TOPIC_0000001193244392__">配置服务器网络信息，如<a href="#ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig166604229122">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig166604229122"><a name="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig166604229122"></a><a name="zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_fig166604229122"></a><span class="figcap"><b>图2 </b>配置服务器网络信息</span><br><span><img id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_image1721155611133" src="zh-cn_image_0000001191247583.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p94043425120">参数解释如<a href="#ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_table19844165021217">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_table19844165021217"></a><a name="zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_table19844165021217"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_table19844165021217" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_row15845145081212"><th align="left" class="cellrowborder" valign="top" width="25.7%" id="mcps1.3.2.2.3.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p08455507122">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="74.3%" id="mcps1.3.2.2.3.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p1884575041213">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_row16557163416120"><td class="cellrowborder" valign="top" width="25.7%" headers="mcps1.3.2.2.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p74054440124">北向业务IP地址</p>
+</td>
+<td class="cellrowborder" rowspan="3" valign="top" width="74.3%" headers="mcps1.3.2.2.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p159071955171213">根据实际情况设置北向业务网卡的网络信息。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_note1742610498411"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p18426949114113">修改IP地址以后，系统会自动重启部分模块。待重启完成以后，需要使用新IP地址登录OMU Portal。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_row15158123741210"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p74052445123">北向子网掩码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_row152297404123"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193244392__zh-cn_topic_0000001206003179_zh-cn_topic_0000001191247529_p84051744121217">北向网关地址</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001192618470.html">ITS800配置
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001197763098.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001198528326.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

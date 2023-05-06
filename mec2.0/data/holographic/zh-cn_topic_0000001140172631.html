@@ -1,0 +1,55 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="新增-在线调试雷达参数导致动向拟合数据异常">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0272267372.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001089209135.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001160479923.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001140172631">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>新增-在线调试雷达参数导致动向拟合数据异常</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001140172631"></a><a name="ZH-CN_TOPIC_0000001140172631"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">新增-在线调试雷达参数导致动向拟合数据异常</h1>
+<div id="body0000001140172631"><div class="section" id="ZH-CN_TOPIC_0000001140172631__section14794285242"><h4 class="sectiontitle">现象描述</h4><p id="ZH-CN_TOPIC_0000001140172631__p1301055112420">通过上位机软件调试ACC7320（CSR）雷达后，配置该雷达参数。发现ITS800中动向拟合数据异常。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001140172631__section156171210152512"><h4 class="sectiontitle">可能原因</h4><p id="ZH-CN_TOPIC_0000001140172631__p129631442277">在线调试雷达导致雷达与ITS800对接异常或断开，导致ITS800不能获取到正确的雷达数据。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001140172631__section11740132514256"><h4 class="sectiontitle">解决方法</h4><p id="ZH-CN_TOPIC_0000001140172631__p68288440294">如需调试雷达参数，请先在ITS800中停止运行路口雷视拟合任务。待雷达在线调试完成后，建议等待5min后再启动ITS800中路口雷视拟合任务。</p>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0272267372.html">全息路口问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001089209135.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001160479923.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

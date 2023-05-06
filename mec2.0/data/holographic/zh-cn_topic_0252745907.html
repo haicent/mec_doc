@@ -1,0 +1,96 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="雾霾天朦胧、晴天泛白问题">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745884.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745906.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745908.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252745907">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>雾霾天朦胧、晴天泛白问题</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252745907"></a><a name="ZH-CN_TOPIC_0252745907"></a>
+
+<div class="articleBoxWithoutHead">
+
+  <h1 class="topicTitle-h1">雾霾天朦胧、晴天泛白问题</h1>
+
+  <div id="body1591600387959"><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_p8060118">典型场景如<a href="#ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ff91d7959af03449c975c23512fe66ce3">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ff91d7959af03449c975c23512fe66ce3"><a name="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ff91d7959af03449c975c23512fe66ce3"></a><a name="zh-cn_topic_0252597479_ff91d7959af03449c975c23512fe66ce3"></a><span class="figcap"><b>图1 </b>雾霾天朦胧</span><br><span><img id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_i60b4b2930c6a4abaa00ce95ba89b5e69" src="zh-cn_image_0252597730.png" width="253.365" height="262.679655" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_p432430389">问题现象及调试方案推荐，如<a href="#ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_td316ec5981524bf894e4117ddb5bf81d">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_td316ec5981524bf894e4117ddb5bf81d"></a><a name="zh-cn_topic_0252597479_td316ec5981524bf894e4117ddb5bf81d"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_td316ec5981524bf894e4117ddb5bf81d" frame="border" border="1" rules="all"><caption><b>表1 </b>问题现象及调试方案推荐</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_re6561cd730f1404b83180e9c6afd871c"><th align="left" class="cellrowborder" valign="top" width="21%" id="mcps1.3.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_a6d7811a470ba424287e0e14a0e6ca23e">问题现象</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="79%" id="mcps1.3.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_a5b80b4b799cf49fe961a04f1865e23ff">调试方案推荐</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_r1029ac1bef5f452d9a5027e75f3a5cc0"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_p783123263816">由于雾霾影响，画面朦胧</p>
+</td>
+<td class="cellrowborder" valign="top" width="79%" headers="mcps1.3.4.2.3.1.2 "><div class="p" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_a704ec92b753e46299d58e344ddd83b57">开启透雾，如果效果不理想，则调大Gamma强度。<ul id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ubf468ea601de499d9b71076117cd91fe"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_lb4b857fd384945199c7b107e2c17669f">开启透雾<ol id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_o5210894e8da842f28118f95e128f2b95"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l670bfd723f1e417493964bdb93d57b85">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_m22b2be7b043543efb65ac121762b296f">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ua3900091db404f8ab78b506011cd0ed3">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u53ac342c4c90409eb0b38ee9638b45f9">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ud97df5d7f6fd4a51afe17de1226c42c8">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u4b0387e0e1ea478f8390645a002022ff">图像增强</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_li67949137395"><span class="parmname" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_p92ae1b3b64204aa0b4848ac40688aa29">“透雾模式”</span>选择<span class="parmvalue" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_p3b2f6a93b7b647afb1cb038e3b7979e2">“自动”</span>或<span class="parmvalue" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_p8415fabe4a8441c092def0f7ac4a249d">“手动”</span>。</li></ol>
+</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_le1f312e06cba49a4a905ab6a092d9514">调大Gamma强度<ol id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_oea7a9af4b2f744868236437a62e62a20"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_lf4943ce59d27470cb5eca842afce18e4">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_mf96ac878b8584392b704218ea7de53d0">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_uf10b48d0234d43fc84c17e4e032529d4">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u44e8985419d94e3aad9bc3e0971304ab">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u8034136b19714d9fada8906b5b155335">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u17502cc9399845298b799ba71e33d3ee">图像增强</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l4330a9ab896649e0a306ceac85a0885b">调大<span class="parmname" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_pea6256ff4dc74db5bf213bf5558c3808">“Gamma矫正”</span>的数值。</li></ol>
+</li></ul>
+</div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_r0e8ad9d2542e43b5835ccd9620d36640"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_p328310206431">晴天情况下，画面泛白</p>
+</td>
+<td class="cellrowborder" valign="top" width="79%" headers="mcps1.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_a5fb98fe07f4743689aed832ed2df0bec">降低曝光补偿系数，如果效果不理想，则增强对比度，如果效果依旧不理想，可适当提高饱和度。</p>
+<ul id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u726ad617f6da4a409d85cb2c71e64523"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l5c957b513178400086950e6bf8e3c81c">降低曝光补偿系数<ol id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_o348df73f6b9e47d6898fc0672f0b0e69"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l0a46be37c8cb4eeca264082169d55745">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_mc24d8ee5857649d28cd7c29d2197aa5f">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_uf115b4b2682a4391b0628e461eeba083">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u266ba72934be46d49fae8e32c3d1e6a7">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u2b484b6bc13148d1b7c69a58325b8d91">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ue1256173d0494167bbfedf75c0da2f41">曝光</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_zh-cn_topic_0128175929_li24932598251">调小<span class="parmname" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_pcf8939a8a7b34d908d62e3a64ac34cc8">“曝光补偿系数”</span>。</li></ol>
+</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l9ced849d4d7f4979b6649883e2375ed6">增强对比度<ol id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_o6eaec1eb02c74ca1ba583d6fb91e3a31"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l4de06cf8efba4bdb87eb17f7fbc04c3b">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_me6820b1898aa4b28b555ac015de48ee8">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u7c86888094634a8c95a44879a59b344a">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u5871d56300ce432ab401fc2146779ec7">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u5907d75c59c1422ba2ba7b94db9aa81f">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u711e837711854742a22f29631e85b4bb">图像调节</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l7d9ee17ffd404ea488780b8b8c398ea5">调大<span class="parmname" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_pd0515404a8b94681882deb66405f1810">“对比度”</span>数值。</li></ol>
+</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l41d8b6340e284523af8914ecfc9cf201">提高饱和度<ol id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_od34b4a3174794397a58496131531b866"><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l25b6e63fc02f4415a7de2df862d44168">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_m666c08d05ea64241af8a92b6677ba9bf">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_u08f4cc3548e341dc82fd0a0dc086505d">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_uf9147ce4076d4986827bb7f0b55c5c67">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ub1a48f95b19d4909932d02f9ca2df8d6">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ua56d62349c354a1eaac70530a4156a9a">图像调节</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_l98c18387066d49f0829f3b6914b6dcd8">调高<span class="parmname" id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_p4c306db546cd4e5eab16372461c0aed3">“饱和度”</span>。</li></ol>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="ZH-CN_TOPIC_0252745907__zh-cn_topic_0252597479_ab7ee8d291b944b21b8f0bec98ceadd2e">相应参数的具体数值，不同环境情况不一，可实时观测画面效果，依据车牌显示清晰情况而定。</p>
+</div>
+
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252745884.html">摄像机及外设问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252745906.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0252745908.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

@@ -1,0 +1,138 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="与第三方应用平台对接配置">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001242481973.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001268851961.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001081634835.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001237719467.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001237559471.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001083171835">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>与第三方应用平台对接配置</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001083171835"></a><a name="ZH-CN_TOPIC_0000001083171835"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">与第三方应用平台对接配置</h1>
+<div id="body0000001083171835"><p id="ZH-CN_TOPIC_0000001083171835__p671661516385">介绍与第三方应用平台（例如图盟）对接时需创建的帐号，以及需要收集、提供的信息。</p>
+<div class="section" id="ZH-CN_TOPIC_0000001083171835__section1319014217184"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001083171835__ol11369649506"><li id="ZH-CN_TOPIC_0000001083171835__li049272619521"><span id="ZH-CN_TOPIC_0000001083171835__">（可选）如果用户没有自己的商用证书，请参考如下步骤获取华为数字证书和证书吊销列表。</span><p><p id="ZH-CN_TOPIC_0000001083171835__p76334913502">数字证书也称身份证书，用于保证ITS800与上级平台（比如IVS3800）通信的安全性，防止通信数据在传输过程被篡改造成安全风险，提升系统的安全性。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001083171835__p1492132625215">证书吊销列表用于校验对端设备证书的合法性，确保通信的安全。证书吊销列表是一种离线的证书状态信息，基本信息包括被吊销证书的序列号，吊销日期，颁发者等，用于公布某些数字证书不再有效。<ul id="ZH-CN_TOPIC_0000001083171835__ul649220264521"><li id="ZH-CN_TOPIC_0000001083171835__li569135364911">如果用户在IVS3800侧已经使用自己的商用证书，则在ITS800侧需要导入自己的商用证书和证书吊销列表。</li><li id="ZH-CN_TOPIC_0000001083171835__li2049282616529">如果用户没有自己的商用证书，则需要使用华为数字证书和证书吊销列表。<ol type="a" id="ZH-CN_TOPIC_0000001083171835__ol16492102614523"><li id="ZH-CN_TOPIC_0000001083171835__li146919534497">登录<a href="https://support.huawei.com/pki/pkidetail" target="_blank" rel="noopener noreferrer">https://support.huawei.com/pki/pkidetail</a>。</li><li id="ZH-CN_TOPIC_0000001083171835__li136913536490">获取华为数字证书：<ol class="substepthirdol" id="ZH-CN_TOPIC_0000001083171835__ol76911553164912"><li id="ZH-CN_TOPIC_0000001083171835__li16915531495">在“根证书”列表中单击“Huawei Equipment Root CA.pem”。<p id="ZH-CN_TOPIC_0000001083171835__p1169175319494"><a name="ZH-CN_TOPIC_0000001083171835__li16915531495"></a><a name="li16915531495"></a>下载的根证书名称是<strong id="ZH-CN_TOPIC_0000001083171835__b169113539490">Huawei Equipment Root CA.pem。</strong></p>
+</li><li id="ZH-CN_TOPIC_0000001083171835__li18691135374919">在“二级CA证书”列表中单击“IT”，下载文档标题为“Huawei IT Product CA”的二级CA证书。<p id="ZH-CN_TOPIC_0000001083171835__p369117539491"><a name="ZH-CN_TOPIC_0000001083171835__li18691135374919"></a><a name="li18691135374919"></a>下载的证书名称是<strong id="ZH-CN_TOPIC_0000001083171835__b3691195310497">Huawei IT Product CA.pem</strong>。</p>
+</li></ol>
+</li><li id="ZH-CN_TOPIC_0000001083171835__li7691135364910">合成华为数字证书：<ol class="substepthirdol" id="ZH-CN_TOPIC_0000001083171835__ol0691165374910"><li id="ZH-CN_TOPIC_0000001083171835__li1069116532494">打开下载的两个证书。</li><li id="ZH-CN_TOPIC_0000001083171835__li0691165312498">将<strong id="ZH-CN_TOPIC_0000001083171835__b5691105319497">Huawei Equipment Root CA.pem</strong>证书的内容复制粘贴到<strong id="ZH-CN_TOPIC_0000001083171835__b3691185316499">Huawei IT Product CA.pem</strong>证书下面，证书内容需以“<strong id="ZH-CN_TOPIC_0000001083171835__b86911453144914">-----BEGIN CERTIFICATE-----</strong>”开始，以“<strong id="ZH-CN_TOPIC_0000001083171835__b7691105317498">-----END CERTIFICATE-----</strong>”结束。</li><li id="ZH-CN_TOPIC_0000001083171835__li66911153104914">保存并重命名<strong id="ZH-CN_TOPIC_0000001083171835__b186918532497">Huawei IT Product CA.pem</strong>证书为<strong id="ZH-CN_TOPIC_0000001083171835__b16691195374916">cert</strong><em id="ZH-CN_TOPIC_0000001083171835__i86921253104913"><strong id="ZH-CN_TOPIC_0000001083171835__b669218538499">.</strong></em><strong id="ZH-CN_TOPIC_0000001083171835__b3692453164914">pem</strong>。</li></ol>
+</li><li id="ZH-CN_TOPIC_0000001083171835__li1849312615527">获取证书吊销列表：<ul id="ZH-CN_TOPIC_0000001083171835__ul1549362614526"><li id="ZH-CN_TOPIC_0000001083171835__li174931026205217">在证书吊销列表单击“IT”，下载文档标题为“pre_crl”的证书吊销列表。<p id="ZH-CN_TOPIC_0000001083171835__p1949316264521"><a name="ZH-CN_TOPIC_0000001083171835__li174931026205217"></a><a name="li174931026205217"></a>下载的吊销列表名称是<strong id="ZH-CN_TOPIC_0000001083171835__b186921753104918">pre_crl.crl</strong>。</p>
+</li></ul>
+</li></ol>
+</li></ul>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001083171835__li103693415508"><span id="ZH-CN_TOPIC_0000001083171835__">导入数字证书和证书吊销列表</span><p><ol type="a" id="ZH-CN_TOPIC_0000001083171835__ol15223101095615"><li id="ZH-CN_TOPIC_0000001083171835__li622310101569">以<strong id="ZH-CN_TOPIC_0000001083171835__b19223121015563">admin</strong>用户登录OMU Portal<span id="ZH-CN_TOPIC_0000001083171835__zh-cn_topic_0294241460_ph840065714197"></span></li><li id="ZH-CN_TOPIC_0000001083171835__li18289955591">选择“对接管理 &gt; 对接证书管理”&gt;“第三方证书”。</li><li id="ZH-CN_TOPIC_0000001083171835__li17453201245910">导入视图库数字证书，如所示。<div class="fignone" id="ZH-CN_TOPIC_0000001083171835__fig14738174016113"><span class="figcap"><b>图1 </b>导入数图库数字证书</span><br><span><img id="ZH-CN_TOPIC_0000001083171835__image17738124015111" src="zh-cn_image_0000001237667421.png" height="154.6125" width="523.6875" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0000001083171835__p83091138220">参数解释如<a href="#ZH-CN_TOPIC_0000001083171835__table12703114119219">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001083171835__table12703114119219"></a><a name="table12703114119219"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001083171835__table12703114119219" frame="border" border="1" rules="all"><caption><b>表1 </b><strong id="ZH-CN_TOPIC_0000001083171835__b1671920411426">表2 </strong>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001083171835__row671920412029"><th align="left" class="cellrowborder" valign="top" width="23.580000000000002%" id="mcps1.3.2.2.2.2.1.3.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001083171835__p1671934114218">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="76.42%" id="mcps1.3.2.2.2.2.1.3.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001083171835__p2071918411420">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001083171835__row177192411723"><td class="cellrowborder" valign="top" width="23.580000000000002%" headers="mcps1.3.2.2.2.2.1.3.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001083171835__p571912411215">上传证书</p>
+</td>
+<td class="cellrowborder" valign="top" width="76.42%" headers="mcps1.3.2.2.2.2.1.3.3.2.3.1.2 "><ul id="ZH-CN_TOPIC_0000001083171835__ul10719174115213"><li id="ZH-CN_TOPIC_0000001083171835__li271924115219">如果用户有自己的商用证书，则导入该商用证书。</li><li id="ZH-CN_TOPIC_0000001083171835__li97199411727">如果用户没有自己的商用证书，则导入已经获取并合并的华为数字证书。<p id="ZH-CN_TOPIC_0000001083171835__p1871910411727"><a name="ZH-CN_TOPIC_0000001083171835__li97199411727"></a><a name="li97199411727"></a>如何获取华为根证书，请参考<a href="mk:@MSITStore:C:/Users/cWX1125419/Desktop/临时发布1221.chm::/zh-cn_topic_0000001126377661.html#ZH-CN_TOPIC_0000001126377661__li090182161019">获取证书</a>。</p>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li id="ZH-CN_TOPIC_0000001083171835__li72791829105911">可选：导入视图库吊销列表，如<a href="#ZH-CN_TOPIC_0000001083171835__fig27835386520">图2</a>所示。</li></ol>
+<div class="fignone" id="ZH-CN_TOPIC_0000001083171835__fig27835386520"><a name="ZH-CN_TOPIC_0000001083171835__fig27835386520"></a><a name="fig27835386520"></a><span class="figcap"><b>图2 </b>导入视图库吊销列表</span><br><span><img id="ZH-CN_TOPIC_0000001083171835__image278315383510" src="zh-cn_image_0000001237427395.png" height="144.63750000000002" width="523.6875" title="点击放大" class="imgResize"></span></div>
+<div class="p" id="ZH-CN_TOPIC_0000001083171835__p9843421065">参数解释如<a href="#ZH-CN_TOPIC_0000001083171835__table1897317181063">表2</a>所示。
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001083171835__table1897317181063"></a><a name="table1897317181063"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001083171835__table1897317181063" frame="border" border="1" rules="all"><caption><b>表2 </b><strong id="ZH-CN_TOPIC_0000001083171835__b69881318169">表3 </strong>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001083171835__row79881518862"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.2.2.3.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001083171835__p4989318469">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.2.2.3.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001083171835__p6989191818615">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001083171835__row19989718765"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001083171835__p69895187616">上传证书</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.3.2.2.3.1.2 "><ul id="ZH-CN_TOPIC_0000001083171835__ul29893181464"><li id="ZH-CN_TOPIC_0000001083171835__li1798981811615">如果数字证书导入的是用户自己的商用证书，则导入该数字证书对应的证书吊销列表。</li><li id="ZH-CN_TOPIC_0000001083171835__li10989318561">如果数字证书导入的是华为数字证书，则导入已经获取到的证书吊销列表。</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="notice" id="ZH-CN_TOPIC_0000001083171835__note63932116918"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0000001083171835__p164961013995">证书吊销列表用于校验对端设备证书的合法性，确保通信的安全。因此建议在导入数字证书以后，导入对应的证书吊销列表。</p>
+</div></div>
+</div>
+</p></li></ol>
+</div>
+</div>
+
+<ul class="ullinks">
+<dl>
+<dt>
+<a href="zh-cn_topic_0000001081634835.html">证书导入（可选）</a>
+</dt>
+<dd>
+</dd>
+</dl>
+<dl>
+<dt>
+<a href="zh-cn_topic_0000001237719467.html">图盟应用平台</a>
+</dt>
+<dd>
+</dd>
+</dl>
+<dl>
+<dt>
+<a href="zh-cn_topic_0000001237559471.html">世纪高通应用平台</a>
+</dt>
+<dd>
+</dd>
+</dl>
+</ul>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001242481973.html">全息路口雷视拟合任务
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001268851961.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="夜间画面亮度过低">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745884.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745909.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745911.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252745910">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>夜间画面亮度过低</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252745910"></a><a name="ZH-CN_TOPIC_0252745910"></a>
+
+<div class="articleBoxWithoutHead">
+
+  <h1 class="topicTitle-h1">夜间画面亮度过低</h1>
+
+  <div id="body1591600387960"><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_zh-cn_topic_0128176033_p8060118">典型场景如<a href="#ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_f9908457d57c144c4b4c9d44590f1adc1">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_f9908457d57c144c4b4c9d44590f1adc1"><a name="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_f9908457d57c144c4b4c9d44590f1adc1"></a><a name="zh-cn_topic_0252597580_f9908457d57c144c4b4c9d44590f1adc1"></a><span class="figcap"><b>图1 </b>夜间亮度问题</span><br><span><img id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_i34eeb07e5d0a49efae4a2b21a80f6d1e" src="zh-cn_image_0252597669.png"></span></div>
+<div class="p" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_a983b2b117aeb4f01a7323c21ba70a3b8">问题现象及调试方案推荐，如<a href="#ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_t7fd3a04e6e4648358b3ea10f70fed7ae">表1</a>所示。
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_t7fd3a04e6e4648358b3ea10f70fed7ae"></a><a name="zh-cn_topic_0252597580_t7fd3a04e6e4648358b3ea10f70fed7ae"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_t7fd3a04e6e4648358b3ea10f70fed7ae" frame="border" border="1" rules="all"><caption><b>表1 </b>问题现象及调试方案推荐</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_r8de8dfd998ee44c59478a158b481aed8"><th align="left" class="cellrowborder" valign="top" width="28.000000000000004%" id="mcps1.3.3.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_zh-cn_topic_0128176033_p384417566451">问题现象</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="72%" id="mcps1.3.3.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_ac9b0bd2b4f674ce7aaf730e88c85c6b1">调试方案推荐</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_r7109e057a7624188b350f0d46c48c236"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_a389b83d3a4d94e4f999575005325d8cb">若整体画面亮度正常，仅车牌亮度过低</p>
+</td>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_a348b62d9c03a4affaa82c5daac703f03">大致原因为补光灯不足造成，建议提高补光灯亮度。</p>
+<ol id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_zh-cn_topic_0128176033_ol46015327479"><li id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_l90594359724f49129a9614004ed7a902">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_mb792f621ef7d45ef91243639a92af156">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_u1579dd09bde4468ca57fd9df1cd871b2">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_u53334528c8464ab48d1a5951d877a77f">抓拍参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_ue542b9fb787f4eb48b222e308c7b87c0">补光灯参数</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_lac22777169ff439e8bc66c41f8243ff7">分别调高IO:1、IO:2和IO:3的亮度。</li><li id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_l8c0b809bf0c546a3b52110ce0f5902c2">单击<span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_u56010e4190c047e0a6fa20f45a0cd414">“保存”</span>。</li></ol>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_rfc794f13a23c4beab7ee507503d09577"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_zh-cn_topic_0128176033_p379718191538">整体画面亮度过低</p>
+</td>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.3.3.2.2.3.1.2 "><div class="p" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_a0c804f52f28045208976d79966c34cd4">适当调大增益限制。<ol id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_o6ef4529e9944447d8a18938386f7b1ca"><li id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_l1254cce980c14fc5b6eaf8659de2eb42">登录摄像机的Web界面，选择<span class="menucascade" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_mf24a8f871d674279963a59c3be77f165">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_ue281b00c9e3647af8d520b7a0d8246d2">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_ua1fbf61dd5aa494da4ec3ba1fa882daf">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_u837ec7509e0143ffb42065352cad34e4">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_udfcc8226ecde4b02ba319df8f6e4d961">曝光</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_lc1e611404e5f4d9c902ece5ae04398f6">调大<span class="parmname" id="ZH-CN_TOPIC_0252745910__zh-cn_topic_0252597580_pf0d06c64a8d34eff878b146c432a6fd0">“增益限制”</span>。</li></ol>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252745884.html">摄像机及外设问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252745909.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0252745911.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

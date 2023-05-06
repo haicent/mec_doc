@@ -1,0 +1,167 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="Y型路口场景">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001263021351.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001104048322.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001150248323.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001103888372">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>Y型路口场景</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001103888372"></a><a name="ZH-CN_TOPIC_0000001103888372"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">Y型路口场景</h1>
+<div id="body0000001103888372"><p id="ZH-CN_TOPIC_0000001103888372__p13621134395517">以双向6车道选用M2391-10-TL-T摄像机为例，系统安装方案推荐如<a href="#ZH-CN_TOPIC_0000001103888372__fig18226144143915">图1</a>、<a href="#ZH-CN_TOPIC_0000001103888372__fig1998212386015">图2</a>所示，设备配置数量推荐如<a href="#ZH-CN_TOPIC_0000001103888372__table6957211294">表1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001103888372__fig18226144143915"><a name="ZH-CN_TOPIC_0000001103888372__fig18226144143915"></a><a name="fig18226144143915"></a><span class="figcap"><b>图1 </b>Y型路口场景方案一</span><br><span><img id="ZH-CN_TOPIC_0000001103888372__image1817175816381" src="zh-cn_image_0000001244061757.png" width="523.6875" height="504.45277400000003" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0000001103888372__p9137752145110">方案一适用以下场景：</p>
+<ul id="ZH-CN_TOPIC_0000001103888372__ul1997711013527"><li id="ZH-CN_TOPIC_0000001103888372__li4977140155215">三个方向的道路互成较大的夹角</li><li id="ZH-CN_TOPIC_0000001103888372__li29772010521">任意两个方向的道路中心线非直线</li><li id="ZH-CN_TOPIC_0000001103888372__li1384714489124">道路弯曲度的曲率半径大于1km（请参见<a href="zh-cn_topic_0000001115236390.html">如何查看道路曲率半径</a>）</li><li id="ZH-CN_TOPIC_0000001103888372__li5761510101419">道路坡度小于1&deg;</li></ul>
+<div class="p" id="ZH-CN_TOPIC_0000001103888372__p128631757201917">以纵向的双向车道为例，各设备的安装要求如下。其他两个方向道路的设备安装与此类似。<ul id="ZH-CN_TOPIC_0000001103888372__ul17863257101914"><li id="ZH-CN_TOPIC_0000001103888372__li2863135751920">雷达：<p id="ZH-CN_TOPIC_0000001103888372__p486412578198"><a name="ZH-CN_TOPIC_0000001103888372__li2863135751920"></a><a name="li2863135751920"></a>在红绿灯杆上安装一台雷达，用于路段车辆的检测。</p>
+</li><li id="ZH-CN_TOPIC_0000001103888372__li686445701917">摄像机<p id="ZH-CN_TOPIC_0000001103888372__p38641857141917"><a name="ZH-CN_TOPIC_0000001103888372__li686445701917"></a><a name="li686445701917"></a>在电警杆上安装一台摄像机，用于路口进口道车辆的抓拍识别。摄像机检测范围需覆盖右侧其他方向道路的人行道斑马线。</p>
+</li><li id="ZH-CN_TOPIC_0000001103888372__li17864105781911">频闪灯<p id="ZH-CN_TOPIC_0000001103888372__p9864135717192"><a name="ZH-CN_TOPIC_0000001103888372__li17864105781911"></a><a name="li17864105781911"></a>在电警杆上安装三个频闪灯，用于抓拍车辆时补光。对于非六车道场景（例如双向四车道），可在此数量基础上减少频闪灯个数，即每减少一个车道可减少一个频闪灯。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001103888372__fig1998212386015"><a name="ZH-CN_TOPIC_0000001103888372__fig1998212386015"></a><a name="fig1998212386015"></a><span class="figcap"><b>图2 </b>Y型路口场景方案二</span><br><span><img id="ZH-CN_TOPIC_0000001103888372__image126142014017" src="zh-cn_image_0000001198984890.png" width="523.6875" height="648.79424925" title="点击放大" class="imgResize"></span></div>
+</li></ul>
+</div>
+<p id="ZH-CN_TOPIC_0000001103888372__p14771913405"></p>
+<p id="ZH-CN_TOPIC_0000001103888372__p2056716225318">方案二适用以下场景：</p>
+<ul id="ZH-CN_TOPIC_0000001103888372__ul756719214530"><li id="ZH-CN_TOPIC_0000001103888372__li45671322531">有两个方向的道路中心线成直线，即形成主路。支路与主路成较大的夹角。</li><li id="ZH-CN_TOPIC_0000001103888372__li1356782105310">道路中间无较高障碍物遮挡雷达波束，可将主路中雷达安装在电警杆上，支路中雷达安装在红绿灯杆上。</li><li id="ZH-CN_TOPIC_0000001103888372__li118391414195316">双向车道宽度（含绿化带等隔离带）不大于30m。</li><li id="ZH-CN_TOPIC_0000001103888372__li1185510298169">道路弯曲度的曲率半径大于1km（请参见<a href="zh-cn_topic_0000001115236390.html">如何查看道路曲率半径</a>）。</li><li id="ZH-CN_TOPIC_0000001103888372__li1785522951614">道路坡度小于1&deg;。</li></ul>
+<div class="p" id="ZH-CN_TOPIC_0000001103888372__p9182154914224">以支路的双向车道为例，各设备的安装要求如下。主路的设备安装与十字路口场景类似。<ul id="ZH-CN_TOPIC_0000001103888372__ul1182194952215"><li id="ZH-CN_TOPIC_0000001103888372__li618212495220">雷达<p id="ZH-CN_TOPIC_0000001103888372__p1818264992213"><a name="ZH-CN_TOPIC_0000001103888372__li618212495220"></a><a name="li618212495220"></a>在支路的红绿灯杆上安装一台雷达，用于路段车辆的检测。</p>
+</li><li id="ZH-CN_TOPIC_0000001103888372__li61824494224">摄像机<p id="ZH-CN_TOPIC_0000001103888372__p91821349102216"><a name="ZH-CN_TOPIC_0000001103888372__li61824494224"></a><a name="li61824494224"></a>在支路的电警杆上安装一台摄像机，用于路口进口道车辆的抓拍识别。摄像机检测范围需覆盖右侧主路的人行道斑马线。</p>
+</li><li id="ZH-CN_TOPIC_0000001103888372__li181821749162212">频闪灯<p id="ZH-CN_TOPIC_0000001103888372__p7182249112211"><a name="ZH-CN_TOPIC_0000001103888372__li181821749162212"></a><a name="li181821749162212"></a>在支路的电警杆上安装三个频闪灯，用于抓拍车辆时补光。对于非六车道场景（例如双向四车道），可在此数量基础上减少频闪灯个数，即每减少一个车道可减少一个频闪灯。</p>
+</li></ul>
+</div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001103888372__table6957211294"></a><a name="table6957211294"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001103888372__table6957211294" frame="border" border="1" rules="all"><caption><b>表1 </b>设备配置数量</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row19951421997"><th align="left" class="cellrowborder" valign="top" width="45.519999999999996%" id="mcps1.3.10.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p19741151614597">设备</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="54.48%" id="mcps1.3.10.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p13741316195918">数量</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row1765163875818"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p187414165591">摄像机</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p10742216105910">3～9台（根据M2391-10-TL-T短焦摄像机最大覆盖三车道的原则合理规划数量）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row695102110913"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p574241655918">雷达</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1074220165595">3台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row1393133016447"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0230024267_p19243113819572">ITS800</p>
+<div class="note" id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_note6766343162215"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p8766243142220">摄像机＋雷达数量＞8台时，需配置ITS800-C02-32T （16VR）。</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p97422164592">1台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row109618211193"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p6742181611594">挂箱</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p17421316185917">3个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row149662113917"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p37421816145912">电警立柜</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1742111614597">1个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row1442154755812"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p197421516185920">室外交换机</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1742151615911">3台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row12478651145817"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1574212167599">镜头</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p11742191617592">镜头3～9个（根据摄像机的数量进行配置）</p>
+<div class="p" id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1041112142916">以M2391-10-TL-T摄像机为例，根据电警杆距离安装侧停止线的距离X1选择镜头：<ul id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_ul1046719221187"><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li164671922285">17m&#8804;X1&#8804;21m：12mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li12468122286">21m&lt;X1&#8804;25m：16mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li847195316264">25m&lt;X1&#8804;30m：20mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li74681522286">30m&lt;X1&#8804;37m：25mm焦距镜头</li></ul>
+</div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row18741205385820"><td class="cellrowborder" valign="top" width="45.519999999999996%" headers="mcps1.3.10.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p374321675916">频闪灯</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.48%" headers="mcps1.3.10.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p2743116205918">根据车道数量进行配置，1个进口车道对应1个频闪灯</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="ZH-CN_TOPIC_0000001103888372__p1669918995310">以上场景中主要的工勘数据如<a href="#ZH-CN_TOPIC_0000001103888372__table1469918965316">表2</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001103888372__table1469918965316"></a><a name="table1469918965316"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001103888372__table1469918965316" frame="border" border="1" rules="all"><caption><b>表2 </b>工勘数据</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row1699179125315"><th align="left" class="cellrowborder" valign="top" width="12.16%" id="mcps1.3.12.2.7.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p186994915312">摄像机架杆高度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.98%" id="mcps1.3.12.2.7.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p869915916535">摄像机架杆距离X（至停止线）</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="12.86%" id="mcps1.3.12.2.7.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p19699698531">红绿灯杆高</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="9.67%" id="mcps1.3.12.2.7.1.4" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1769989135315">车道宽度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.85%" id="mcps1.3.12.2.7.1.5" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p26996918537">摄像机画面下边缘至停止线距离L</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.479999999999999%" id="mcps1.3.12.2.7.1.6" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p15699119155315">频闪灯至摄像机距离</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_row26991493536"><td class="cellrowborder" valign="top" width="12.16%" headers="mcps1.3.12.2.7.1.1 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p146995995317">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.98%" headers="mcps1.3.12.2.7.1.2 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_p2673112905411">M2391-10-TL作为电警使用：</p>
+<ul id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_ul2673229165413"><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li1667313296549">17m&#8804;X1&#8804;21m（12mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li16673229145414">21m&lt;X1&#8804;25m（16mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li1467382915414">25m&lt;X1&#8804;30m（20mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_zh-cn_topic_0000001150688219_li2067311293549">31m&lt;X1&#8804;37m（25mm焦距镜头）</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="12.86%" headers="mcps1.3.12.2.7.1.3 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p269917917539">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.67%" headers="mcps1.3.12.2.7.1.4 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p20700896532">3.75m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.85%" headers="mcps1.3.12.2.7.1.5 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p1770011965318">8m&#8804;L&#8804;9m（用于小车抓拍）</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.479999999999999%" headers="mcps1.3.12.2.7.1.6 "><p id="ZH-CN_TOPIC_0000001103888372__zh-cn_topic_0000001104048322_p187000955315">&#8805;2m</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001263021351.html">标准路口
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001104048322.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001150248323.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

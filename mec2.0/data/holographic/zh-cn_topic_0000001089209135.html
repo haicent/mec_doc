@@ -1,0 +1,109 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="新增-如何调整进、出口道摄像机视频与雷达信号衔接距离">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0272267372.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001081841451.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001140172631.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001089209135">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>新增-如何调整进、出口道摄像机视频与雷达信号衔接距离</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001089209135"></a><a name="ZH-CN_TOPIC_0000001089209135"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">新增-如何调整进、出口道摄像机视频与雷达信号衔接距离</h1>
+<div id="body0000001089209135"><div class="section" id="ZH-CN_TOPIC_0000001089209135__section14794285242"><h4 class="sectiontitle">现象描述</h4><ul id="ZH-CN_TOPIC_0000001089209135__ul14137026142719"><li id="ZH-CN_TOPIC_0000001089209135__li813782662718">在出口道斑马线附近，车辆轨迹消失或中断一段时间，不能现成连续的车辆轨迹。</li><li id="ZH-CN_TOPIC_0000001089209135__li179151219154413">在进口道斑马线附近，车辆轨迹堆叠或者断裂，如<a href="#ZH-CN_TOPIC_0000001089209135__fig179391455418">图1</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001089209135__fig179391455418"><a name="ZH-CN_TOPIC_0000001089209135__fig179391455418"></a><a name="fig179391455418"></a><span class="figcap"><b>图1 </b>出口道车辆轨迹异常</span><br><span><img id="ZH-CN_TOPIC_0000001089209135__image18155521546" src="zh-cn_image_0000001089067945.png" width="523.6875" height="111.63128900000001" title="点击放大" class="imgResize"></span></div>
+</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001089209135__section156171210152512"><h4 class="sectiontitle">可能原因</h4><p id="ZH-CN_TOPIC_0000001089209135__p1729419328206">进、出口道的摄像机视频和雷达信号衔接位置设置不合理，即衔接距离取值错误。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001089209135__section17548195317152"><h4 class="sectiontitle">解决方法</h4><p id="ZH-CN_TOPIC_0000001089209135__p2029312271515">合理设置进、出口道的摄像机视频和雷达信号衔接位置，请根据路口宽度设置衔接距离，如<a href="zh-cn_topic_0000001089209135.html#ZH-CN_TOPIC_0000001089209135__table19303123018461">表1</a>所示。调优参数会保存到<span class="filepath" id="ZH-CN_TOPIC_0000001089209135__filepath1959543117227">“C:\Program Files\HW\HoloSens_iClient\calibrateFile\<i><span class="varname" id="ZH-CN_TOPIC_0000001089209135__varname11674846172216">路口名</span></i>\funxion.xml”</span>文件中。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001089209135__table19303123018461"></a><a name="table19303123018461"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001089209135__table19303123018461" frame="border" border="1" rules="all"><caption><b>表1 </b>衔接距离取值</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001089209135__row73031630134617"><th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.3.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001089209135__p23037303464">路口宽度Y</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.3.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001089209135__p16303113017469">出口道衔接距离X<sub id="ZH-CN_TOPIC_0000001089209135__sub1744541524718">1</sub></p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.3.2.4.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001089209135__p143031630184615">进口道衔接距离X<sub id="ZH-CN_TOPIC_0000001089209135__sub4482182018471">2</sub></p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001089209135__row1230393054615"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.3.3.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001089209135__p20916643164713">Y&#8805;70m</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.3.3.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001089209135__p1091654384711">X<sub id="ZH-CN_TOPIC_0000001089209135__sub1091634317478">1</sub>=6m</p>
+</td>
+<td class="cellrowborder" rowspan="5" valign="top" width="33.33333333333333%" headers="mcps1.3.3.3.2.4.1.3 "><p id="ZH-CN_TOPIC_0000001089209135__p1191694334711">默认X<sub id="ZH-CN_TOPIC_0000001089209135__sub9916443144711">2</sub>=5m</p>
+<p id="ZH-CN_TOPIC_0000001089209135__p891624313470">推荐X<sub id="ZH-CN_TOPIC_0000001089209135__sub1891619437474">2</sub>=10m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001089209135__row14304930124617"><td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001089209135__p891634316477">60m&#8804;Y&lt;70m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001089209135__p1691610435470">X<sub id="ZH-CN_TOPIC_0000001089209135__sub17916243114711">1</sub>=2m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001089209135__row10304173004613"><td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001089209135__p1191620439476">50m&#8804;Y&lt;60m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001089209135__p1391684304714">X<sub id="ZH-CN_TOPIC_0000001089209135__sub691615438478">1</sub>=-2m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001089209135__row2304173074611"><td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001089209135__p12916144315472">Y&lt;50m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001089209135__p1891644311475">X<sub id="ZH-CN_TOPIC_0000001089209135__sub1991614436476">1</sub>=-6m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001089209135__row93049307466"><td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001089209135__p1191610438476">不确定Y值（无进口道停止线的特殊路口）</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001089209135__p29161943154715">X<sub id="ZH-CN_TOPIC_0000001089209135__sub5916134317479">1</sub>=-2m</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0272267372.html">全息路口问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001081841451.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001140172631.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

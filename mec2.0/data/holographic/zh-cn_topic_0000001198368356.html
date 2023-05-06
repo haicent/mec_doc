@@ -1,0 +1,143 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置ITS800时间">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198528326.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001243368211.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001243128215.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001198368356">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>配置ITS800时间</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001198368356"></a><a name="ZH-CN_TOPIC_0000001198368356"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置ITS800时间</h1>
+<div id="body0000001198368356"><div class="section" id="ZH-CN_TOPIC_0000001198368356__section040110191370"><h4 class="sectiontitle">前提条件</h4><p id="ZH-CN_TOPIC_0000001198368356__p648712161578">采用GPS时间同步前，请确认ITS800硬件上已经连接GPS天线。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001198368356__section106610472718"><h4 class="sectiontitle">背景信息</h4><ul id="ZH-CN_TOPIC_0000001198368356__ul1566919362719"><li id="ZH-CN_TOPIC_0000001198368356__li16669143613710">NTP服务器首次设置时，ITS800会从NTP服务器强制同步时间。同一NTP服务器多次保存，仅第一次保存会触发强制同步时间。<p id="ZH-CN_TOPIC_0000001198368356__p16691636179"><a name="ZH-CN_TOPIC_0000001198368356__li16669143613710"></a><a name="li16669143613710"></a>例如NTP服务器的时间为2020年11月11日 11:11:11，则设置NTP时间同步后，ITS800时间会强制同步成2020年11月11日 11:11:11。</p>
+</li><li id="ZH-CN_TOPIC_0000001198368356__li116699361073">NTP服务器设置后，时间同步规则如下：<ul id="ZH-CN_TOPIC_0000001198368356__ul1166993615717"><li id="ZH-CN_TOPIC_0000001198368356__li966963615717">ITS800和NTP服务器时间差不超过600秒，则ITS800每秒钟会同步0.5毫秒。<p id="ZH-CN_TOPIC_0000001198368356__p1966915361671"><a name="ZH-CN_TOPIC_0000001198368356__li966963615717"></a><a name="li966963615717"></a>该场景下，同步600秒大概需要14天。</p>
+</li><li id="ZH-CN_TOPIC_0000001198368356__li566919365710">ITS800和NTP服务器时间差超过600秒，则不会进行时间同步。</li></ul>
+</li></ul>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">ITS800向NTP服务器同步</a></li><li><a href="#" onclick="return showCurrent($$(this));">ITS800向GPS同步</a></li><li><a href="#" onclick="return showCurrent($$(this));">ITS800作为时钟同步服务器</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001198368356__section1691917140378"><a name="ZH-CN_TOPIC_0000001198368356__section1691917140378"></a><a name="section1691917140378"></a><h4 class="sectiontitle">ITS800向NTP服务器同步</h4><ol id="ZH-CN_TOPIC_0000001198368356__ol61261632105115"><li id="ZH-CN_TOPIC_0000001198368356__li181266326515"><span id="ZH-CN_TOPIC_0000001198368356__">以<strong id="ZH-CN_TOPIC_0000001198368356__b12669203613715">admin</strong>用户登录OMU Portal（<a href="zh-cn_topic_0000001113819874.html">登录OMU Portal</a> ）。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li3126153245115"><span id="ZH-CN_TOPIC_0000001198368356__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol136472665115">“系统管理”</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol1987419865114">“时间配置”</span>。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li712723214511"><span id="ZH-CN_TOPIC_0000001198368356__">配置服务器时间信息，如<a href="#ZH-CN_TOPIC_0000001198368356__fig161961757114313">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198368356__fig161961757114313"><a name="ZH-CN_TOPIC_0000001198368356__fig161961757114313"></a><a name="fig161961757114313"></a><span class="figcap"><b>图1 </b><strong id="ZH-CN_TOPIC_0000001198368356__b97207016446"></strong>配置NTP时间同步</span><br><span><img id="ZH-CN_TOPIC_0000001198368356__image019964812508" src="zh-cn_image_0000001243567939.png"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001198368356__li16239105858"><span id="ZH-CN_TOPIC_0000001198368356__">输入当前登录用户的密码，单击“确认”进行密码验证。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li0367101713511"><span id="ZH-CN_TOPIC_0000001198368356__">配置NTP时间同步信息后，系统自动返回登录页面，需要重新登录。</span></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001198368356__section65071822125310"><a name="ZH-CN_TOPIC_0000001198368356__section65071822125310"></a><a name="section65071822125310"></a><h4 class="sectiontitle">ITS800向GPS同步</h4><div class="note" id="ZH-CN_TOPIC_0000001198368356__zh-cn_topic_0000001160243218_zh-cn_topic_0000001145407518_note3536172391517"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001198368356__zh-cn_topic_0000001160243218_zh-cn_topic_0000001145407518_ul1853632321518"><li id="ZH-CN_TOPIC_0000001198368356__zh-cn_topic_0000001160243218_zh-cn_topic_0000001145407518_li16536102310156">采用GPS时间同步前，请确认ITS800硬件上已经连接GPS天线。</li></ul>
+</div></div>
+<ol id="ZH-CN_TOPIC_0000001198368356__ol780210232536"><li id="ZH-CN_TOPIC_0000001198368356__li3802823175312"><span id="ZH-CN_TOPIC_0000001198368356__">以<strong id="ZH-CN_TOPIC_0000001198368356__b158026238534">admin</strong>用户登录OMU Portal（<a href="zh-cn_topic_0000001113819874.html">登录OMU Portal</a> ）。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li18802162313539"><span id="ZH-CN_TOPIC_0000001198368356__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol14802182319537">“系统管理”</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol9802923135320">“时间配置”</span>。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li780214235531"><span id="ZH-CN_TOPIC_0000001198368356__">配置服务器时间信息，如<a href="#ZH-CN_TOPIC_0000001198368356__fig1803162314530">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198368356__fig1803162314530"><a name="ZH-CN_TOPIC_0000001198368356__fig1803162314530"></a><a name="fig1803162314530"></a><span class="figcap"><b>图2 </b><strong id="ZH-CN_TOPIC_0000001198368356__b188031323155313"></strong>配置GPS同步</span><br><span><img id="ZH-CN_TOPIC_0000001198368356__image119161053145815" src="zh-cn_image_0000001243647789.png"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001198368356__li20118737352"><span id="ZH-CN_TOPIC_0000001198368356__">输入当前登录用户的密码，单击“确认”进行密码验证。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li17118143714517"><span id="ZH-CN_TOPIC_0000001198368356__">配置时间同步信息后，系统自动返回登录页面，需要重新登录。</span></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001198368356__section1772115213012"><a name="ZH-CN_TOPIC_0000001198368356__section1772115213012"></a><a name="section1772115213012"></a><h4 class="sectiontitle">ITS800作为时钟同步服务器</h4><ol id="ZH-CN_TOPIC_0000001198368356__ol137219521503"><li id="ZH-CN_TOPIC_0000001198368356__li18721125214013"><span id="ZH-CN_TOPIC_0000001198368356__">以<strong id="ZH-CN_TOPIC_0000001198368356__b37211052904">admin</strong>用户登录OMU Portal（<a href="zh-cn_topic_0000001113819874.html">登录OMU Portal</a> ）。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li27212521706"><span id="ZH-CN_TOPIC_0000001198368356__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol14721195216018">“系统管理”</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001198368356__uicontrol8721152309">“时间配置”</span>。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li6721195220018"><span id="ZH-CN_TOPIC_0000001198368356__">配置服务器时间信息，如<a href="#ZH-CN_TOPIC_0000001198368356__fig107216521006">图3</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198368356__fig107216521006"><a name="ZH-CN_TOPIC_0000001198368356__fig107216521006"></a><a name="fig107216521006"></a><span class="figcap"><b>图3 </b><strong id="ZH-CN_TOPIC_0000001198368356__b1072112528016"></strong>ITS800做为时钟同步服务器</span><br><span><img id="ZH-CN_TOPIC_0000001198368356__image35389427217" src="zh-cn_image_0000001198888282.png" width="997.5" height="484.668492" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001198368356__li74801615614"><span id="ZH-CN_TOPIC_0000001198368356__">输入当前登录用户的密码，单击“确认”进行密码验证。</span></li><li id="ZH-CN_TOPIC_0000001198368356__li194811611661"><span id="ZH-CN_TOPIC_0000001198368356__">配置时间同步信息后，系统自动返回登录页面，需要重新登录。</span><p><p id="ZH-CN_TOPIC_0000001198368356__p16673138531"></p>
+<p id="ZH-CN_TOPIC_0000001198368356__p067015361672">参数解释如<a href="#ZH-CN_TOPIC_0000001198368356__table1062719360710">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001198368356__table1062719360710"></a><a name="table1062719360710"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001198368356__table1062719360710" frame="border" border="1" rules="all"><caption><b>表1 </b><strong id="ZH-CN_TOPIC_0000001198368356__b167053611714"></strong>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001198368356__row186706361077"><th align="left" class="cellrowborder" valign="top" width="24.240000000000002%" id="mcps1.3.5.2.5.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001198368356__p10670336473">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="75.76%" id="mcps1.3.5.2.5.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001198368356__p1467016361071">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001198368356__row2670163612712"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p136701236374">时区配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p126709361712">服务器的当前时区。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row126701836772"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p567020361712">时间配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p1867017365720">服务器的当前时间。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row86701236778"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p267063613718">夏令时状态</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p186701536172">如果当地法律规定使用夏令时，开启“夏令时状态”，可启用夏令时。</p>
+<p id="ZH-CN_TOPIC_0000001198368356__p146709361777">配置夏令时后，时区将不能修改，所以请先设置时区，再设置夏令时，如果设置夏令时后需要修改时区，必须先取消夏令时。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row10670203615715"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p17670133615713">星期方式</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p156706361372">选择配置夏令时的方式。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row13670153613712"><td class="cellrowborder" valign="top" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p16670436874">日期方式</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row1670123619713"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p10670173610713">开始时间</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p36701364712">夏令时的开始时间。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row26704361972"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p1670936571">结束时间</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p367017368716">夏令时的结束时间。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198368356__row196702361373"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.3.5.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198368356__p15671163610716">偏移时间</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.3.5.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198368356__p1867133610710">夏令时期间的时间提前量。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001198528326.html">配置时钟同步
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001243368211.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001243128215.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

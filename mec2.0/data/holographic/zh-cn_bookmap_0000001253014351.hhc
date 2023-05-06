@@ -1,0 +1,540 @@
+
+<html>
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+<OBJECT type="text/site properties">
+<param value="0x800025" name="Window Styles">
+<param value="宋体,10,1" name="Font">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="文档指南"><param name="Local" value="zh-cn_topic_0000001083174645.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="准备资料和软件"><param name="Local" value="zh-cn_topic_0000001083259791.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通用约定"><param name="Local" value="zh-cn_topic_0000001083453605.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="文档包变更记录"><param name="Local" value="zh-cn_topic_0000001083259793.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="解决方案描述"><param name="Local" value="zh-cn_topic_0251423566.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="方案介绍"><param name="Local" value="zh-cn_topic_0000001150813699.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="方案设计"><param name="Local" value="zh-cn_topic_0000001104093712.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="端到端组网方案简介"><param name="Local" value="zh-cn_topic_0000001150613655.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="典型场景"><param name="Local" value="zh-cn_topic_0239278145.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="标准路口"><param name="Local" value="zh-cn_topic_0000001263021351.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="十字路口场景"><param name="Local" value="zh-cn_topic_0000001150688219.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="T字路口场景"><param name="Local" value="zh-cn_topic_0000001104048322.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Y型路口场景"><param name="Local" value="zh-cn_topic_0000001103888372.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="X型路口场景"><param name="Local" value="zh-cn_topic_0000001150248323.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="高架桥场景"><param name="Local" value="zh-cn_topic_0000001103728554.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="超大路口场景"><param name="Local" value="zh-cn_topic_0000001150488159.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="隔离带遮挡场景"><param name="Local" value="zh-cn_topic_0000001234000819.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="增强路口"><param name="Local" value="zh-cn_topic_0000001218261538.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="十字路口场景-进口道增强"><param name="Local" value="zh-cn_topic_0000001218421512.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="性能规格"><param name="Local" value="zh-cn_topic_0243694386.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ITS800"><param name="Local" value="zh-cn_topic_0243694387.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="硬件规格"><param name="Local" value="zh-cn_topic_0245624216.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="软件规格"><param name="Local" value="zh-cn_topic_0000001193027460.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达"><param name="Local" value="zh-cn_topic_0290598486.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机"><param name="Local" value="zh-cn_topic_0243694389.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="华为摄像机"><param name="Local" value="zh-cn_topic_0000001234077635.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="第三方摄像机"><param name="Local" value="zh-cn_topic_0000001188398048.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="第三方应用平台配置规划"><param name="Local" value="zh-cn_topic_0000001233972177.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图盟应用平台"><param name="Local" value="zh-cn_topic_0000001237077639.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="世纪高通应用平台"><param name="Local" value="zh-cn_topic_0000001191957726.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="解决方案交付流程"><param name="Local" value="zh-cn_topic_0000001242472995.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="工勘"><param name="Local" value="zh-cn_topic_0000001113388420.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="现场勘测指导"><param name="Local" value="zh-cn_topic_0000001159908237.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="设备配置要求"><param name="Local" value="zh-cn_topic_0000001159868229.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="路口系统布线总图"><param name="Local" value="zh-cn_topic_0000001159868223.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达安装电警杆布线总图"><param name="Local" value="zh-cn_topic_0000001189243048.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达安装红绿灯杆布线总图"><param name="Local" value="zh-cn_topic_0000001188764608.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="设备命名规划"><param name="Local" value="zh-cn_topic_0000001136499288.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机命名规划"><param name="Local" value="zh-cn_topic_0000001234322725.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达命名规划"><param name="Local" value="zh-cn_topic_0000001234004219.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="地图采集准备"><param name="Local" value="zh-cn_topic_0000001234091517.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="工勘输出件"><param name="Local" value="zh-cn_topic_0000001234250005.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装与调试"><param name="Local" value="zh-cn_topic_0251424796.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装准备"><param name="Local" value="zh-cn_topic_0245510338.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="准备安装物料"><param name="Local" value="zh-cn_topic_0252746717.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="准备工具"><param name="Local" value="zh-cn_topic_0252746718.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装雷达"><param name="Local" value="zh-cn_topic_0245362839.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装ACC7320（HTR）雷达"><param name="Local" value="zh-cn_topic_0243727161.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装前提"><param name="Local" value="zh-cn_topic_0243727656.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装雷达"><param name="Local" value="zh-cn_topic_0243727167.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达调试"><param name="Local" value="zh-cn_topic_0000001192278138.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达升级"><param name="Local" value="zh-cn_topic_0000001236918123.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装ACC7320（CSR）雷达"><param name="Local" value="zh-cn_topic_0245358079.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装前提"><param name="Local" value="zh-cn_topic_0245358081.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装雷达"><param name="Local" value="zh-cn_topic_0243727163.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达调试"><param name="Local" value="zh-cn_topic_0000001237078113.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达升级"><param name="Local" value="zh-cn_topic_0000001192438132.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装ACC7322雷达"><param name="Local" value="zh-cn_topic_0000001265120973.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装前提"><param name="Local" value="zh-cn_topic_0000001220800820.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装雷达"><param name="Local" value="zh-cn_topic_0000001265600921.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达调试"><param name="Local" value="zh-cn_topic_0000001265400977.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达升级"><param name="Local" value="zh-cn_topic_0000001265440965.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装华为摄像机"><param name="Local" value="zh-cn_topic_0243727164.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装须知"><param name="Local" value="zh-cn_topic_0239278926.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装要求"><param name="Local" value="zh-cn_topic_0252744890.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装环境要求"><param name="Local" value="zh-cn_topic_0252744891.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装高度及距离要求"><param name="Local" value="zh-cn_topic_0252744892.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装角度要求"><param name="Local" value="zh-cn_topic_0252744893.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机角度"><param name="Local" value="zh-cn_topic_0252744894.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="车牌倾斜角度"><param name="Local" value="zh-cn_topic_0252744895.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄相机画面定位"><param name="Local" value="zh-cn_topic_0252744896.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图像要求"><param name="Local" value="zh-cn_topic_0252744897.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="光线影响"><param name="Local" value="zh-cn_topic_0252744898.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="清晰度"><param name="Local" value="zh-cn_topic_0252744899.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="对比度"><param name="Local" value="zh-cn_topic_0279516302.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="车牌字符要求"><param name="Local" value="zh-cn_topic_0252744900.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="车牌出现时长要求"><param name="Local" value="zh-cn_topic_0252744902.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装配套外设"><param name="Local" value="zh-cn_topic_0000001189554518.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装频闪灯"><param name="Local" value="zh-cn_topic_0000001192446838.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="频闪灯调试"><param name="Local" value="zh-cn_topic_0000001237086815.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装ITS800"><param name="Local" value="zh-cn_topic_0000001113990992.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="制作杆件工勘图"><param name="Local" value="zh-cn_topic_0000001244117307.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安全注意事项"><param name="Local" value="zh-cn_topic_0000001235954035.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="设备基础配置"><param name="Local" value="zh-cn_topic_0251428120.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机配置"><param name="Local" value="zh-cn_topic_0239450867.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机配置流程"><param name="Local" value="zh-cn_topic_0239450868.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="初始配置"><param name="Local" value="zh-cn_topic_0252754378.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="登录设备"><param name="Local" value="zh-cn_topic_0252754379.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置IP地址"><param name="Local" value="zh-cn_topic_0252754380.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="应用安装或升级"><param name="Local" value="zh-cn_topic_0239450952.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置视频参数"><param name="Local" value="zh-cn_topic_0251158904.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置视频流参数"><param name="Local" value="zh-cn_topic_0251146043.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置OSD参数"><param name="Local" value="zh-cn_topic_0251158905.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置电警模式（可选）"><param name="Local" value="zh-cn_topic_0000001264793157.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置补光灯"><param name="Local" value="zh-cn_topic_0000001220033040.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="功能验证"><param name="Local" value="zh-cn_topic_0252754384.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="与平台对接配置"><param name="Local" value="zh-cn_topic_0000001090480030.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置摄像机SDK协议参数"><param name="Local" value="zh-cn_topic_0000001090320380.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置密码"><param name="Local" value="zh-cn_topic_0000001137456535.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ITS800配置"><param name="Local" value="zh-cn_topic_0000001192618470.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="升级ITS800"><param name="Local" value="zh-cn_topic_0000001197763098.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置网络参数"><param name="Local" value="zh-cn_topic_0000001193244392.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置时钟同步"><param name="Local" value="zh-cn_topic_0000001198528326.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="时间同步方案介绍"><param name="Local" value="zh-cn_topic_0000001243368211.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置ITS800时间"><param name="Local" value="zh-cn_topic_0000001198368356.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置摄像机时间"><param name="Local" value="zh-cn_topic_0000001243128215.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置雷达时间"><param name="Local" value="zh-cn_topic_0000001198893836.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="创建对接用户"><param name="Local" value="zh-cn_topic_0000001196328166.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="全息路口雷视拟合任务"><param name="Local" value="zh-cn_topic_0000001242481973.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="前提条件"><param name="Local" value="zh-cn_topic_0000001219957022.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置安装iClient ME"><param name="Local" value="zh-cn_topic_0000001238444363.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安装前须知"><param name="Local" value="zh-cn_topic_0000001238685175.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="获取并安装iClient ME"><param name="Local" value="zh-cn_topic_0000001193685196.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="接入iTS800设备"><param name="Local" value="zh-cn_topic_0000001193404428.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="接入ITS800设备"><param name="Local" value="zh-cn_topic_0000001193845182.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="接入摄像机"><param name="Local" value="zh-cn_topic_0000001193244474.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="添加华为摄像机"><param name="Local" value="zh-cn_topic_0000001244120569.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="添加三方摄像机"><param name="Local" value="zh-cn_topic_0000001199040726.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通过ONVIF添加相机"><param name="Local" value="zh-cn_topic_0000001193367516.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通过28181接入相机"><param name="Local" value="zh-cn_topic_0000001238927397.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置视图业务"><param name="Local" value="zh-cn_topic_0000001238324365.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置视频预览"><param name="Local" value="zh-cn_topic_0000001238925127.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="调测录像"><param name="Local" value="zh-cn_topic_0000001238645163.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置录像策略"><param name="Local" value="zh-cn_topic_0000001193365248.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置服务器录像计划"><param name="Local" value="zh-cn_topic_0000001238685177.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="结果验证"><param name="Local" value="zh-cn_topic_0000001193685198.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="接入雷达"><param name="Local" value="zh-cn_topic_0000001194032436.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置路口雷视拟合任务"><param name="Local" value="zh-cn_topic_0000001218036374.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置路口雷视拟合任务流程"><param name="Local" value="zh-cn_topic_0000001262236227.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="设备标定"><param name="Local" value="zh-cn_topic_0000001217716426.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="准备标定"><param name="Local" value="zh-cn_topic_0000001261996279.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="准备环境与数据"><param name="Local" value="zh-cn_topic_0000001262356219.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="导入文件与检查数据"><param name="Local" value="zh-cn_topic_0000001217556440.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="标定融合"><param name="Local" value="zh-cn_topic_0000001262396281.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="标定摄像机"><param name="Local" value="zh-cn_topic_0000001217876406.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="标定雷达"><param name="Local" value="zh-cn_topic_0000001218036376.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="生成融合文件"><param name="Local" value="zh-cn_topic_0000001262236229.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="验证文件（可选）"><param name="Local" value="zh-cn_topic_0000001217716428.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="附录"><param name="Local" value="zh-cn_topic_0000001261996281.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="获取ITS800的离线数据"><param name="Local" value="zh-cn_topic_0000001262356221.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机标定验证"><param name="Local" value="zh-cn_topic_0000001217556442.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="掉头区域绘制（可选）"><param name="Local" value="zh-cn_topic_0000001262396283.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="非机动车、行人区域绘制（可选）"><param name="Local" value="zh-cn_topic_0000001217876408.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="高精地图制作标准"><param name="Local" value="zh-cn_topic_0000001218036378.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="导入配置文件"><param name="Local" value="zh-cn_topic_0000001222085612.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="创建路口雷视拟合任务"><param name="Local" value="zh-cn_topic_0000001269371937.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="结果验证"><param name="Local" value="zh-cn_topic_0000001268851961.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="与第三方应用平台对接配置"><param name="Local" value="zh-cn_topic_0000001083171835.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="证书导入（可选）"><param name="Local" value="zh-cn_topic_0000001081634835.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图盟应用平台"><param name="Local" value="zh-cn_topic_0000001237719467.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="应用介绍"><param name="Local" value="zh-cn_topic_0000001238027213.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="1400对接"><param name="Local" value="zh-cn_topic_0000001192759506.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="视频对接"><param name="Local" value="zh-cn_topic_0000001192599536.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="世纪高通应用平台"><param name="Local" value="zh-cn_topic_0000001237559471.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="应用介绍"><param name="Local" value="zh-cn_topic_0000001237627227.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="1400对接"><param name="Local" value="zh-cn_topic_0000001192919474.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="视频对接"><param name="Local" value="zh-cn_topic_0000001193079478.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="维护"><param name="Local" value="zh-cn_topic_0000001159919955.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="例行维护"><param name="Local" value="zh-cn_topic_0000001113563892.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="部件更换"><param name="Local" value="zh-cn_topic_0000001113403998.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="软件升级"><param name="Local" value="zh-cn_topic_0000001113667524.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="升级ITS800"><param name="Local" value="zh-cn_topic_0000001160387325.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="背景信息"><param name="Local" value="zh-cn_topic_0000001114908190.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通过iClient ME升级系统软件"><param name="Local" value="zh-cn_topic_0000001161188001.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="本地PC没有软件升级包"><param name="Local" value="zh-cn_topic_0000001161027995.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="本地PC已获取软件升级包"><param name="Local" value="zh-cn_topic_0000001115068094.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="备份与恢复"><param name="Local" value="zh-cn_topic_0000001159883807.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="安全维护"><param name="Local" value="zh-cn_topic_0000001159923819.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达帐户清单"><param name="Local" value="zh-cn_topic_0000001113827416.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="SDC帐户清单"><param name="Local" value="zh-cn_topic_0000001160347325.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ITS800帐户清单"><param name="Local" value="zh-cn_topic_0000001160387327.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="OMU Portal帐户管理"><param name="Local" value="zh-cn_topic_0000001113404000.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="密码维护建议"><param name="Local" value="zh-cn_topic_0000001159883809.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="故障处理"><param name="Local" value="zh-cn_topic_0251419329.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="应急维护"><param name="Local" value="zh-cn_topic_0000001160369277.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="应急维护概述"><param name="Local" value="zh-cn_topic_0000001113689478.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="业务故障场景"><param name="Local" value="zh-cn_topic_0000001160409285.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图盟应用平台无法访问"><param name="Local" value="zh-cn_topic_0000001160409559.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图盟应用平台页面白屏且地图不能访问"><param name="Local" value="zh-cn_topic_0000001160409561.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="图盟应用平台不能播放实况"><param name="Local" value="zh-cn_topic_0000001113849646.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雷达离线"><param name="Local" value="zh-cn_topic_0000001113849380.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ITS800离线"><param name="Local" value="zh-cn_topic_0000001113849644.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="使用SSH命令无法登录ITS800后台"><param name="Local" value="zh-cn_topic_0000001113689754.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="iClient功能使用异常"><param name="Local" value="zh-cn_topic_0000001160369559.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="收集故障信息"><param name="Local" value="zh-cn_topic_0000001159905621.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通过Web页面收集SDC日志"><param name="Local" value="zh-cn_topic_0000001159889141.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通过Web界面收集ITS800日志"><param name="Local" value="zh-cn_topic_0000001159929147.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="故障案例"><param name="Local" value="zh-cn_topic_0000001113545698.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机及外设问题"><param name="Local" value="zh-cn_topic_0252745884.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="车牌模糊问题"><param name="Local" value="zh-cn_topic_0252745905.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="运动拖尾、噪声颗粒过大问题"><param name="Local" value="zh-cn_topic_0252745906.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="雾霾天朦胧、晴天泛白问题"><param name="Local" value="zh-cn_topic_0252745907.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="背光和顺光问题"><param name="Local" value="zh-cn_topic_0252745908.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="夜间过曝问题"><param name="Local" value="zh-cn_topic_0252745909.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="夜间画面亮度过低"><param name="Local" value="zh-cn_topic_0252745910.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="补光问题"><param name="Local" value="zh-cn_topic_0252745911.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="绘制信号灯区域框举例"><param name="Local" value="zh-cn_topic_0252745914.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="SDC Web页面上不能预览实况画面"><param name="Local" value="zh-cn_topic_0272267877.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="使用IE浏览器预览实况画面，系统一直提示正在连接"><param name="Local" value="zh-cn_topic_0000001082225417.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="全息路口问题"><param name="Local" value="zh-cn_topic_0272267372.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="出口道斑马线附近车辆轨迹部分消失"><param name="Local" value="zh-cn_topic_0284674565.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="某路段不显示任何车辆轨迹"><param name="Local" value="zh-cn_topic_0284674567.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="某路段中部分车辆轨迹出现闪烁或残影现象"><param name="Local" value="zh-cn_topic_0284674568.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="新增-路口、路段重新铺设或施工，是否影响车辆轨迹"><param name="Local" value="zh-cn_topic_0284674570.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="在图盟轨迹显示界面中只有轨迹而无车辆模型"><param name="Local" value="zh-cn_topic_0284674571.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="新增-在图盟轨迹显示界面中，目标轨迹的时间与实际相差较大"><param name="Local" value="zh-cn_topic_0000001082139353.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="在图盟轨迹显示界面中，某方向只显示车辆而不能显示车牌"><param name="Local" value="zh-cn_topic_0000001081841451.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="新增-如何调整进、出口道摄像机视频与雷达信号衔接距离"><param name="Local" value="zh-cn_topic_0000001089209135.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="新增-在线调试雷达参数导致动向拟合数据异常"><param name="Local" value="zh-cn_topic_0000001140172631.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="新增-摄像机画面下边缘与停止线距离较小导致车牌不能识别"><param name="Local" value="zh-cn_topic_0000001160479923.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="OMU Portal操作问题"><param name="Local" value="zh-cn_topic_0000001160479925.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="登录OMU Portal提示用户被锁定"><param name="Local" value="zh-cn_topic_0000001160599913.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="在OMU Portal上升级时安装包上传进度停留在58%"><param name="Local" value="zh-cn_topic_0000001113920102.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="如何修改安全问题"><param name="Local" value="zh-cn_topic_0000001238215228.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ITS800问题"><param name="Local" value="zh-cn_topic_0000001114080004.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="如何查询目录及文件大小"><param name="Local" value="zh-cn_topic_0000001160479927.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="如何查看设备电子标签、电子条码和制造日期"><param name="Local" value="zh-cn_topic_0000001160599915.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="参考"><param name="Local" value="zh-cn_topic_0000001159876743.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="日志参考"><param name="Local" value="zh-cn_topic_0000001113399782.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="收集雷达日志"><param name="Local" value="zh-cn_topic_0000001115381044.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="命令参考"><param name="Local" value="zh-cn_topic_0000001113406844.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="告警参考"><param name="Local" value="zh-cn_topic_0000001113566742.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524010 D卡占用"><param name="Local" value="zh-cn_topic_0000001294280693.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524011 创建拟合失败告警"><param name="Local" value="zh-cn_topic_0000001248199818.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524012 启动拟合失败告警"><param name="Local" value="zh-cn_topic_0000001248040578.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524013 创建通道重复"><param name="Local" value="zh-cn_topic_0000001247880814.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524014 配置文件异常告警"><param name="Local" value="zh-cn_topic_0000001247721090.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524020 雷达解析错误"><param name="Local" value="zh-cn_topic_0000001294400133.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524021 视频编码格式异常"><param name="Local" value="zh-cn_topic_0000001294679541.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524022 视频分辨率异常"><param name="Local" value="zh-cn_topic_0000001294520109.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524023 算法未收到平台数据"><param name="Local" value="zh-cn_topic_0000001294280697.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524030 视频帧同步失败，雷达时间戳后退"><param name="Local" value="zh-cn_topic_0000001248199822.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524031 视频与视频通道聚类失败，雷视时间戳相差过大"><param name="Local" value="zh-cn_topic_0000001248040582.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524032 视频/雷达FPS到达间隔异常告警"><param name="Local" value="zh-cn_topic_0000001247880818.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524033 视频/雷达FPS帧间隔异常告警"><param name="Local" value="zh-cn_topic_0000001247721094.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524034 视频/雷达FPS达到间隔严重异常告警"><param name="Local" value="zh-cn_topic_0000001294400137.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524035 视频/雷达FPS帧间隔严重异常告警"><param name="Local" value="zh-cn_topic_0000001294679545.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524040 拟合路口进口道轨迹波折异常"><param name="Local" value="zh-cn_topic_0000001294520113.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524041 拟合路口出口道轨迹波折异常"><param name="Local" value="zh-cn_topic_0000001294280701.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524050 摄像机移位"><param name="Local" value="zh-cn_topic_0000001248199826.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524051 摄像机过大移位"><param name="Local" value="zh-cn_topic_0000001248040586.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524052 摄像机移位频繁"><param name="Local" value="zh-cn_topic_0000001247880822.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524060 stopline附近无视频新增目标"><param name="Local" value="zh-cn_topic_0000001247721098.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524061 长短焦衔接率低"><param name="Local" value="zh-cn_topic_0000001294400141.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524062 雷达横向偏车道"><param name="Local" value="zh-cn_topic_0000001294679549.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ALM-308524063 轨迹区域检查异常"><param name="Local" value="zh-cn_topic_0000001294520117.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="通信矩阵"><param name="Local" value="zh-cn_topic_0000001159879581.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="附录"><param name="Local" value="zh-cn_topic_0000001159920399.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="登录OMU Portal"><param name="Local" value="zh-cn_topic_0000001113819874.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机接入协议介绍"><param name="Local" value="zh-cn_topic_0000001238297615.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="摄像机接入协议介绍"><param name="Local" value="zh-cn_topic_0000001242108795.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置摄像机GB/T 28181协议参数"><param name="Local" value="zh-cn_topic_0000001193537658.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GB/T28181互联编码格式介绍"><param name="Local" value="zh-cn_topic_0000001160339787.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置摄像机ONVIF协议参数"><param name="Local" value="zh-cn_topic_0000001193697652.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="配置摄像机GA/T 1400协议参数"><param name="Local" value="zh-cn_topic_0000001238177653.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="获取ITS800资料与软件"><param name="Local" value="zh-cn_topic_0000001113400910.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="获取资料"><param name="Local" value="zh-cn_topic_0000001159880715.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="获取软件"><param name="Local" value="zh-cn_topic_0000001113400912.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="如何查看道路曲率半径"><param name="Local" value="zh-cn_topic_0000001115236390.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="全息路口解决方案交付Checklist"><param name="Local" value="zh-cn_topic_0000001115396280.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="场景范围"><param name="Local" value="zh-cn_topic_0000001241437033.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="车型示例"><param name="Local" value="zh-cn_topic_0000001241716991.html"><param name="ImageNumber" value="9"></OBJECT>
+</LI></UL>
+</LI></UL>
+</body>
+</html>

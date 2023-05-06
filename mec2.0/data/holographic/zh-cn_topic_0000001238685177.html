@@ -1,0 +1,95 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置服务器录像计划">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238645163.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001193365248.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001193685198.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001238685177">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>配置服务器录像计划</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001238685177"></a><a name="ZH-CN_TOPIC_0000001238685177"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置服务器录像计划</h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_section848657104310"><h4 class="sectiontitle">背景信息</h4><ul id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_ul4606721598"><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li4222916174212">服务器计划录像是指由用户指定时间段，系统在该时间段内自动进行录像，并将录像保存在服务器硬盘。</li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li568997105913">摄像机默认开启录像功能，录像码流默认为主码流，录像计划为全程录制。</li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li760612213591">多通道摄像机默认只开启第一个通道摄像机的录像功能，其他通道摄像机的录像功能，请参考本章节手动开启。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_section1673619418366"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_ol66845728"><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li286724310326"><span id="ZH-CN_TOPIC_0000001238685177__"><span>登录iClient ME<span>（<span><img id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0258249723_image21391327171319" src="zh-cn_image_0258249713.png"></span> <a href="zh-cn_topic_0000001193845182.html#ZH-CN_TOPIC_0000001193845182">如何登录iClient ME</a>）。</span></span></span></li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li12139111525414"><span id="ZH-CN_TOPIC_0000001238685177__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0251850162_menucascade4632153319489">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0251850162_uicontrol2632193384819">系统功能</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0251850162_uicontrol196321233124817">设备配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0251850162_uicontrol126911852114917">设备管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0251850162_uicontrol45816586491">微边缘</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li997282011531"><span id="ZH-CN_TOPIC_0000001238685177__">鼠标右键单击某个<span>ITS800</span><span></span>设备，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_zh-cn_topic_0207484132_zh-cn_topic_0204358616_uicontrol19538540174112">“存储管理”</span>。</span></li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li179382352913"><span id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p188184595403">选择界面左侧页签的<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol350652152919">“服务器录像计划”</span>。</span></li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li3562225125513"><span id="ZH-CN_TOPIC_0000001238685177__">配置服务器录像计划，如<a href="#ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_fig829017515313">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_fig829017515313"><a name="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_fig829017515313"></a><a name="zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_fig829017515313"></a><span class="figcap"><b>图1 </b>配置服务器录像计划</span><br><span><img id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_image1129115515311" src="zh-cn_image_0000001152295262.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p144379114448">参数解释如<a href="#ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_table4172525124416">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_table4172525124416"></a><a name="zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_table4172525124416"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_table4172525124416" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row71734251444"><th align="left" class="cellrowborder" valign="top" width="35.199999999999996%" id="mcps1.3.2.2.5.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p4173325134419">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="64.8%" id="mcps1.3.2.2.5.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p617312564411">说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row6174325124411"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p917410252447">每天</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p1789352654610">以<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol5535448194910">“天”</span>为维度，配置录像时间段。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row1317410256444"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p20174132513442">每周</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p126724548493">以<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol18672145416499">“周”</span>为维度，配置录像时间段。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row3174925114419"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p91741725184417">全程录像</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p16174182513447">每天24小时全程录像。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row917462594419"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p7174202519449">应用到其他</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p1674713381359">用户可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol29755384618">“应用到其他”</span>，把当前摄像机的服务器录像计划应用到其他摄像机。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row171497572442"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p51494577449">优先恢复设置</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p1748415112456">在使用数据保险箱恢复时，如需要快速优先恢复部分重要的摄像机的录像和图片，可在系统正常运行情况下，在<span>iClient ME</span>上配置好优先恢复的摄像机。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_row54288516436"><td class="cellrowborder" valign="top" width="35.199999999999996%" headers="mcps1.3.2.2.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_p144291258431">删除计划</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.8%" headers="mcps1.3.2.2.5.2.3.2.3.1.2 "><ul id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_ul161221172360"><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li1438761916369">录像计划下方的<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol1287736173611">“删除计划”</span>，表示删除选中摄像机的录像计划。</li><li id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_li171221417163619">设备树下方的<span class="uicontrol" id="ZH-CN_TOPIC_0000001238685177__zh-cn_topic_0000001160561698_zh-cn_topic_0000001191247535_uicontrol104376259376">“删除计划”</span>，表示用户可选择多个摄像机删除录像计划</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001238645163.html">调测录像
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001193365248.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001193685198.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

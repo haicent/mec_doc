@@ -1,0 +1,98 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="导入配置文件">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001218036374.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001217716426.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001269371937.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001222085612">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>导入配置文件</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001222085612"></a><a name="ZH-CN_TOPIC_0000001222085612"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">导入配置文件</h1>
+<div id="body0000001222085612"><p id="ZH-CN_TOPIC_0000001222085612__p17463339161413">标定融合后自动导入配置文件，可直接进行下一步<a href="zh-cn_topic_0000001269371937.html">创建路口雷视拟合任务</a>。如自动导入失败或其他情况需要手动配置，则参考以下步骤。</p>
+<ol id="ZH-CN_TOPIC_0000001222085612__ol7533113674316"><li id="ZH-CN_TOPIC_0000001222085612__li389198184510"><span id="ZH-CN_TOPIC_0000001222085612__">在<span>iClient ME</span>首页中，选择<span class="menucascade" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0190671172_menucascade38411571574">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0190671172_zh-cn_topic_0242083821_uicontrol158316575711">系统功能</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0190671172_zh-cn_topic_0242083821_uicontrol88318573711">设备配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0190671172_zh-cn_topic_0242083821_uicontrol77851016265">设备管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0190671172_zh-cn_topic_0242083821_uicontrol446516420264">微边缘</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001222085612__li155802054715"><span id="ZH-CN_TOPIC_0000001222085612__">右键单击某个<span>ITS800</span>设备，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__uicontrol6466928195711">“车路任务配置”</span>。</span></li><li id="ZH-CN_TOPIC_0000001222085612__li1788035155215"><span id="ZH-CN_TOPIC_0000001222085612__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__uicontrol373573485216">“配置导入”</span>，单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__uicontrol114906414533">“导入配置文件”</span>。您也可以在<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__uicontrol639718453530">“批量导入配置文件”</span>界面，批量导入配置文件。导入配置文件界面的参数信息如<a href="#ZH-CN_TOPIC_0000001222085612__table668110104010">表1</a>所示。</span><p><div class="note" id="ZH-CN_TOPIC_0000001222085612__note41898505547"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001222085612__ul5593151184"><li id="ZH-CN_TOPIC_0000001222085612__li106015151282">批量导入配置文件时，可以批量导入所有满足命名规则的.xml，.json，.lut文件。</li><li id="ZH-CN_TOPIC_0000001222085612__li19418143919910">配置文件的命名规则如下：<ul id="ZH-CN_TOPIC_0000001222085612__ul149911354131612"><li id="ZH-CN_TOPIC_0000001222085612__li299115541166">设备标定文件：后缀是<strong id="ZH-CN_TOPIC_0000001222085612__b79911154151614">.lut</strong>的为设备标定文件。</li><li id="ZH-CN_TOPIC_0000001222085612__li13991105419160">设备通道配置文件：<strong id="ZH-CN_TOPIC_0000001222085612__b0991154181618">xxx_xxx_xxx_channel_xxx</strong><strong id="ZH-CN_TOPIC_0000001222085612__b13992654181614">.xml</strong>，其中<strong id="ZH-CN_TOPIC_0000001222085612__b1199235418160">x</strong><strong id="ZH-CN_TOPIC_0000001222085612__b399245414166">xx</strong>表示用户根据命名规则自行设置。</li><li id="ZH-CN_TOPIC_0000001222085612__li159922054141617">高精度地图文件：后缀是.<strong id="ZH-CN_TOPIC_0000001222085612__b799265413163">json</strong>的为高精度地图文件。</li><li id="ZH-CN_TOPIC_0000001222085612__li1999212544163">拟合任务通道配置文件：<strong id="ZH-CN_TOPIC_0000001222085612__b189921854181618">fusion_xxx_channel.xml</strong>，其中<strong id="ZH-CN_TOPIC_0000001222085612__b129921754201612">xx</strong><strong id="ZH-CN_TOPIC_0000001222085612__b3992145461618">x</strong>表示根据命名规则自行设置。</li></ul>
+</li></ul>
+</div></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001222085612__table668110104010"></a><a name="table668110104010"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001222085612__table668110104010" frame="border" border="1" rules="all"><caption><b>表1 </b>配置导入界面的参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_row106651347105515"><th align="left" class="cellrowborder" colspan="2" valign="top" id="mcps1.3.2.3.2.2.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p971611411706">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" id="mcps1.3.2.3.2.2.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p56661247145512">说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_row19666144716558"><td class="cellrowborder" rowspan="2" valign="top" width="16.830000000000002%" headers="mcps1.3.2.3.2.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p77164412014">导入配置文件</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.689999999999998%" headers="mcps1.3.2.3.2.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p9666164755520">选择资料</p>
+</td>
+<td class="cellrowborder" valign="top" width="63.480000000000004%" headers="mcps1.3.2.3.2.2.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p566654710553">选择导入的配置文件类型，包括选项：</p>
+<ul id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_ul35637804017"><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_li11563198164013">标定文件：用于标定摄像机图像坐标与世界坐标的转化。</li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_li124357276421">通道配置：每个视频通道、雷达通道的配置。</li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_li676314303422">高精地图：记录世界坐标下停止线，车道线等标示标志线。</li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_li136104162437">拟合任务：雷视拟合配置文件，用于配置哪些摄像机，雷达需要做拟合。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_row76661847135511"><td class="cellrowborder" valign="top" headers="mcps1.3.2.3.2.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p46661472555">资料路径</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.2.3.2.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0000001123714697_p0666114715550">选择配置文件本地存放的路径。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_li6364129214"><span id="ZH-CN_TOPIC_0000001222085612__">导入设备标定文件，如<a href="#ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig1771263517219">图1</a>所示。</span><p><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_p181376354123">需要手动导入配置文件中后缀是<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b1716664632916">.lut</strong>的所有标定文件。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig1771263517219"><a name="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig1771263517219"></a><a name="zh-cn_topic_0258959856_fig1771263517219"></a><span class="figcap"><b>图1 </b>导入标定文件</span><br><span><img id="ZH-CN_TOPIC_0000001222085612__image19575347203712" src="zh-cn_image_0000001222405620.png" height="193.51500000000001" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_li1049519553116"><span id="ZH-CN_TOPIC_0000001222085612__">导入通道配置文件，如<a href="#ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig13114122816593">图2</a>所示。</span><p><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_p45021855181111">需要手动导入配置文件中名称是以<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b1033242914317">xxx_xxx_xxx_channel_xxx</strong><strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b1612595353514">.xml</strong>命名的所有通道配置文件，其中<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b3661131214532">x</strong><strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b11206088513">xx</strong>表示用户根据命名规则自行设置。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig13114122816593"><a name="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig13114122816593"></a><a name="zh-cn_topic_0258959856_fig13114122816593"></a><span class="figcap"><b>图2 </b>导入通道文件</span><br><span><img id="ZH-CN_TOPIC_0000001222085612__image1826984416409" src="zh-cn_image_0000001266765765.png" height="196.50750000000002" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_li5528192617121"><span id="ZH-CN_TOPIC_0000001222085612__">导入高精地图文件，如<a href="#ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig19411054115920">图3</a>所示。</span><p><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_p17534132681210">需要手动导入配置文件中后缀是.<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b15260924113819">json</strong>的高精地图文件。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig19411054115920"><a name="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig19411054115920"></a><a name="zh-cn_topic_0258959856_fig19411054115920"></a><span class="figcap"><b>图3 </b>导入高精地图</span><br><span><img id="ZH-CN_TOPIC_0000001222085612__image98421364326" src="zh-cn_image_0000001222245660.png" height="190.5225" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_li201416124"><span id="ZH-CN_TOPIC_0000001222085612__">导入拟合任务文件，如<a href="#ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig132513171606">图4</a>所示。</span><p><p id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_p6674171219">需要手动导入配置文件中的<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b20467649163915">fusion_xxx_channel.xml</strong>文件，其中<strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b178491149402">xx</strong><strong id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_b41102513406">x</strong>表示根据命名规则自行设置。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig132513171606"><a name="ZH-CN_TOPIC_0000001222085612__zh-cn_topic_0258959856_fig132513171606"></a><a name="zh-cn_topic_0258959856_fig132513171606"></a><span class="figcap"><b>图4 </b>导入拟合任务</span><br><span><img id="ZH-CN_TOPIC_0000001222085612__image10849192414212" src="zh-cn_image_0000001222565576.png" height="191.52" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001222085612__li13249124283715"><span id="ZH-CN_TOPIC_0000001222085612__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001222085612__uicontrol1714385210373">“确定”</span>。</span></li></ol>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001218036374.html">配置路口雷视拟合任务
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001217716426.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001269371937.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

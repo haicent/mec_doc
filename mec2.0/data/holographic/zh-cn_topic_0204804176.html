@@ -1,0 +1,48 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何通过网口登录操作系统">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0204804176">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>如何通过网口登录操作系统</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0204804176"></a><a name="ZH-CN_TOPIC_0204804176"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何通过网口登录操作系统</h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_zh-cn_topic_0092329128_section31478034"><h4 class="sectiontitle">背景信息</h4><p id="ZH-CN_TOPIC_0204804176__p25287251">操作系统登录时，需要先以<strong id="ZH-CN_TOPIC_0204804176__b1716318511521">admin</strong>用户登录，然后才能切换到<strong id="ZH-CN_TOPIC_0204804176__b1549218178527">root</strong><strong id="ZH-CN_TOPIC_0204804176__b205271723406">/ivsoper</strong>用户；不能直接以<strong id="ZH-CN_TOPIC_0204804176__b168464361504">root/ivsoper</strong>用户登录。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_section14319194932411"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_zh-cn_topic_0092329128_ol61514200"><li id="ZH-CN_TOPIC_0204804176__li11285681050"><span id="ZH-CN_TOPIC_0204804176__">打开SSH功能。</span><p><p id="ZH-CN_TOPIC_0204804176__p11186128460">出于安全考虑，设备默认关闭SSH功能。如何打开SSH功能，请参考<a href="zh-cn_topic_0000001139071810.html">如何开启SSH功能</a>。</p>
+</p></li><li id="ZH-CN_TOPIC_0204804176__li12350111320565"><span id="ZH-CN_TOPIC_0204804176__">在SSH连接工具中输入设备的IP地址、<strong id="ZH-CN_TOPIC_0204804176__b7985133913586">admin</strong>用户名，按“Enter”键。</span><p><ul id="ZH-CN_TOPIC_0204804176__ul96481744134614"><li id="ZH-CN_TOPIC_0204804176__li1773715194619">如果用户没有在OMU Portal开机向导时设置过操作系统密码，则首次登录操作系统需要设置admin及root用户密码。</li><li id="ZH-CN_TOPIC_0204804176__li1464834474618">如果用户已经在OMU Portal开机向导时设置过操作系统密码，则首次登录操作系统仅需要修改admin用户密码。<pre class="screen" id="ZH-CN_TOPIC_0204804176__screen187618459352">WARNING：Your password has expired.
+Your must change your password now and login again!
+Changing password for user admin.
+Current password:  //输入初始设置的旧密码
+New password:   //设置操作系统admin用户的新密码,如1qaz@WSX#EDC
+Retype new password:  //再次输入新密码,如1qaz@WSX#EDC</pre>
+</li></ul>
+</p></li></ol><ol start="3" id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_zh-cn_topic_0092329128_ol5821192254"><li id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_zh-cn_topic_0092329128_li37980190"><span id="ZH-CN_TOPIC_0204804176__">切换到<strong id="ZH-CN_TOPIC_0204804176__zh-cn_topic_0100788852_zh-cn_topic_0092329128_b56496584">root</strong>或<strong id="ZH-CN_TOPIC_0204804176__b2736125114371">ivsoper</strong>用户。请根据实际业务场景切换到相应用户。</span><p><ul id="ZH-CN_TOPIC_0204804176__ul11817329203812"><li id="ZH-CN_TOPIC_0204804176__li1281712291383">切换到root用户命令：<strong id="ZH-CN_TOPIC_0204804176__b1684143412387">su - root</strong><p id="ZH-CN_TOPIC_0204804176__p734420235911">切换过程中需要输入<strong id="ZH-CN_TOPIC_0204804176__b188911462593">root</strong>用户的密码。</p>
+</li><li id="ZH-CN_TOPIC_0204804176__li10416163713384">切换到ivsoper用户命令：<strong id="ZH-CN_TOPIC_0204804176__b84160376387">su - ivsoper</strong><p id="ZH-CN_TOPIC_0204804176__p1841610371382">切换过程中需要输入<strong id="ZH-CN_TOPIC_0204804176__b574610527382">ivsoper</strong>用户的密码。</p>
+</li></ul>
+</p></li></ol>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+</body>
+</html>

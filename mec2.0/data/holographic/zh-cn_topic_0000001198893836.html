@@ -1,0 +1,114 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置雷达时间">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001198528326.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001243128215.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001198893836">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>配置雷达时间</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001198893836"></a><a name="ZH-CN_TOPIC_0000001198893836"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置雷达时间</h1>
+<div id="body0000001198893836"><div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">ACC7320（HTR）和ACC7322雷达配置</a></li><li><a href="#" onclick="return showCurrent($$(this));">ACC7320（CSR）雷达配置</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001198893836__section7461959151217"><h4 class="sectiontitle">ACC7320（HTR）和ACC7322雷达配置</h4><ol id="ZH-CN_TOPIC_0000001198893836__ol132301123141314"><li id="ZH-CN_TOPIC_0000001198893836__li132305230139"><span id="ZH-CN_TOPIC_0000001198893836__">使用上位机软件连接雷达，具体操作过程请参见<a href="zh-cn_topic_0000001192278138.html">雷达调试</a>。</span></li><li id="ZH-CN_TOPIC_0000001198893836__li1395161741413"><span id="ZH-CN_TOPIC_0000001198893836__">在工具栏中选择“设置 &gt; 时间设置”，弹出时间设置界面，如<a href="#ZH-CN_TOPIC_0000001198893836__fig12837114621513">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198893836__fig12837114621513"><a name="ZH-CN_TOPIC_0000001198893836__fig12837114621513"></a><a name="fig12837114621513"></a><span class="figcap"><b>图1 </b>设置时间</span><br><span><img id="ZH-CN_TOPIC_0000001198893836__image16927153015231" src="zh-cn_image_0000001243583915.png"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001198893836__li1241113437167"><span id="ZH-CN_TOPIC_0000001198893836__">填写“NTP服务器IP”地址和“校时间隔”参数。</span><p><p id="ZH-CN_TOPIC_0000001198893836__p119871210111719">“NTP服务器IP”地址需配置为ITS800的IP地址（例如，192.168.1.120），可通过单击“NTP查询”查询NTP服务器相关信息。</p>
+</p></li><li id="ZH-CN_TOPIC_0000001198893836__li7294111931710"><span id="ZH-CN_TOPIC_0000001198893836__">NTP校时间隔设置成1min。</span></li><li id="ZH-CN_TOPIC_0000001198893836__li1176515717178"><span id="ZH-CN_TOPIC_0000001198893836__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001198893836__uicontrol28913121715">“设置”</span>。</span></li><li id="ZH-CN_TOPIC_0000001198893836__li156851912171714"><span id="ZH-CN_TOPIC_0000001198893836__">查看上位机界面<span class="uicontrol" id="ZH-CN_TOPIC_0000001198893836__uicontrol9333162592115">“系统时间”</span>中时间是否正确。如<a href="#ZH-CN_TOPIC_0000001198893836__fig118652443300">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198893836__fig118652443300"><a name="ZH-CN_TOPIC_0000001198893836__fig118652443300"></a><a name="fig118652443300"></a><span class="figcap"><b>图2 </b>HTR雷达时间</span><br><span><img id="ZH-CN_TOPIC_0000001198893836__image1568721110237" src="zh-cn_image_0000001243583901.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001198893836__p122117781717">如果显示的时间和NTP服务器时间一致，说明NTP时间配置成功；否则，请查找问题原因重新配置或者联系华为技术支持工程师。</p>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001198893836__section15455165412217"><a name="ZH-CN_TOPIC_0000001198893836__section15455165412217"></a><a name="section15455165412217"></a><h4 class="sectiontitle">ACC7320（CSR）雷达配置</h4><ol id="ZH-CN_TOPIC_0000001198893836__ol7362105702114"><li id="ZH-CN_TOPIC_0000001198893836__li163628570218"><span id="ZH-CN_TOPIC_0000001198893836__">打开“交通场景雷达参数配置软件”并登录。</span><p><p id="ZH-CN_TOPIC_0000001198893836__p174991288236">登录过程与“交通场景雷达通用软件”类似，具体操作过程请参见<a href="zh-cn_topic_0000001237078113.html">雷达调试</a>。</p>
+</p></li><li id="ZH-CN_TOPIC_0000001198893836__li9840183062319"><span id="ZH-CN_TOPIC_0000001198893836__">选择“NTP”配置雷达NTP同步功能，如<a href="#ZH-CN_TOPIC_0000001198893836__fig15362155714211">图3</a>所示，具体参数含义如<a href="#ZH-CN_TOPIC_0000001198893836__table454773315287">表1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001198893836__fig15362155714211"><a name="ZH-CN_TOPIC_0000001198893836__fig15362155714211"></a><a name="fig15362155714211"></a><span class="figcap"><b>图3 </b>设置时间</span><br><span><img id="ZH-CN_TOPIC_0000001198893836__image1086715517274" src="zh-cn_image_0000001198418864.png"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001198893836__table454773315287"></a><a name="table454773315287"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001198893836__table454773315287" frame="border" border="1" rules="all"><caption><b>表1 </b><strong id="ZH-CN_TOPIC_0000001198893836__b0570733112819">表1 </strong>参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001198893836__row2570433152819"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.2.2.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001198893836__p1757117332286">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.2.2.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001198893836__p15571333202814">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001198893836__row257143317280"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p657123315282">IP地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p145713332285">输入设置与ITS800时间同步的ACC7320（CSR）雷达实际IP地址。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row4571933132819"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p105714337283">端口</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p1557113322819">根据具体雷达选择端口。</p>
+<p id="ZH-CN_TOPIC_0000001198893836__p95712335282">ACC7320（CSR）雷达默认<span class="uicontrol" id="ZH-CN_TOPIC_0000001198893836__uicontrol15328154719288">“端口”</span>为<span class="uicontrol" id="ZH-CN_TOPIC_0000001198893836__uicontrol1929185214285">“5000”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row1557173322815"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p1657153318289">开启/关闭NTP</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p9571733122813">根据实际情况选择开启/关闭NTP。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row17571933122815"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p1571153312810">NTP服务器IP</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p17571733192812">ITS800的实际IP地址。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row18571153302813"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p15571123313285">NTP校时周期(秒)</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p55711233192819">设置与ITS800时间校时周期时间。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row757117339282"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p15717336288">NTP校时阈值(毫秒)</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p957163311289">设置NTP校时阈值。</p>
+<p id="ZH-CN_TOPIC_0000001198893836__p115711933132814">当雷达时间与ITS800时间误差超过阈值，则自动校时。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001198893836__row6571133362810"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001198893836__p14571833142813">NTP-delay阈值</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.2.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001198893836__p10571113311286">设置与ITS800网络延时的时间阈值。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001198528326.html">配置时钟同步
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001243128215.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+</body>
+</html>

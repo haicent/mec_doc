@@ -1,0 +1,78 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="方案介绍">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0251423566.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001104093712.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001150813699">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>方案介绍</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001150813699"></a><a name="ZH-CN_TOPIC_0000001150813699"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">方案介绍</h1>
+<div id="body0000001150813699"><p id="ZH-CN_TOPIC_0000001150813699__p333mcpsimp">全息路口基于路口的雷达、电警/卡口摄像机两种感知设备，构建智能感知。在保证原有正常的非现场执法的功能基础上，利用行业最新的传感器技术、高精度地图技术、AI算法、大算力芯片、边缘计算技术，实现雷达数据、视频分析数据、路口渠化数据的拟合，形成准确、全面的车辆、行人、非机动车的时空轨迹数据，实现城市交通要素的数字化。</p>
+<p id="ZH-CN_TOPIC_0000001150813699__p334mcpsimp">全息路口的核心是通过智能交通微边缘ITS800拟合多方向雷达和视频信息，产生车牌、位置、车辆速度、行驶姿态、车辆属性、轨迹等多种基础元数据，在交通治理平台上通过数据建模的方式，快速合成多种业务指标，如路口溢出、排队长度、路口停车次数、路口行驶速度、各方向过车流量、交通违法事件等，全面服务于城市交通治理全场景。</p>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">行业现状</a></li><li><a href="#" onclick="return showCurrent($$(this));">方案价值</a></li><li><a href="#" onclick="return showCurrent($$(this));">实时全景的时空感知节点</a></li><li><a href="#" onclick="return showCurrent($$(this));">实时的控制和服务节点</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001150813699__section1641213180443"><h4 class="sectiontitle">行业现状</h4><p id="ZH-CN_TOPIC_0000001150813699__p383819183311">从上世纪90年代到现在，国内各大城市先后建设了信号控制系统、高清卡口系统、视频识别等外场设施设备，产生和积累了大量的交通流、交通事件、交通违法数据，但是这些数据不能满足现在交通管理在安全、效能等方面的实时性和精准性的要求，主要的问题有如下几个方面。</p>
+<ul id="ZH-CN_TOPIC_0000001150813699__ul490991004617"><li id="ZH-CN_TOPIC_0000001150813699__li1182917619501">无精准感知数据，隐患治理无据可依，治理效果难管控。<p id="ZH-CN_TOPIC_0000001150813699__p970689505"><a name="ZH-CN_TOPIC_0000001150813699__li1182917619501"></a><a name="li1182917619501"></a>交通隐患点识别主要基于事故发生后的识别，无法基于风险评估提前预判。隐患点的排查上报依靠人工方式，虽然已经有视频可看，但视频分析依赖人工经验看视频。</p>
+</li><li id="ZH-CN_TOPIC_0000001150813699__li1747913965019">无车道级流量、车辆轨迹等数据，交通组织优化不明显。<p id="ZH-CN_TOPIC_0000001150813699__p242011015502"><a name="ZH-CN_TOPIC_0000001150813699__li1747913965019"></a><a name="li1747913965019"></a>传统手段统计以人工统计覆盖高峰期为主，设施易坏、在线率低导致流量统计不准确。互联网采样比例低，推导滞后，发现拥堵无法溯源，导致交通组织优化不明显。</p>
+</li><li id="ZH-CN_TOPIC_0000001150813699__li6669171145018">无精准交通流数据，信控配时不精细，不合理。<p id="ZH-CN_TOPIC_0000001150813699__p2595121255018"><a name="ZH-CN_TOPIC_0000001150813699__li6669171145018"></a><a name="li6669171145018"></a>饱和条件和非饱和条件下，自适应控制需要的路面检测参数不同，车队排队长度、溢出、车道分方向流量等都缺乏有效的检测手段。</p>
+</li><li id="ZH-CN_TOPIC_0000001150813699__li159092105465">缺少事故预警机制，次生影响安全和畅通。<p id="ZH-CN_TOPIC_0000001150813699__p9909131034614"><a name="ZH-CN_TOPIC_0000001150813699__li159092105465"></a><a name="li159092105465"></a>视频无法主动预警事故，也不能推送事故录像给民警需要现场查找、调阅本地录像，效率低下。交警现场定责的事故平均花费1个小时，容易造成次生的拥堵。</p>
+</li></ul>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001150813699__section176621524316"><h4 class="sectiontitle">方案价值</h4><ul id="ZH-CN_TOPIC_0000001150813699__ul683320920472"><li id="ZH-CN_TOPIC_0000001150813699__li1998816463467">全量刻画路口内的车路信息：涵盖路口内的标志、标线、交通设备，并通过雷达和视频结合实时获取车辆的轨迹和车牌。</li><li id="ZH-CN_TOPIC_0000001150813699__li10988114624616">单路口以及多路口间的自适应调节：通过路侧单元对信号机的智慧化管理实现单路口的自适应控制和多路口的协调。</li><li id="ZH-CN_TOPIC_0000001150813699__li29882465463">交通态势的精准化和精细化感知：通过记录每秒车辆的位置和车牌，可以实时感知交通态势，并可通过历史记录和路网连接关系，分析车辆OD（Origin-Destination）态势，掌握城市交通规律。</li><li id="ZH-CN_TOPIC_0000001150813699__li59881446134613">事件即时上报：实现单车事故、多车事故、逆行、违停、实线变道、拥堵、流量突变等交通事件即时上报，同时关联到六合一路段数据。</li><li id="ZH-CN_TOPIC_0000001150813699__li8988114618462">安全隐患的精准挖掘：通过轨迹挖掘路口冲突点、常发变道点、大车路径（计算路口安全视距）等安全隐患点，为路口秩序管理提供详实数据。</li><li id="ZH-CN_TOPIC_0000001150813699__li2833209174710">面向车联网的信息服务：通过路侧单元可以把交通态势、事件、控制信息以及路口渠化信息和公交车、120急救车等特种车辆进行交互，未来可以和半自动或者无人驾驶车辆通信。</li></ul>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001150813699__section8956195624218"><h4 class="sectiontitle">实时全景的时空感知节点</h4><ul id="ZH-CN_TOPIC_0000001150813699__ul385mcpsimp"><li id="ZH-CN_TOPIC_0000001150813699__li386mcpsimp">更精细的数据，每时每刻每辆车的轨迹数据（非卫星定位轨迹）。</li><li id="ZH-CN_TOPIC_0000001150813699__li387mcpsimp">更全面的数据，不仅是进口道，而且还能生成路口内部和出口道的数据。</li><li id="ZH-CN_TOPIC_0000001150813699__li388mcpsimp">更可读的数据，不仅有数据，还可以将数据在数字地图上进行可视化展现。</li><li id="ZH-CN_TOPIC_0000001150813699__li389mcpsimp">更加可计算的数据，所有的数据基于高精度地图数据进行空间位置的组织，并挂接到路段、路口、方向、车道，通过路网拓扑关系，形成全网可计算的交通大数据。</li></ul>
+<p id="ZH-CN_TOPIC_0000001150813699__p391mcpsimp">全息路口通过将路口设施和车辆轨迹数字化，精确刻画路口的机、非、人的精准轨迹，支撑黑点和隐患点等安全治理，以及来去向车辆数量统计和路口根因分析等畅通调度，实现路口的全方向、全天候、全要素的全数字化。为交管信息互联提供数据源头，为更高级别的深度应用提供精准数据支撑，也为隐患排查、交通组织优化等深度治理奠定数据基础。</p>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001150813699__section1872414916439"><h4 class="sectiontitle">实时的控制和服务节点</h4><p id="ZH-CN_TOPIC_0000001150813699__p421mcpsimp">全息路口通过统一路网单元对路口的动、静态数据进行接入、融合、计算和存储，实现单路口和多路口的联动优化，达到提升路口通行效率，降低城市拥堵程度。</p>
+<ul id="ZH-CN_TOPIC_0000001150813699__ul123618541434"><li id="ZH-CN_TOPIC_0000001150813699__li423mcpsimp">支持单路口优化</li><li id="ZH-CN_TOPIC_0000001150813699__li424mcpsimp">支持多路口优化</li><li id="ZH-CN_TOPIC_0000001150813699__li63645413435">对路口的安全进行评价</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0251423566.html">解决方案描述
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001104093712.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

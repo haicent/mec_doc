@@ -1,0 +1,9 @@
+#!env sh
+cd /Users/fy/doc/mec/mec2.0/
+rm report.html
+mv MEC2.0华为感知设备调研报告.html report.html
+scp -r /Users/fy/doc/mec/mec2.0/report.html root@172.18.100.84:/usr/share/nginx/html/mec2.0/
+ssh root@172.18.100.84 "cd /usr/share/nginx/html;sudo chmod -R 777 *;cd mec2.0;find ./ -name report.html |xargs sed -i s#file:////Users/fy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/#../#g;python3 report.py"
+# ssh root@172.18.100.84 "cd /usr/share/nginx/html;sudo chmod -R 777 *;cd mec1.0;find ./ -name index.html |xargs sed -i s#file:////Users/fy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/#../#g;"
+
+ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome  http://doc.hiacent.info/mec2.0/report.html#版本记录

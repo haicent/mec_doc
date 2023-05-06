@@ -1,0 +1,807 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="（可选）配置用户信息">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001145407514">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>（可选）配置用户信息</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001145407514"></a><a name="ZH-CN_TOPIC_0000001145407514"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">（可选）配置用户信息</h1>
+<div id="body1578468021003"><div class="section" id="ZH-CN_TOPIC_0000001145407514__section64801413111817"><h4 class="sectiontitle">背景信息</h4><div class="p" id="ZH-CN_TOPIC_0000001145407514__p113231059183419"><span>OMU Portal</span>上可以配置<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol6792124711307">“系统管理员”</span>、<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol721215517308">“普通操作员”</span>、<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol798920225205">“系统管理员(ISV)”</span>、<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol93262014479">“普通操作员(ISV)”</span>、<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol57131414132317">“系统运维管理员（人机）”</span>。<ul id="ZH-CN_TOPIC_0000001145407514__ul0187104716544"><li id="ZH-CN_TOPIC_0000001145407514__li51341148203917"><strong id="ZH-CN_TOPIC_0000001145407514__b017936144213">admin</strong>用户为系统预定义用户，拥有系统所有权限。该用户的角色和名称均无法修改。</li><li id="ZH-CN_TOPIC_0000001145407514__li1857336165210">系统管理员和系统管理员(ISV)权限相同。<ul id="ZH-CN_TOPIC_0000001145407514__ul18617164510355"><li id="ZH-CN_TOPIC_0000001145407514__li8110174718348">系统管理员用于登录<span id="ZH-CN_TOPIC_0000001145407514__ph18336181293110">iClient ME</span>或<span id="ZH-CN_TOPIC_0000001145407514__ph26591116355">OMU Portal</span>等场景。</li><li id="ZH-CN_TOPIC_0000001145407514__li138711329123519">系统管理员(ISV)用于在第三方视图库或视综平台与<span id="ZH-CN_TOPIC_0000001145407514__ph697533923513">ITS800</span>对接等场景</li></ul>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li1383735210529">普通操作员和普通操作员(ISV)权限相同。<ul id="ZH-CN_TOPIC_0000001145407514__ul1013580155513"><li id="ZH-CN_TOPIC_0000001145407514__li0134180165511">普通操作员用于登录<span id="ZH-CN_TOPIC_0000001145407514__ph655022015344">iClient ME</span>或<span id="ZH-CN_TOPIC_0000001145407514__ph1413414019559">OMU Portal</span>等场景。</li><li id="ZH-CN_TOPIC_0000001145407514__li1013516005511">普通操作员(ISV)用于在第三方视图库或视综平台与<span id="ZH-CN_TOPIC_0000001145407514__ph1813417014557">ITS800</span>对接等场景。</li></ul>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li12232996367">系统运维管理员(人机)在9.1.0以前的版本用于登录iClient OM进行设备升级、巡检等操作场景，9.1.0及以后版本不再使用该角色。</li></ul>
+</div>
+<p id="ZH-CN_TOPIC_0000001145407514__p652894214416">不用的角色用户对应在<span>OMU Portal</span>和<span>iClient ME</span>对应的权限如下：</p>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">OMU Portal</a></li><li><a href="#" onclick="return showCurrent($$(this));">iClient ME</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001145407514__section72551576524"><h4 class="sectiontitle">OMU Portal</h4><p id="ZH-CN_TOPIC_0000001145407514__p149561128136">不同角色用户对应的<span>OMU Portal</span>权限如<a href="#ZH-CN_TOPIC_0000001145407514__table8742111715718">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001145407514__table8742111715718"></a><a name="table8742111715718"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001145407514__table8742111715718" frame="border" border="1" rules="all"><caption><b>表1 </b>权限对应关系</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001145407514__row87422017205713"><th align="left" class="cellrowborder" valign="top" width="17.10828917108289%" id="mcps1.3.2.3.2.8.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p12742191765712">功能权限</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.26847315268473%" id="mcps1.3.2.3.2.8.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p374311714573">admin</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="16.03839616038396%" id="mcps1.3.2.3.2.8.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p974391755719">系统管理员</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.388461153884613%" id="mcps1.3.2.3.2.8.1.4" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p137431217105715">普通操作员</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="14.978502149785019%" id="mcps1.3.2.3.2.8.1.5" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p12673935182818">系统管理员(ISV)</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="11.72882711728827%" id="mcps1.3.2.3.2.8.1.6" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p1031264022315">普通操作员(ISV)</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="9.48905109489051%" id="mcps1.3.2.3.2.8.1.7" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p1470214563612">系统运维管理员（人机）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001145407514__row17743717185716"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p274381720579">登录/登出</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p2064913125919">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p89868337597">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p111521642205919">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p134273644720">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p43121040142317">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1025735316220">&#8730;</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row47432017195715"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p117431817155715">密码修改</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p618620234596">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p1299793345917">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p416544212596">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1442183613473">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p63121540202314">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p119310276390">&#8730;</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row51711953142115"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13171353192113">重启</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p20172453122117">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p164961970227">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p105121273222">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p65251774225">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p853915762219">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p95521171229">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1774331715573"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p2595643506">首页</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p17200182395911">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p2086345593">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p151766421598">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p134213684713">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p831212403239">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1828814531929">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row4744131715713"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p15744191712573">系统管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p32090237591">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p9178342592">&#8730;（网络配置和时间配置仅支持查看）</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p19188144235917">&#8730;（仅支持基本配置）</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1442536114718">&#8730;（网络配置和时间配置仅支持查看）</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p173121840102313">&#8730;（仅支持基本配置）</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p132989536213">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1339018390579"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1739083917572">对接管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1721816234599">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p929103445915">&#8730;（不支持对接证书管理）</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p1456611005">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p104233634717">&#8730;（不支持对接证书管理）</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p240019020289">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p11307155317216">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row7913124325712"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p091494311579">维护管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1523312233595">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p33816348592">&#8730;（不支持数据保险箱管理）</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p136712115010">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p19431936164719">&#8730;（不支持数据保险箱管理）</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p19421107284">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1731755317217">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row18914643135718"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p391554310573">存储管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p15242023115914">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p1447634185913">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p77716112013">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p443836124713">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1242930152817">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p53286532025">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row191544311577"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1591604365716">巡检</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p112517233592">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p18592342595">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p3883110016">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p843936154719">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p343612032811">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1033735318212">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row73911339115719"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p171416385810">故障收集</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p17259112312596">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p469183485913">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p11100317013">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1243936174713">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p16442009289">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p93466535211">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row27071237105817"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p2707133745811">升级</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p626822314597">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p117086370581">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p211113114019">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p44333617472">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p64495013286">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p133568534211">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row5744117145717"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p157443172573">用户管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p14277132305913">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p27442179577">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p13121711016">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p54353684717">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p18457901285">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1036513531722">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1327411314287"><td class="cellrowborder" valign="top" width="17.10828917108289%" headers="mcps1.3.2.3.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p35805542410">修改安全问题及答案</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.26847315268473%" headers="mcps1.3.2.3.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p4581655132418">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.03839616038396%" headers="mcps1.3.2.3.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p175825552414">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.388461153884613%" headers="mcps1.3.2.3.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p95885512413">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.978502149785019%" headers="mcps1.3.2.3.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p205875562416">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.72882711728827%" headers="mcps1.3.2.3.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1258115515243">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.48905109489051%" headers="mcps1.3.2.3.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p358145532413">×</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001145407514__section492317281412"><h4 class="sectiontitle"><span>iClient ME</span></h4><p id="ZH-CN_TOPIC_0000001145407514__p1892462812412">不同角色用户对应的<span>iClient ME</span>权限如<a href="#ZH-CN_TOPIC_0000001145407514__table1292420285417">表2</a>所示。</p>
+<p id="ZH-CN_TOPIC_0000001145407514__p171124664111">如果需要对多台设备进行批量升级或批量巡检，可以通过iClient ME运维工具。</p>
+<p id="ZH-CN_TOPIC_0000001145407514__p101446144111">iClient ME运维工具的安装和使用，请参考《<span><a href="zh-cn_topic_0258314501.html">iClient ME 产品文档</a></span>》。如何下载《<span><a href="zh-cn_topic_0258314501.html">iClient ME 产品文档</a></span>》，请参见<a href="zh-cn_topic_0258314501.html">获取资料</a>。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001145407514__table1292420285417"></a><a name="table1292420285417"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001145407514__table1292420285417" frame="border" border="1" rules="all"><caption><b>表2 </b>权限对应关系</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001145407514__row1925928442"><th align="left" class="cellrowborder" valign="top" width="17.11%" id="mcps1.3.3.5.2.8.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p2092520289414">功能权限</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.9%" id="mcps1.3.3.5.2.8.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p592517280419">admin</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="17.11%" id="mcps1.3.3.5.2.8.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p20574163094618">系统管理员</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.8%" id="mcps1.3.3.5.2.8.1.4" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p1095694344620">普通操作员</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="13.26%" id="mcps1.3.3.5.2.8.1.5" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p13906194912462">系统管理员(ISV)</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="11.61%" id="mcps1.3.3.5.2.8.1.6" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p83281956124615">普通操作员(ISV)</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="9.21%" id="mcps1.3.3.5.2.8.1.7" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p12953422133710">系统运维管理员（人机）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001145407514__row18926132818412"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p209842433517">设备配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p12941855152419">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p5293455152418">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p1329205512246">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p132381579554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p356892075520">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p29411625531">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row14927172819417"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p811822415216">存储管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p5281205532413">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p328055517244">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p1427985510242">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1423887105519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1569162015558">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p10951192516315">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row592710289417"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p527685532419">告警管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p42751155102415">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p19274195518246">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p14272555152411">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p11239472556">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p5569132011556">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p496119255315">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row12929028944"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p926415557247">录像书签管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p32632055192417">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p172621555152415">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p0260145592415">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p7239147165519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1756915204558">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p59811725232">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row493018288418"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p122491955172416">日志管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p524855522415">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p112461155152416">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p4245255142413">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p152391675554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1056916202557">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1299217251133">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row4931122812419"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p12431755102419">告警处理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p15242115542410">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p8238165502414">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p15237135522416">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p192391577557">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p25691202558">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p42142613317">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row896015287254"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13960152852517">防区布撤防</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p179601128122511">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p2960192892510">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p5960102812254">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p152391716558">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1256917206557">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p15128261133">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row10960122852511"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p496192872512">水印篡改校验</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1961122816254">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p10961528162511">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p29611228152515">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1123927165518">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p13569122014554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p172212261134">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row114841621183717"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p10485112123713">抓拍管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p14858217376">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p134852217379">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p14485182133711">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p12399775515">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p35691220195519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p03218261736">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row13485132120378"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p115947588310">视频预览</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p3485172123719">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p14851821133715">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p9485122113371">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p32390785511">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p18569220185517">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p64210261237">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row154861121143717"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p25881432103715">录像回放</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p248662193717">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p16486112153710">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p15486321193719">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p52391720552">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1556918202556">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1952102619319">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row748712123713"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1148752123713">录像下载</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p154871621133716">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p548762173714">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p1048782116373">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p132399712557">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p156912208559">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p56132618310">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row16487182143714"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p54881121193710">语音</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1148812216374">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p1448812114371">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p74881921173719">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p192391173555">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p156962012553">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p17112261234">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row348820213370"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p11488321183719">云台基本操作</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p448852173717">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p948872119376">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p16489721143713">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1723914717554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p16570202095517">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p28119262311">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row24893214377"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p3489102116373">手动录像</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1548962115377">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p184891921173710">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p74891721133711">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p02406725516">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p6570112035512">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p39210262039">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row9489172113372"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1848982117376">抓拍</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p2489112110370">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p18489192110373">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p3489192112372">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p14240674559">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p2570220165518">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p111025261032">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1060460143513"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p106042012351">卡口</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p14605140143510">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p17605408350">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p860560173519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p11240107195519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p8570132013556">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p17112526431">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row116059014352"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p136060020354">云台高级操作</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p13606506350">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p960617023515">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p8606160103515">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p824016785518">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p18570122016558">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1512262611320">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row15606180193511"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13607706350">录像锁定管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p176074083516">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p12607120153512">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p36071609350">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p20240147125518">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p14570220185512">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1313212614313">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1060716017357"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1460712063512">系统配置管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p16071402352">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p186077033514">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p19607120163517">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p62401879553">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p19570122012555">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p101421326933">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row17608110103511"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13608704358">智能分析任务查看</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p156085063511">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p860850103510">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p1260840183518">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p1124013711554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p15570720115510">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p51548261832">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row7961142815257"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p18961928192510">智能分析任务检索</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p179613284253">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p1796132815253">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p296172892511">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p19240973552">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p1157012095519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p8164626836">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row129621528172513"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p19621528162511">静态库查看</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p20896541153813">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p189621228102517">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p796252892519">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p224018715510">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p8570182095517">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p10174326732">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row39319281743"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p122321455202410">静态库管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p489574110388">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p1323125522419">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p622955519247">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p122405715558">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p175701620185512">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p161848261239">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row10872847131815"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p830620591186">红名单管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p78758479187">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p787516473184">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p587554711185">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p112401071554">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p14571182011553">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p1929110291439">×</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1750020142295"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p850051416296">巡检</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1050061416291">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p850011417296">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p650021420294">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p250031452915">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p2050041414295">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p75003147295">&#8730;</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row2352120162917"><td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p335272062911">升级</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.3.3.5.2.8.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p7352020152914">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.3.3.5.2.8.1.3 "><p id="ZH-CN_TOPIC_0000001145407514__p20352182062912">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.8%" headers="mcps1.3.3.5.2.8.1.4 "><p id="ZH-CN_TOPIC_0000001145407514__p3352820132916">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.26%" headers="mcps1.3.3.5.2.8.1.5 "><p id="ZH-CN_TOPIC_0000001145407514__p12352142072910">&#8730;</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.61%" headers="mcps1.3.3.5.2.8.1.6 "><p id="ZH-CN_TOPIC_0000001145407514__p435272016295">×</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.21%" headers="mcps1.3.3.5.2.8.1.7 "><p id="ZH-CN_TOPIC_0000001145407514__p0352162092913">&#8730;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001145407514__section2473164815201"><h4 class="sectiontitle">操作步骤</h4><p id="ZH-CN_TOPIC_0000001145407514__p040091715512">请根据实际需求选择角色创建用户。配置用户的步骤类似，本节以配置系统管理员为例。</p>
+<ol id="ZH-CN_TOPIC_0000001145407514__ol6163105562019"><li id="ZH-CN_TOPIC_0000001145407514__li291212590369"><a name="ZH-CN_TOPIC_0000001145407514__li291212590369"></a><a name="li291212590369"></a><span id="ZH-CN_TOPIC_0000001145407514__">以<strong id="ZH-CN_TOPIC_0000001145407514__b019814240439">admin</strong>用户登录<span>OMU Portal</span>配置系统管理员。</span><p><ol type="a" id="ZH-CN_TOPIC_0000001145407514__ol1643319483719"><li id="ZH-CN_TOPIC_0000001145407514__li4205850165319"><a name="ZH-CN_TOPIC_0000001145407514__li4205850165319"></a><a name="li4205850165319"></a><span id="ZH-CN_TOPIC_0000001145407514__ph2096343211567">以<strong id="ZH-CN_TOPIC_0000001145407514__zh-cn_topic_0203265088_b8624101631310">admin</strong>用户登录OMU Portal（<span><img id="ZH-CN_TOPIC_0000001145407514__zh-cn_topic_0203265088_zh-cn_topic_0203265088_image13678257365" src="zh-cn_image_0257331811.png"></span> <a href="zh-cn_topic_0215538442.html">如何登录OMU Portal</a>）。</span></li><li id="ZH-CN_TOPIC_0000001145407514__li84901688519">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001145407514__menucascade164632313518">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol184510235516">用户管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol13776951164914">用户列表</span>”</span>。</li><li id="ZH-CN_TOPIC_0000001145407514__li734219584491">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol197521314115015">“添加用户”</span>按钮。</li><li id="ZH-CN_TOPIC_0000001145407514__li1920333810515"><a name="ZH-CN_TOPIC_0000001145407514__li1920333810515"></a><a name="li1920333810515"></a>配置系统管理员，如<a href="#ZH-CN_TOPIC_0000001145407514__fig19992131081018">图1</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001145407514__fig19992131081018"><a name="ZH-CN_TOPIC_0000001145407514__fig19992131081018"></a><a name="fig19992131081018"></a><span class="figcap"><b>图1 </b>配置系统管理员</span><br><span><img id="ZH-CN_TOPIC_0000001145407514__image1399310105106" src="zh-cn_image_0000001230184421.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001145407514__p4672103114106">参数解释如<a href="#ZH-CN_TOPIC_0000001145407514__table1991214122019">表3</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001145407514__table1991214122019"></a><a name="table1991214122019"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001145407514__table1991214122019" frame="border" border="1" rules="all"><caption><b>表3 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001145407514__row159141541202010"><th align="left" class="cellrowborder" valign="top" width="25.369999999999997%" id="mcps1.3.4.3.1.2.1.4.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p189157418205">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="74.63%" id="mcps1.3.4.3.1.2.1.4.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p14915144115206">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001145407514__row49155419205"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1091594162012">角色</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1491534117209">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol17762182371113">“系统管理员”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row8915144118200"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p791594117208">用户名</p>
+</td>
+<td class="cellrowborder" rowspan="3" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1233169122919">自定义设置用户名和用户密码，需要遵守复杂度高的密码规则。密码复杂度建议请参考<a href="zh-cn_topic_0204803612.html">密码维护建议</a>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row13919241102014"><td class="cellrowborder" valign="top" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p8919241112014">密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row1491944117208"><td class="cellrowborder" valign="top" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13920154111201">确认密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row13485134182212"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p184861234142219">多点登录数</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p16909926104215">同一时间在<span>iClient ME</span>上添加<span>ITS800</span>和登录<span>OMU Portal</span>的用户数量限制，两者之间互不占用登录点数。</p>
+<p id="ZH-CN_TOPIC_0000001145407514__p1813994561117">如：配置用户的多点登录数为N，同一时间该用户可在N个PC上添加<span>ITS800</span>，并可以同时在N个PC上登录<span>OMU Portal</span></p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row967817344223"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p13679193417228">云镜控制优先级</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__zh-cn_topic_0217902112_p6274154112319">对云台的控制优先级。分为1~32不同优先级，1为最高级别，32为最低级别。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row986763413223"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p19867734152213">是否启用账户有效期</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><ul id="ZH-CN_TOPIC_0000001145407514__ul169462535500"><li id="ZH-CN_TOPIC_0000001145407514__li7946145375017">开启<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol094711537504">“是否启用账户有效期”</span>，用户账号仅在有效时间段内有效。</li><li id="ZH-CN_TOPIC_0000001145407514__li1062811494505">不开启<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol6501423155512">“是否启用账户有效期”</span>，用户账号永久有效。<p id="ZH-CN_TOPIC_0000001145407514__p34581150105014">不开启<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol118951914205117">“是否启用账户有效期”</span>，系统会提示<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol6292203294812">“去勾选后账号有安全风险”</span>。出于安全考虑，建议启用账户有效期。</p>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row12235143514229"><td class="cellrowborder" valign="top" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p2235143519225">有效期起始时间/有效期结束时间</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row175073456466"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p550834514619">启用全部设备查看权限</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p3532177101919">默认开启，用户可以查看<span>ITS800</span>上所有的摄像机，包括当前已添加的摄像机和后续新添加的摄像机。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row13418937122511"><td class="cellrowborder" valign="top" width="25.369999999999997%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p28561770276">用户描述</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.63%" headers="mcps1.3.4.3.1.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p18418137132517">自定义设置用户描述信息。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li119001940151611"><a name="ZH-CN_TOPIC_0000001145407514__li119001940151611"></a><a name="li119001940151611"></a>（<strong id="ZH-CN_TOPIC_0000001145407514__b715142418381">可选</strong>）如果<a href="#ZH-CN_TOPIC_0000001145407514__li1920333810515">1.d</a>中没有勾选<span class="parmname" id="ZH-CN_TOPIC_0000001145407514__parmname1250520512140">“启用全部设备查看权限”</span>，需要执行以下步骤，给用户分配摄像机查看权限。<ol class="substepthirdol" id="ZH-CN_TOPIC_0000001145407514__ol17157101114170"><li id="ZH-CN_TOPIC_0000001145407514__li4743134111219">在<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol197919315177">“用户列表”</span>界面单击新创建用户后面的<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol391054581714">“权限设置”</span>。</li><li id="ZH-CN_TOPIC_0000001145407514__li5664104771712">给用户分配摄像机查看权限，如<a href="#ZH-CN_TOPIC_0000001145407514__fig107894163234">图2</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001145407514__fig107894163234"><a name="ZH-CN_TOPIC_0000001145407514__fig107894163234"></a><a name="fig107894163234"></a><span class="figcap"><b>图2 </b>分配摄像机查看权限</span><br><span><img id="ZH-CN_TOPIC_0000001145407514__image079181662316" src="zh-cn_image_0000001230422935.png"></span></div>
+<div class="note" id="ZH-CN_TOPIC_0000001145407514__note399912439155"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001145407514__p19999114315151">建议勾选<span class="parmname" id="ZH-CN_TOPIC_0000001145407514__parmname107729291169">“启用全部设备查看权限”</span>，可以查看<span>ITS800</span>上所有的摄像机，包括当前已添加的摄像机和后续新添加的摄像机。</p>
+</div></div>
+</li></ol>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li6992566392"><strong id="ZH-CN_TOPIC_0000001145407514__b1020419511318">（可选）</strong>如果存在多个<span id="ZH-CN_TOPIC_0000001145407514__ph207821428152019">ITS800</span>，请参考<a href="#ZH-CN_TOPIC_0000001145407514__li4205850165319">1.a</a>~<a href="#ZH-CN_TOPIC_0000001145407514__li119001940151611">1.e</a>为每个设备添加用户。</li></ol>
+</p></li><li id="ZH-CN_TOPIC_0000001145407514__li1984702216370"><span id="ZH-CN_TOPIC_0000001145407514__">以创建好的新用户登录<span>OMU Portal</span>。</span><p><ol type="a" id="ZH-CN_TOPIC_0000001145407514__ol17911121453810"><li id="ZH-CN_TOPIC_0000001145407514__li549813913385">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol04985911381">“注销”</span>，注销<strong id="ZH-CN_TOPIC_0000001145407514__b1549820914384">admin</strong>用户登录。</li><li id="ZH-CN_TOPIC_0000001145407514__li7498139143818">以新用户登录<span id="ZH-CN_TOPIC_0000001145407514__ph17498893380">OMU Portal</span>，如<a href="#ZH-CN_TOPIC_0000001145407514__fig2498790387">图3</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001145407514__fig2498790387"><a name="ZH-CN_TOPIC_0000001145407514__fig2498790387"></a><a name="fig2498790387"></a><span class="figcap"><b>图3 </b>新用户登录</span><br><span><img id="ZH-CN_TOPIC_0000001145407514__image15499199103813" src="zh-cn_image_0000001145407590.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001145407514__p1849919943818">参数解释如<a href="#ZH-CN_TOPIC_0000001145407514__table1349917920386">表4</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001145407514__table1349917920386"></a><a name="table1349917920386"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001145407514__table1349917920386" frame="border" border="1" rules="all"><caption><b>表4 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001145407514__row16499195382"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.4.3.2.2.1.2.5.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p6499199103818">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.4.3.2.2.1.2.5.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p124991692387">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001145407514__row1849911915385"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p15499496383">用户名</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p2499189123816">需要与<a href="#ZH-CN_TOPIC_0000001145407514__fig19992131081018">图1</a>设置的<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol14499169203818">“用户名”</span>和<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol16500096385">“密码”</span>保持一致。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row250015917384"><td class="cellrowborder" valign="top" headers="mcps1.3.4.3.2.2.1.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p14500149133818">密码</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li16500197384">系统提示<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol15500893384">“第一次登录，请先修改密码”</span>，单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001145407514__uicontrol155001993387">“确定”</span>。</li><li id="ZH-CN_TOPIC_0000001145407514__li1850015912385">修改密码，如<a href="#ZH-CN_TOPIC_0000001145407514__fig16500109123817">图4</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001145407514__fig16500109123817"><a name="ZH-CN_TOPIC_0000001145407514__fig16500109123817"></a><a name="fig16500109123817"></a><span class="figcap"><b>图4 </b>修改密码</span><br><span><img id="ZH-CN_TOPIC_0000001145407514__image105001290383" src="zh-cn_image_0000001191167457.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001145407514__p185008915389">参数解释如<a href="#ZH-CN_TOPIC_0000001145407514__table175009912383">表5</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001145407514__table175009912383"></a><a name="table175009912383"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001145407514__table175009912383" frame="border" border="1" rules="all"><caption><b>表5 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001145407514__row1750120913816"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.4.3.2.2.1.4.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p1650169133818">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.4.3.2.2.1.4.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001145407514__p15010983819">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001145407514__row15501169113816"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p1850111933814">原密码</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1350112917381">与<a href="#ZH-CN_TOPIC_0000001145407514__fig19992131081018">图1</a>设置的密码保持一致。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row050189173818"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p65011694387">新密码</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="50%" headers="mcps1.3.4.3.2.2.1.4.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001145407514__p1350119913813">自定义设置密码，要求使用复杂度高的密码。密码复杂度建议请参考<a href="zh-cn_topic_0204803612.html">密码维护建议</a>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001145407514__row65011896381"><td class="cellrowborder" valign="top" headers="mcps1.3.4.3.2.2.1.4.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001145407514__p0501109133819">确认密码</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li id="ZH-CN_TOPIC_0000001145407514__li15011995381">使用修改后的密码可以重新登录<span id="ZH-CN_TOPIC_0000001145407514__ph9501992383">OMU Portal</span>。</li></ol>
+</p></li></ol>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置摄像机ONVIF协议参数">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238297615.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001160339787.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238177653.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001193697652">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>配置摄像机ONVIF协议参数</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001193697652"></a><a name="ZH-CN_TOPIC_0000001193697652"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置摄像机ONVIF协议参数</h1>
+<div id="body0000001193697652"><p id="ZH-CN_TOPIC_0000001193697652__p1920022418559">当SDC通过ONVIF协议对接平台时需要配置ONVIF协议参数。</p>
+<div class="section" id="ZH-CN_TOPIC_0000001193697652__section3143018"><h4 class="sectiontitle">前提条件</h4><ul id="ZH-CN_TOPIC_0000001193697652__ul56304866"><li id="ZH-CN_TOPIC_0000001193697652__li36981751">ONVIF保留了MD5摘要认证，MD5属于弱算法，存在安全风险，且媒体流未加密，请在可信网络内使用该协议，否则可能存在安全风险。</li><li id="ZH-CN_TOPIC_0000001193697652__li64400304">ONVIF协议如需使用H.265编码协议，需要摄像机的ONVIF版本和平台均支持H.265编码协议。华为摄像机需要V200R003C10及以后的版本，平台请联系平台提供者确认支持情况。否则请先将视频流（包括主码流和子码流）编码协议修改为H.264，再进行设备中的参数配置。具体操作请登录摄像机Web界面，选择“配置 &gt; 音视图 &gt; 视频流参数”，将“编码协议”设置为“H.264”。</li><li id="ZH-CN_TOPIC_0000001193697652__li47841456589">ONVIF协议默认采用HTTP/HTTPS的传输协议类型。</li><li id="ZH-CN_TOPIC_0000001193697652__li42731832">ONVIF协议只支持G711U音频编码格式，其他音频编码格式会造成随路语音、语音对讲、语音广播等功能不可用。</li><li id="ZH-CN_TOPIC_0000001193697652__li49042175">使用ONVIF协议与平台对接时，默认端口号为“80”或“8080”。当接入Milestone平台时，请使用8080端口，以免造成对接异常。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001193697652__section087634875419"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001193697652__ol12993271"><li id="ZH-CN_TOPIC_0000001193697652__li194641910172415"><span id="ZH-CN_TOPIC_0000001193697652__">登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0000001193697652__zh-cn_topic_0176661643_i1093752272">IP地址</em>）。</span></li><li id="ZH-CN_TOPIC_0000001193697652__li49830577"><span id="ZH-CN_TOPIC_0000001193697652__">选择“配置 &gt; 网络 &gt; 平台对接参数”。</span><p><p id="ZH-CN_TOPIC_0000001193697652__p45822015">系统显示“平台对接参数”页面。</p>
+</p></li><li id="ZH-CN_TOPIC_0000001193697652__li9744952"><span id="ZH-CN_TOPIC_0000001193697652__">选择“第二协议参数 &gt; ONVIF”，进入ONVIF协议参数配置页面。</span></li><li id="ZH-CN_TOPIC_0000001193697652__li20595711"><span id="ZH-CN_TOPIC_0000001193697652__">配置ONVIF参数，如<a href="#ZH-CN_TOPIC_0000001193697652__d0e13396">图1</a>所示，参数说明如<a href="#ZH-CN_TOPIC_0000001193697652__d0e13403">表1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001193697652__d0e13396"><a name="ZH-CN_TOPIC_0000001193697652__d0e13396"></a><a name="d0e13396"></a><span class="figcap"><b>图1 </b>ONVIF参数页面</span><br><span><img id="ZH-CN_TOPIC_0000001193697652__image1237632916464" src="zh-cn_image_0000001222521574.png"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001193697652__d0e13403"></a><a name="d0e13403"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001193697652__d0e13403" width="90%" frame="border" border="1" rules="all"><caption><b>表1 </b>ONVIF参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001193697652__row54553416"><th align="left" class="cellrowborder" valign="top" width="18%" id="mcps1.3.3.2.4.2.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193697652__p56750612">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="82%" id="mcps1.3.3.2.4.2.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001193697652__p33396827">如何配置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001193697652__row38154497"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p3506570">启用ONVIF</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p15596723">启用ONVIF协议，打勾表示已启用。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row6152779"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p28613063">ONVIF消息有效期</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p35956792">启用“ONVIF消息有效期”，打勾表示已启用。</p>
+<p id="ZH-CN_TOPIC_0000001193697652__p55175680">开启ONVIF消息有效期功能后，如果超出平台设置的有效期，ONVIF消息将失效。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001193697652__note26819078"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193697652__p40045115">该功能仅在平台支持ONVIF消息有效期功能时启用有效，否则无法与上级安防平台对接成功，并且仅建议在有安全隐患时启用，默认关闭。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row24861720"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p533463">ONVIF流传输类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p43210538">请在“流传输类型”后的下拉框中选择所需的流传输类型，默认为基本流。</p>
+<ul id="ZH-CN_TOPIC_0000001193697652__ul53350527"><li id="ZH-CN_TOPIC_0000001193697652__li10392698">基本流：采用ES（Elementary Stream）打包方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li26425420">节目流：采用PS（Program Stream）打包方式。</li></ul>
+<div class="note" id="ZH-CN_TOPIC_0000001193697652__note36502190"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193697652__ul60084257"><li id="ZH-CN_TOPIC_0000001193697652__li3887407">请根据解码设备的要求来选择流传输类型，以免无法解码。</li><li id="ZH-CN_TOPIC_0000001193697652__li34986663">ONVIF媒体流的配置仅对SDC通过ONVIF协议与平台对接时有效。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row46444516"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p3909429">ONVIF鉴权方式</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p48228364">请在“鉴权方式”后的下拉框中选择所需的鉴权方式。</p>
+<ul id="ZH-CN_TOPIC_0000001193697652__ul31402092"><li id="ZH-CN_TOPIC_0000001193697652__li641811513472">Digest_MD5：MD5加密的Digest鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li419218264477">Digest_SHA256：SHA256加密的Digest鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li812053710478">Digest_MD5/Digest_SHA256：同时支持Digest_MD5和Digest_SHA256鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li166981529124816">Digest_MD5(priority)/WSSE：同时支持Digest_MD5和WSSE鉴权方式，但是优先进行Digest_MD5鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li2012735104813">WSSE（Web Service Security）：“WSSE”鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li14183374">None：表示不进行鉴权。</li></ul>
+<div class="note" id="ZH-CN_TOPIC_0000001193697652__note44235833"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193697652__ul62578181"><li id="ZH-CN_TOPIC_0000001193697652__li795584814323">使用ONVIF WSSE鉴权方式存在安全风险。<ul id="ZH-CN_TOPIC_0000001193697652__ul19986155213215"><li id="ZH-CN_TOPIC_0000001193697652__li26332721">建议当摄像机接入的部分平台不支持HTTP摘要认证只支持ONVIF WSSE鉴权方式时启用Digest_MD5(priority)/WSSE鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li15955105653219">建议当摄像机接入的所有平台都不支持HTTP摘要认证只支持ONVIF WSSE鉴权方式时启用WSSE鉴权方式。</li><li id="ZH-CN_TOPIC_0000001193697652__li1567944503315">建议当部分平台无法正确处理Digest消息时启用WSSE鉴权方式。</li></ul>
+</li><li id="ZH-CN_TOPIC_0000001193697652__li35667902">使用None鉴权方式存在安全风险，仅建议在平台不支持鉴权时启用。且使用None鉴权方式时，通过ONVIF协议引流及RTSP协议请求实况，也不会进行鉴权。</li></ul>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row39392124"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p36645450">ONVIF版本信息</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p15491440">摄像机支持的ONVIF版本，需要和平台支持的ONVIF版本保持一致。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row5205236"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p18970962">ONVIF传输协议类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p60252957">ONVIF传输使用协议类型：</p>
+<ul id="ZH-CN_TOPIC_0000001193697652__ul5405702"><li id="ZH-CN_TOPIC_0000001193697652__li48651324">HTTP/HTTPS：可以分别通过HTTP或者HTTPS协议传输。</li><li id="ZH-CN_TOPIC_0000001193697652__li35208735">HTTP：使用HTTP协议传输。</li><li id="ZH-CN_TOPIC_0000001193697652__li48443160">HTTPS：使用HTTPS协议传输。<div class="note" id="ZH-CN_TOPIC_0000001193697652__note87315404483"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001193697652__p4731184034813">HTTP协议是不安全协议，存在风险，请谨慎使用。</p>
+</div></div>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001193697652__row18201322154819"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.3.3.2.4.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001193697652__p14441101095212">修改ONVIF密码</p>
+</td>
+<td class="cellrowborder" valign="top" width="82%" headers="mcps1.3.3.2.4.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001193697652__p3332519484">方法一：</p>
+<ol type="a" id="ZH-CN_TOPIC_0000001193697652__ol944121035214"><li id="ZH-CN_TOPIC_0000001193697652__li13194437201217">选择“第二协议参数”下方的“密码管理”页签。</li><li id="ZH-CN_TOPIC_0000001193697652__li1441131055215">选择“ONVIF密码”，输入“Web用户密码”、ONVIF协议的“新密码”和“确认密码”。</li><li id="ZH-CN_TOPIC_0000001193697652__li1044271018529">单击“保存”。</li></ol>
+<p id="ZH-CN_TOPIC_0000001193697652__p8502171734819">方法二：</p>
+<ol type="a" id="ZH-CN_TOPIC_0000001193697652__ol37916553487"><li id="ZH-CN_TOPIC_0000001193697652__li87911655124816">选择“配置 &gt; 系统配置 &gt; 密码管理”。</li><li id="ZH-CN_TOPIC_0000001193697652__li962545719482">选择“协议密码”。</li><li id="ZH-CN_TOPIC_0000001193697652__li12581330174913">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001193697652__uicontrol144997242416">“ONVIF密码”</span>，输入“Web用户密码”、ONVIF协议的“新密码”和“确认密码”。</li><li id="ZH-CN_TOPIC_0000001193697652__li13153502515">单击“保存”。</li></ol>
+<div class="note" id="ZH-CN_TOPIC_0000001193697652__note2024120181517"><span class="notetitle"> 说明： </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001193697652__ul6839329165112"><li id="ZH-CN_TOPIC_0000001193697652__li1383932945114">为保证数据信息安全，请及时修改ONVIF密码。<p id="ZH-CN_TOPIC_0000001193697652__p1983952985118"><a name="ZH-CN_TOPIC_0000001193697652__li1383932945114"></a><a name="li1383932945114"></a>当采用ONVIF协议与上级安防平台进行对接时，上级安防平台使用的用户名及密码必须与此密码保持一致，否则无法与上级安防平台对接成功，并且当平台连续20次鉴权失败后将被锁定5分钟。密码完成修改后，请及时记录并保存。</p>
+</li><li id="ZH-CN_TOPIC_0000001193697652__li78391829115112">默认用户名为“admin”，初始密码为首次登录摄像机时所设置的Web用户密码。</li></ul>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001238297615.html">摄像机接入协议介绍
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001160339787.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001238177653.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

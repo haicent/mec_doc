@@ -1,0 +1,133 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置摄像机SDK协议参数">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001090480030.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001137456535.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001090320380">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/RowOrColfreezeSupport.js"></script>
+
+<script type="text/javascript">
+setTimeout(function(){
+	jQueryHW(document).ready(function(){
+		jQueryHW("table[rowfreeze='yes']").rowfreeze();
+		jQueryHW("table[colfreeze='yes']").colfreeze();
+	});
+},500);
+</script>
+<title>配置摄像机SDK协议参数</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001090320380"></a><a name="ZH-CN_TOPIC_0000001090320380"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置摄像机SDK协议参数</h1>
+<div id="body0000001090320380"><div class="section" id="ZH-CN_TOPIC_0000001090320380__section12411248162710"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001090320380__ol6446135785110"><li id="ZH-CN_TOPIC_0000001090320380__li15446185745114"><span id="ZH-CN_TOPIC_0000001090320380__"><span>登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_zh-cn_topic_0176661643_i1093752272">IP地址</em>）。</span></span></li><li id="ZH-CN_TOPIC_0000001090320380__li0483122113522"><span id="ZH-CN_TOPIC_0000001090320380__">选择“配置 &gt; 网络 &gt; 平台对接参数”。</span></li><li id="ZH-CN_TOPIC_0000001090320380__li290220401521"><span id="ZH-CN_TOPIC_0000001090320380__">在“SDK参数”配置页面，勾选“SDK功能开关”，表示启用SDK。启用后，可以显示连接平台在线状态。</span></li><li id="ZH-CN_TOPIC_0000001090320380__li3367651533"><span id="ZH-CN_TOPIC_0000001090320380__">配置SDK参数，如<a href="#ZH-CN_TOPIC_0000001090320380__fig3826124105615">图1</a>所示，参数说明如<a href="#ZH-CN_TOPIC_0000001090320380__table247948175710">表1</a>所示。</span><p><div class="note" id="ZH-CN_TOPIC_0000001090320380__note14749554510"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001090320380__ul1436041464514"><li id="ZH-CN_TOPIC_0000001090320380__li11982163795918">如果需要进行多平台注册，请选择“平台<em id="ZH-CN_TOPIC_0000001090320380__i98491022263">X</em>”，配置其他平台的相关信息。</li><li id="ZH-CN_TOPIC_0000001090320380__li336081464516">双网口摄像机支持配置六个平台，配置前先选择对应的网口ETH0或ETH1。</li><li id="ZH-CN_TOPIC_0000001090320380__li1792124711159">勾选“SDK主动注册”，则必须配置SDC的系统时间为NTP校时。</li><li id="ZH-CN_TOPIC_0000001090320380__li775349524">为了避免平台出现异常后，摄像机无法远程维护，针对5G摄像机，除了注册到平台，建议也同时主动注册到部署在公网PC的iClient SDC上。配置后，还需要在iClient SDC侧配置摄像机主动注册iClient SDC，详细配置请参见《iClient SDC 产品文档》。</li></ul>
+</div></div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001090320380__fig3826124105615"><a name="ZH-CN_TOPIC_0000001090320380__fig3826124105615"></a><a name="fig3826124105615"></a><span class="figcap"><b>图1 </b>配置SDK参数</span><br><span><img id="ZH-CN_TOPIC_0000001090320380__image128261341125611" src="zh-cn_image_0000001221348268.png" height="228.4275" width="523.6875" title="点击放大" class="imgResize"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001090320380__table247948175710"></a><a name="table247948175710"></a><table cellpadding="4" cellspacing="0" summary="" rowfreeze="yes" id="ZH-CN_TOPIC_0000001090320380__table247948175710" width="90%" frame="border" border="1" rules="all"><caption><b>表1 </b>SDK主动注册参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row48596827"><th align="left" class="cellrowborder" valign="top" width="17%" id="mcps1.3.1.2.4.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p44028890">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="83%" id="mcps1.3.1.2.4.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p9570326">如何配置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row4882174110386"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p68835415386">SDK非加密端口开关</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p6883174111381">勾选<span class="uicontrol" id="ZH-CN_TOPIC_0000001090320380__uicontrol5348928204013">“SDK功能开关”</span>后，则<span class="uicontrol" id="ZH-CN_TOPIC_0000001090320380__uicontrol576032217411">“SDK非加密端口开关”</span>使能。反之则不使能。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__row1714425811268"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p2014455811262">连接状态</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p1114515589268">对接到平台后的状态。状态类型有：在线、下线。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row18144164583610"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p16145124523614">SDK主动注册</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p714520457364">勾选后，表示已选择主动注册方式。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row1538144819364"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p1938284810361">双向认证</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p14421155141316">选择摄像机与平台之间的认证方式，如果勾选双向认证，会采用TLS方式认证，如果不勾选，会采用密码认证。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row36998902"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p44121058">注册类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p17035971">根据平台配置选择：</p>
+<ul id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_ul19106019"><li id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_li37736449">单服务器模式：摄像机仅对接一个监控平台时选择。</li><li id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_li4083726">双服务器模式：摄像机对接两个监控平台并且这两个监控平台为主备关系时选择。</li></ul>
+<p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p02376349364">规则如下：</p>
+<ul id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_ul1230735115360"><li id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_li24246706">双服务器模式时，如果与平台对接，优先对接第一个IP地址对应的平台，当对接失败或者断开后，再对接第二个IP地址对应的平台。如果第一个平台恢复连接，则当第二个平台断开后，才会对接到第一个平台。</li><li id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_li16893765">同一时间只能注册到一个平台。</li><li id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_li193201751173615">摄像机支持对接第三方平台，包括支持双服务器模式的第三方平台。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row26217762"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p43263967">平台IP</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p615615894115">根据实际对接的平台配置<span class="parmname" id="ZH-CN_TOPIC_0000001090320380__parmname963133874214">“平台IP”</span>。</p>
+<ul id="ZH-CN_TOPIC_0000001090320380__ul119121290293"><li id="ZH-CN_TOPIC_0000001090320380__li13912122912920">摄像机接入到ITS800平台时，输入平台IP地址。</li><li id="ZH-CN_TOPIC_0000001090320380__li6852041112917">摄像机接入到ITS800平台时，输入MPU对应的集群浮动网关IP地址。<p id="ZH-CN_TOPIC_0000001090320380__p1513054312913"><a name="ZH-CN_TOPIC_0000001090320380__li6852041112917"></a><a name="li6852041112917"></a>如果服务器和摄像机在不同网络，且存在NAT，则配置为集群浮动网关的映射IP地址。</p>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row65374922"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__p60877295">端口号</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__p1283512861215">平台侦听SDK协议端口号。当对接的平台为支持双向认证的华为平台，且摄像机勾选了双向认证时，端口号设置为“5062”。其他设置为“5060”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_row20589111"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.3.1.2.4.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p57105327">设备ID</p>
+</td>
+<td class="cellrowborder" valign="top" width="83%" headers="mcps1.3.1.2.4.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001090320380__zh-cn_topic_0128163407_p62128759">设备ID，每台设备的ID唯一。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001090320380__note850184203112"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001090320380__p1681614107311">输入1~64位数字，必须与平台配置的互联编码保持一致，以免造成对接失败。</p>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001090320380__li1510394013595"><span id="ZH-CN_TOPIC_0000001090320380__">单击“保存”。</span></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001090480030.html">与平台对接配置
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001137456535.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

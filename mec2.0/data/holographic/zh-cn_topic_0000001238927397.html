@@ -1,0 +1,69 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="通过28181接入相机">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001199040726.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001193367516.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001238927397">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>通过28181接入相机</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001238927397"></a><a name="ZH-CN_TOPIC_0000001238927397"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">通过28181接入相机</h1>
+<div id="body0000001238927397"><p id="ZH-CN_TOPIC_0000001238927397__p1099615271269">GB/T 28181协议只支持主动接入方式。</p>
+<div class="caution" id="ZH-CN_TOPIC_0000001238927397__note95661832161812"><span class="cautiontitle"><img src="public_sys-resources/caution_3.0-zh-cn.png"> </span><div class="cautionbody"><ul id="ZH-CN_TOPIC_0000001238927397__ul18315606"><li id="ZH-CN_TOPIC_0000001238927397__li6777155119218">MD5算法存在一定的网络安全风险，启用MD5算法后请做好网络安全风险管控。</li></ul>
+</div></div>
+<ol id="ZH-CN_TOPIC_0000001238927397__ol17883155610438"><li id="ZH-CN_TOPIC_0000001238927397__li98831756124311"><span id="ZH-CN_TOPIC_0000001238927397__">登录ITS800 OMU Portal界面，进入<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol1642118200434">“系统管理”</span>，<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol1280262204310">“高级配置”</span>，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol18369345184315">“DCG”</span>模块，点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol518874864318">“搜索”</span>。</span></li><li id="ZH-CN_TOPIC_0000001238927397__li207481241474"><span id="ZH-CN_TOPIC_0000001238927397__">将<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol1348313314812">“EnableMD5_SHA256_S_28181”</span>改为2。点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol148792452816">“保存”</span>。如<a href="#ZH-CN_TOPIC_0000001238927397__fig128421535413">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001238927397__fig128421535413"><a name="ZH-CN_TOPIC_0000001238927397__fig128421535413"></a><a name="fig128421535413"></a><span class="figcap"><b>图1 </b>开启T28181 MD5算法认证</span><br><span><img id="ZH-CN_TOPIC_0000001238927397__image4592175816343" src="zh-cn_image_0000001241267215.png" width="997.5" height="313.46796600000005" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001238927397__li1032144415583"><span id="ZH-CN_TOPIC_0000001238927397__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol14341175518585">“MU”</span>模块，点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol20341105517588">“搜索”</span>。</span></li><li id="ZH-CN_TOPIC_0000001238927397__li13340173816314"><span id="ZH-CN_TOPIC_0000001238927397__">将<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol103407383310">“EnableMD5_S_RTSP”</span>改为1。点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol23401638837">“保存”</span>。如<a href="zh-cn_topic_0000001193367516.html#ZH-CN_TOPIC_0000001193367516__fig4276142310153">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001238927397__fig4276142310153"><span class="figcap"><b>图2 </b>开启MD5算法认证</span><br><span><img id="ZH-CN_TOPIC_0000001238927397__image22771323191519" src="zh-cn_image_0000001239097044.png"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0000001238927397__li9573431192214"><a name="ZH-CN_TOPIC_0000001238927397__li9573431192214"></a><a name="li9573431192214"></a><span id="ZH-CN_TOPIC_0000001238927397__">登录摄像机的Web界面。在平台对接相关配置项中选择开启T28181协议。并获取以下信息</span><p><ul id="ZH-CN_TOPIC_0000001238927397__ul1837124613221"><li id="ZH-CN_TOPIC_0000001238927397__li123711046162211">获取<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol541214381616">“互联编码”</span>：要求第11~13位为132，每台设备的ID必须唯一。</li><li id="ZH-CN_TOPIC_0000001238927397__li16231162512235"><span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol718317191258">“28181服务器地址”</span>配置为ITS800设备IP</li><li id="ZH-CN_TOPIC_0000001238927397__li3775053266">密码：自定义设置对接密码，ITS800和上级视图管理平台两者间必须输入相同对接密码且密码长度为8~16位，才可以对接成功。</li></ul>
+</p></li><li id="ZH-CN_TOPIC_0000001238927397__li192071414132614"><span id="ZH-CN_TOPIC_0000001238927397__">在iClient ME上点击添加摄像机，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol633053432619">“IP接入”</span>。如<a href="#ZH-CN_TOPIC_0000001238927397__fig5839350132715">图3</a>所示填写信息。单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001238927397__uicontrol397651243120">“下一步”</span>添加成功。</span><p><ul id="ZH-CN_TOPIC_0000001238927397__ul81193516285"><li id="ZH-CN_TOPIC_0000001238927397__li1511163514282">驱动选择T28181</li><li id="ZH-CN_TOPIC_0000001238927397__li0821104513288">名称：自定义摄像机名称</li><li id="ZH-CN_TOPIC_0000001238927397__li460615932811">互联编码：填写<a href="#ZH-CN_TOPIC_0000001238927397__li9573431192214">5</a>中获取的互联编码。</li><li id="ZH-CN_TOPIC_0000001238927397__li9671038192914">密码：填写<a href="#ZH-CN_TOPIC_0000001238927397__li9573431192214">5</a>中设置的密码。<div class="fignone" id="ZH-CN_TOPIC_0000001238927397__fig5839350132715"><a name="ZH-CN_TOPIC_0000001238927397__fig5839350132715"></a><a name="fig5839350132715"></a><span class="figcap"><b>图3 </b>通过28181协议添加摄像机</span><br><span><img id="ZH-CN_TOPIC_0000001238927397__image13501193820275" src="zh-cn_image_0000001196817062.png" width="997.5" height="681.143274" title="点击放大" class="imgResize"></span></div>
+</li></ul>
+</p></li></ol>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001199040726.html">添加三方摄像机
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001193367516.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

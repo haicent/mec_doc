@@ -1,0 +1,72 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="频闪灯调试">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001189554518.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001192446838.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001237086815">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>频闪灯调试</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001237086815"></a><a name="ZH-CN_TOPIC_0000001237086815"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">频闪灯调试</h1>
+<div id="body0000001237086815"><div class="section" id="ZH-CN_TOPIC_0000001237086815__section95004241213"><h4 class="sectiontitle">频闪灯调试</h4><p id="ZH-CN_TOPIC_0000001237086815__p356805555618">频闪灯的调试，主要从物理接线和补光角度两个方面进行检查和调整。调试工作应安排在夜晚。</p>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">检查物理接线</a></li><li><a href="#" onclick="return showCurrent($$(this));">调整补光角度</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001237086815__section317619954417"><h4 class="sectiontitle">检查物理接线</h4><ol id="ZH-CN_TOPIC_0000001237086815__ol221104612465"><li id="ZH-CN_TOPIC_0000001237086815__li192124624613">登录摄像机的Web页面，设置频闪灯的工作模式为“始终频闪”，具体操作请参见<a href="zh-cn_topic_0000001220033040.html">配置补光灯</a>。</li><li id="ZH-CN_TOPIC_0000001237086815__li1721746114617">在现场通过肉眼查看频闪灯是否一直长亮。<p id="ZH-CN_TOPIC_0000001237086815__p14212046164611"><a name="ZH-CN_TOPIC_0000001237086815__li1721746114617"></a><a name="li1721746114617"></a>如果灯闪烁则表示物理接线异常，无闪烁则表示物理接线正确。</p>
+<p id="ZH-CN_TOPIC_0000001237086815__p521946184618">如果有异常则修复物理接线。修复完之后，建议再执行一遍检查。</p>
+</li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001237086815__section488913675418"><h4 class="sectiontitle">调整补光角度</h4><p id="ZH-CN_TOPIC_0000001237086815__p119556220486">通过查看视频中检测场景亮度、光斑位置来判断补光角度是否正确，光斑的位置，一般建议定在相应车道前人行横道的中央。</p>
+<p id="ZH-CN_TOPIC_0000001237086815__p195516218486">具体步骤如下：</p>
+<ol id="ZH-CN_TOPIC_0000001237086815__ol15955132164814"><li id="ZH-CN_TOPIC_0000001237086815__li16955428485">登录摄像机Web页面，设置频闪灯工作模式为“始终频闪”，具体操作请参见<a href="zh-cn_topic_0000001220033040.html">配置补光灯</a>。</li><li id="ZH-CN_TOPIC_0000001237086815__li9955102144814">在左侧导航树中，单击“预览配置”或“智能交通检测”，预览实况视频画面。</li><li id="ZH-CN_TOPIC_0000001237086815__li1195516254816">查看视频场景内的频闪灯光斑所处的位置以及抓拍图片中车牌、车辆外观等的亮度。<p id="ZH-CN_TOPIC_0000001237086815__p2955521480"><a name="ZH-CN_TOPIC_0000001237086815__li1195516254816"></a><a name="li1195516254816"></a>如果光斑位置正常、亮度正常，则结束流程；如果光斑位置异常或亮度不够，则调整频闪灯的补光角度或亮度，角度的调整，以光斑位置为准。</p>
+<p id="ZH-CN_TOPIC_0000001237086815__p2095552114818">亮度的调整，请参考频闪灯的说明书。</p>
+</li></ol>
+<div class="notice" id="ZH-CN_TOPIC_0000001237086815__note53720453"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0000001237086815__p5998112774917">调整频闪灯角度时，应兼顾场景内车牌的效果。如果车牌过爆，还应适当纠正频闪灯补光角度，通过不停的纠正，直至频闪灯位置最佳为止。</p>
+<p id="ZH-CN_TOPIC_0000001237086815__p18677174014496">可将激光笔垂直紧贴灯面中心，通过激光笔光斑位置辅助调整频闪灯角度。</p>
+</div></div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001189554518.html">安装配套外设
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001192446838.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+</body>
+</html>

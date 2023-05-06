@@ -1,0 +1,54 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何查询目录及文件大小">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001114080004.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001160599915.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001160479927">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>如何查询目录及文件大小</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001160479927"></a><a name="ZH-CN_TOPIC_0000001160479927"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何查询目录及文件大小</h1>
+<div id="body0000001160479927"><div class="section" id="ZH-CN_TOPIC_0000001160479927__section14794285242"><h4 class="sectiontitle">现象描述</h4><p id="ZH-CN_TOPIC_0000001160479927__p1301055112420">在安装升级或磁盘初始化时，底软分区满会导致操作失败。如何查看各目录及文件分布情况，找出造成分区满的大文件？</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001160479927__section11740132514256"><h4 class="sectiontitle">解决方法</h4><ol id="ZH-CN_TOPIC_0000001160479927__ol8968205251113"><li id="ZH-CN_TOPIC_0000001160479927__zh-cn_topic_0258959834_li924614291510"><span id="ZH-CN_TOPIC_0000001160479927__"><span>以<strong id="ZH-CN_TOPIC_0000001160479927__zh-cn_topic_0258959834_zh-cn_topic_0203265088_b78801195302">root</strong>用户登录操作系统<span>（<span><img id="ZH-CN_TOPIC_0000001160479927__zh-cn_topic_0258959834_zh-cn_topic_0203265088_image1647516447536" src="zh-cn_image_0000001160613441.png"></span> <span><a href="zh-cn_topic_0204804176.html">如何通过网口登录操作系统</a></span>）。</span></span></span></li><li id="ZH-CN_TOPIC_0000001160479927__li169681352151115"><span id="ZH-CN_TOPIC_0000001160479927__">执行以下命令查看目录及子目录下文件大小。</span><p><pre class="screen" id="ZH-CN_TOPIC_0000001160479927__screen1236122301213">du -h --max-depth=n</pre>
+<p id="ZH-CN_TOPIC_0000001160479927__p123916598115">n代表目录层级。例如，查询2层目录及文件，如<a href="#ZH-CN_TOPIC_0000001160479927__fig470180181314">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001160479927__fig470180181314"><a name="ZH-CN_TOPIC_0000001160479927__fig470180181314"></a><a name="fig470180181314"></a><span class="figcap"><b>图1 </b>查询目录及文件</span><br><span><img id="ZH-CN_TOPIC_0000001160479927__image12258105531218" src="zh-cn_image_0000001114088748.png"></span></div>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001114080004.html">ITS800问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001160599915.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+</body>
+</html>

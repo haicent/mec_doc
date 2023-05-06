@@ -1,0 +1,268 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="十字路口场景-进口道增强">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001218261538.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001218421512">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>十字路口场景-进口道增强</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001218421512"></a><a name="ZH-CN_TOPIC_0000001218421512"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">十字路口场景-进口道增强</h1>
+<div id="body0000001218421512"><p id="ZH-CN_TOPIC_0000001218421512__p225015115513">在红绿灯杆上增加长焦摄像机，监测对侧进口道。</p>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">单向1-3车道</a></li><li><a href="#" onclick="return showCurrent($$(this));">单向4-6车道</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218421512__section840714112521"><h4 class="sectiontitle">单向1-3车道</h4><p id="ZH-CN_TOPIC_0000001218421512__p882714297216">以十字路口单向3车道为例，系统方案推荐如<a href="#ZH-CN_TOPIC_0000001218421512__fig118454149271">图1</a>，设备配置数量推荐如<a href="zh-cn_topic_0000001150688219.html#ZH-CN_TOPIC_0000001150688219__table360445391512">表1</a>所示。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001218421512__note8861129163714"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001218421512__zh-cn_topic_0000001150688219_p519135354117">对于十字路口场景，并且道路中间无较高障碍物遮挡雷达波束时，可将雷达安装在电警杆上。</p>
+<p id="ZH-CN_TOPIC_0000001218421512__zh-cn_topic_0000001150688219_p1797105516225">当雷达不能较好的检测进出口车道时，可将雷达安装在红绿灯杆上，用于重点覆盖进口道。详细参考<a href="zh-cn_topic_0000001234000819.html">隔离带遮挡场景</a>。</p>
+</div></div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001218421512__fig118454149271"><a name="ZH-CN_TOPIC_0000001218421512__fig118454149271"></a><a name="fig118454149271"></a><span class="figcap"><b>图1 </b>单向1-3车道场景</span><br><span><img id="ZH-CN_TOPIC_0000001218421512__image186653101319" src="zh-cn_image_0000001263141303.png" width="523.6875" height="545.404804" title="点击放大" class="imgResize"></span></div>
+
+<div class="tableBorder"><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001218421512__table360445391512" frame="border" border="1" rules="all"><caption><b>表1 </b>单向1-3车道设备配置数量</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001218421512__row3604253121511"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.5.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p146041753131512">设备</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.5.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p1604175311151">数量</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001218421512__row2060505311515"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p19631123685212">摄像机</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p0358541165711">8台（根据M2391-10-TL短焦摄像机最大覆盖三车道、长焦摄像机最大覆盖6车道的原则合理规划数量）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row15878123155113"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p487943185118">雷达</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p3403113613537">4台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row87205284513"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__zh-cn_topic_0230024267_p19243113819572">ITS800-C02-32T （16VR）</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p141178408535">1台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row260565331515"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p26053537157">挂箱</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p61651719549">4个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row10280121618516"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p8280171665117">电警立柜</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p138858318540">1个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row8605135341515"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p4605115318156">室外交换机</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p186656655416">4台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row37280255519"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p1493303019446">镜头</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p1546572115715">镜头8个（根据摄像机的数量进行配置）</p>
+<p id="ZH-CN_TOPIC_0000001218421512__p174651421195713">以M2391-10-TL摄像机为例，根据电警杆距离安装侧停止线的距离X1选择电警杆短焦镜头：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul14659212578"><li id="ZH-CN_TOPIC_0000001218421512__li204651221145718">17m&#8804;X1&#8804;21m：12mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li18465112114578">21m&lt;X1&#8804;25m：16mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li10465202165715">25m&lt;X1&#8804;30m：20mm焦距镜头</li></ul>
+<p id="ZH-CN_TOPIC_0000001218421512__p6465921165718">红绿灯杆距离对侧停止线的距离X2选择长焦镜头：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul3909132713215"><li id="ZH-CN_TOPIC_0000001218421512__li189091427193216">27&#8804;X2＜40m：35mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li1490982733216">40m&lt;X2：50mm焦距镜头</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row1053511302513"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p1896921496">频闪灯</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p19612211998">12个，根据车道数量进行配置，1个进口车道对应1个频闪灯</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p" id="ZH-CN_TOPIC_0000001218421512__p328219499577">对于上述场景方案，以单向3车道方案竖直方向的双向车道为例，各设备的安装要求如下（水平方向道路的设备安装与此类似）：<ul id="ZH-CN_TOPIC_0000001218421512__ul19282174918575"><li id="ZH-CN_TOPIC_0000001218421512__li1828274915713">雷达<p id="ZH-CN_TOPIC_0000001218421512__p1128215494576"><a name="ZH-CN_TOPIC_0000001218421512__li1828274915713"></a><a name="li1828274915713"></a>在双向道路中间各安装一台雷达，用于路段车辆的检测。雷达安装位置需确保雷达处于双向道路中间。</p>
+</li><li id="ZH-CN_TOPIC_0000001218421512__li15282154916572">摄像机<p id="ZH-CN_TOPIC_0000001218421512__p174071995510"><a name="ZH-CN_TOPIC_0000001218421512__li15282154916572"></a><a name="li15282154916572"></a>在双向道路的电警杆上各安装一台M2391-10-TL短焦摄像机，用于路口进口道车辆的抓拍识别。摄像机检测范围需覆盖右侧纵向人行道斑马线。</p>
+<p id="ZH-CN_TOPIC_0000001218421512__p10401619125514">在红绿灯杆上各安装一台M2391-10-TL长焦摄像机，用于进口道车辆的雷视轨迹拟合。具体要求见<a href="zh-cn_topic_0252744893.html">安装角度要求</a>。</p>
+</li><li id="ZH-CN_TOPIC_0000001218421512__li14283749115711">频闪灯<p id="ZH-CN_TOPIC_0000001218421512__p92831349135713"><a name="ZH-CN_TOPIC_0000001218421512__li14283749115711"></a><a name="li14283749115711"></a>在双向道路的电警杆上各安装三个频闪灯，用于抓拍车辆时补光。对于非六车道场景（例如双向四车道），可在此数量基础上减少频闪灯个数，即每减少一个车道可减少一个频闪灯。</p>
+</li></ul>
+</div>
+<p id="ZH-CN_TOPIC_0000001218421512__p152836491571">以上场景中主要的工勘数据如<a href="#ZH-CN_TOPIC_0000001218421512__table1028334918576">表2</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001218421512__table1028334918576"></a><a name="table1028334918576"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001218421512__table1028334918576" frame="border" border="1" rules="all"><caption><b>表2 </b>工勘数据</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001218421512__row1028364920572"><th align="left" class="cellrowborder" valign="top" width="12.16%" id="mcps1.3.2.8.2.7.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p132831249195713">摄像机架杆高度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.98%" id="mcps1.3.2.8.2.7.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p162831649125712">摄像机架杆距离X（至停止线）</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="12.86%" id="mcps1.3.2.8.2.7.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p528324918579">红绿灯杆高</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="9.67%" id="mcps1.3.2.8.2.7.1.4" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p628354955718">车道宽度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.85%" id="mcps1.3.2.8.2.7.1.5" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p202831149195718">摄像机画面下边缘至红绿灯杆距离L</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.479999999999999%" id="mcps1.3.2.8.2.7.1.6" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p132832491570">频闪灯至摄像机距离</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001218421512__row5283104985714"><td class="cellrowborder" valign="top" width="12.16%" headers="mcps1.3.2.8.2.7.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p72835494573">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.98%" headers="mcps1.3.2.8.2.7.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p2673112905411">M2391-10-TL作为电警使用：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul2673229165413"><li id="ZH-CN_TOPIC_0000001218421512__li1667313296549">17m&#8804;X1&#8804;21m（12mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li16673229145414">21m&lt;X1&#8804;25m（16mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li1467382915414">25m&lt;X1&#8804;30m（20mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li2067311293549">31m&lt;X1&#8804;37m（25mm焦距镜头）</li></ul>
+<p id="ZH-CN_TOPIC_0000001218421512__p167332955410">M2391-10-TL作为进口道长焦使用：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul16673629105412"><li id="ZH-CN_TOPIC_0000001218421512__li7673172935412">27&#8804;X2＜40m（35mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li18341132112016">40m&lt;X2（50mm焦距镜头）</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="12.86%" headers="mcps1.3.2.8.2.7.1.3 "><p id="ZH-CN_TOPIC_0000001218421512__p7283204910578">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.67%" headers="mcps1.3.2.8.2.7.1.4 "><p id="ZH-CN_TOPIC_0000001218421512__p1728312491574">3.75m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.85%" headers="mcps1.3.2.8.2.7.1.5 "><p id="ZH-CN_TOPIC_0000001218421512__p52831549155713">20m&#8804;L</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.479999999999999%" headers="mcps1.3.2.8.2.7.1.6 "><p id="ZH-CN_TOPIC_0000001218421512__p2283114918579">&#8805;2m</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218421512__section3411448205216"><h4 class="sectiontitle">单向4-6车道</h4><p id="ZH-CN_TOPIC_0000001218421512__p142101539202417">以十字路口单向6车道为例，系统方案推荐如<a href="#ZH-CN_TOPIC_0000001218421512__fig1982120478274">图2</a>，设备配置数量推荐如<a href="#ZH-CN_TOPIC_0000001218421512__table6421224165913">表3</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001218421512__fig1982120478274"><a name="ZH-CN_TOPIC_0000001218421512__fig1982120478274"></a><a name="fig1982120478274"></a><span class="figcap"><b>图2 </b>单向4-6车道场景</span><br><span><img id="ZH-CN_TOPIC_0000001218421512__image1476134841313" src="zh-cn_image_0000001263261289.png" width="523.6875" height="540.74405175" title="点击放大" class="imgResize"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001218421512__table6421224165913"></a><a name="table6421224165913"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001218421512__table6421224165913" frame="border" border="1" rules="all"><caption><b>表3 </b>单向4-6车道设备配置数量</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001218421512__row164211224175911"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.3.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p1542112405911">设备</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.3.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p19421152418594">数量</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001218421512__row0421182412593"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p942192425914">摄像机</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p7421024155919">12台（根据M2391-10-TL短焦摄像机最大覆盖三车道、长焦摄像机最大覆盖6车道的原则合理规划数量）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row642211246593"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p5422162414597">雷达</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p18422524205917">4台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row11422324135914"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p108616124253">ITS800-C02-32T （16VR）</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p7422112410595">1台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row1642212242591"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p1342272455920">挂箱</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p44221824155911">4个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row7422162415912"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p3422182405914">电警立柜</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p2422162425918">1个</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row7422142413598"><td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p124221024155915">室外交换机</p>
+</td>
+<td class="cellrowborder" align="left" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p4422324125914">4台</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row2422152417596"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p8422324135916">镜头</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p542219247592">镜头12个（根据摄像机的数量进行配置）</p>
+<p id="ZH-CN_TOPIC_0000001218421512__p346625515579">以M2391-10-TL摄像机为例，根据电警杆距离安装侧停止线的距离X1选择电警杆短焦镜头：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul12466955205717"><li id="ZH-CN_TOPIC_0000001218421512__li046625515578">17m&#8804;X1&#8804;21m：12mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li94661955115714">21m&lt;X1&#8804;25m：16mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li1146615535718">25m&lt;X1&#8804;30m：20mm焦距镜头</li></ul>
+<p id="ZH-CN_TOPIC_0000001218421512__p12466115575717">红绿灯杆距离对侧停止线的距离X2选择长焦镜头：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul19465182115575"><li id="ZH-CN_TOPIC_0000001218421512__li14824131693311">27&#8804;X2＜40m：35mm焦距镜头</li><li id="ZH-CN_TOPIC_0000001218421512__li1696144318437">40m&lt;X2：50mm焦距镜头</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218421512__row14221224175917"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p1422122495919">频闪灯</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p14422162417597">24个，根据车道数量进行配置，1个进口车道对应1个频闪灯</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p" id="ZH-CN_TOPIC_0000001218421512__p57374371012">对于上述场景方案，以单向6车道方案竖直方向的双向车道为例，各设备的安装要求如下（水平方向道路的设备安装与此类似）：<ul id="ZH-CN_TOPIC_0000001218421512__ul177371837704"><li id="ZH-CN_TOPIC_0000001218421512__li118839051712">雷达<p id="ZH-CN_TOPIC_0000001218421512__p1913810214178"><a name="ZH-CN_TOPIC_0000001218421512__li118839051712"></a><a name="li118839051712"></a>在双向道路中间各安装一台雷达，用于路段车辆的检测。雷达安装位置需确保雷达处于双向道路中间。</p>
+</li><li id="ZH-CN_TOPIC_0000001218421512__li13471540171">摄像机<p id="ZH-CN_TOPIC_0000001218421512__p11327174710587"><a name="ZH-CN_TOPIC_0000001218421512__li13471540171"></a><a name="li13471540171"></a>在双向道路的电警杆上各安装两台M2391-10-TL短焦摄像机，用于路口进口道车辆的抓拍识别。摄像机检测范围需覆盖右侧纵向人行道斑马线。</p>
+<p id="ZH-CN_TOPIC_0000001218421512__p19327144705813">在红绿灯杆上各安装一台M2391-10-TL长焦摄像机，用于进口道车辆的雷视轨迹拟合。具体要求见<a href="zh-cn_topic_0252744893.html">安装角度要求</a>。</p>
+</li><li id="ZH-CN_TOPIC_0000001218421512__li11972968173">频闪灯<p id="ZH-CN_TOPIC_0000001218421512__p7142587178"><a name="ZH-CN_TOPIC_0000001218421512__li11972968173"></a><a name="li11972968173"></a>在双向道路的电警杆上各安装六个频闪灯，用于抓拍车辆时补光。</p>
+</li></ul>
+</div>
+<p id="ZH-CN_TOPIC_0000001218421512__p0317135119">以上场景中主要的工勘数据如<a href="#ZH-CN_TOPIC_0000001218421512__table6546175861111">表4</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001218421512__table6546175861111"></a><a name="table6546175861111"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001218421512__table6546175861111" frame="border" border="1" rules="all"><caption><b>表4 </b>工勘数据</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001218421512__row15547258191120"><th align="left" class="cellrowborder" valign="top" width="12.16%" id="mcps1.3.3.7.2.7.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p17547165821118">摄像机架杆高度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.98%" id="mcps1.3.3.7.2.7.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p654745820119">摄像机架杆距离X（至停止线）</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="12.86%" id="mcps1.3.3.7.2.7.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p11547155881111">红绿灯杆高</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="9.67%" id="mcps1.3.3.7.2.7.1.4" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p25471758181119">车道宽度</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="24.85%" id="mcps1.3.3.7.2.7.1.5" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p9548258191115">摄像机画面下边缘至红绿灯杆距离L</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="15.479999999999999%" id="mcps1.3.3.7.2.7.1.6" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218421512__p65481958171113">频闪灯至摄像机距离</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001218421512__row1754885818114"><td class="cellrowborder" valign="top" width="12.16%" headers="mcps1.3.3.7.2.7.1.1 "><p id="ZH-CN_TOPIC_0000001218421512__p65481058161114">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.98%" headers="mcps1.3.3.7.2.7.1.2 "><p id="ZH-CN_TOPIC_0000001218421512__p742540191416">M2391-10-TL作为电警使用：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul1742517012142"><li id="ZH-CN_TOPIC_0000001218421512__li2042518012148">17m&#8804;X1&#8804;21m（12mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li442550131413">21m&lt;X1&#8804;25m（16mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li54258061419">25m&lt;X1&#8804;30m（20mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li04251805143">31m&lt;X1&#8804;37m（25mm焦距镜头）</li></ul>
+<p id="ZH-CN_TOPIC_0000001218421512__p104254012149">M2391-10-TL作为进口道长焦使用：</p>
+<ul id="ZH-CN_TOPIC_0000001218421512__ul1898516143510"><li id="ZH-CN_TOPIC_0000001218421512__li88981816183512">27&#8804;X2＜40m（35mm焦距镜头）</li><li id="ZH-CN_TOPIC_0000001218421512__li1289851612357">40m&lt;X2（50mm焦距镜头）</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="12.86%" headers="mcps1.3.3.7.2.7.1.3 "><p id="ZH-CN_TOPIC_0000001218421512__p105501258171117">6m</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.67%" headers="mcps1.3.3.7.2.7.1.4 "><p id="ZH-CN_TOPIC_0000001218421512__p1855015813112">3.75m</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.85%" headers="mcps1.3.3.7.2.7.1.5 "><p id="ZH-CN_TOPIC_0000001218421512__p8550958181120">20m&#8804;L</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.479999999999999%" headers="mcps1.3.3.7.2.7.1.6 "><p id="ZH-CN_TOPIC_0000001218421512__p1855095861116">&#8805;2m</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001218261538.html">增强路口
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

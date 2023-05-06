@@ -1,0 +1,81 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="摄像机标定验证">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001261996281.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001262356221.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001262396283.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001217556442">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>摄像机标定验证</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001217556442"></a><a name="ZH-CN_TOPIC_0000001217556442"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">摄像机标定验证</h1>
+<div id="body8662426"><p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p24032179472">在一台摄像机标定选点完成后，需要验证上述选点及标定是否准确，手动验证具体操作如下。</p>
+<ol id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ol1737412415591"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li34751257522"><span id="ZH-CN_TOPIC_0000001217556442__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol447517513523">“标定验证”</span>。</span><p><ul id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ul17324162804216"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li103245285427">人工验证。<ol type="a" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ol4499956124113"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li107116558155">在摄像机抓拍图中任意选择一个点，如<a href="#ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1936165051819">图1</a>所示的红色十字坐标点。<div class="fignone" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1936165051819"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1936165051819"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1936165051819"></a><span class="figcap"><b>图1 </b>左侧选点验证</span><br><span><img id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_image117661952165215" src="zh-cn_image_0000001224759110.png" width="523.6875" height="269.61317775000003" title="点击放大" class="imgResize"></span></div>
+</li><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li691355618316">在右侧地图中选择上述坐标点对应的点，如<a href="#ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1234825811473">图2</a>所示的绿色十字坐标点。<div class="p" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p64201642195211">地图中橙色小圆点为工具自动生成。校验及量化输出的原理是检测地图中两者的误差。<div class="fignone" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1234825811473"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1234825811473"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig1234825811473"></a><span class="figcap"><b>图2 </b>右侧选点验证</span><br><span><img id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_image13912905419" src="zh-cn_image_0000001268959505.png" width="523.6875" height="269.88589425" title="点击放大" class="imgResize"></span></div>
+</div>
+</li><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li197231038749">右侧点击摄像机对应的真实位置，会弹出验证结果。<ul id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ul24725377915"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li204721371898">如果弹出提示框为验证通过，表明验证通过，如<a href="#ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig6168328453">图3</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig6168328453"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig6168328453"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_fig6168328453"></a><span class="figcap"><b>图3 </b>验证通过</span><br><span><img id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_image61681728553" src="zh-cn_image_0000001208954576.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p16525145613911">您可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol184681737293">“确定”</span>后选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol1346813377920">“完成”</span>，重复<a href="zh-cn_topic_0000001217876406.html#ZH-CN_TOPIC_0000001217876406">标定摄像机</a>，标定其他的摄像机。</p>
+</li></ul>
+<ul id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ul10890144013917"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li128905404913">如果弹出提示框为验证失败，表明验证不通过。<p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p731082215103"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li128905404913"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li128905404913"></a>在<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol288718401295">“确定”</span>结果后需重新选点验证。</p>
+</li></ul>
+</li></ol>
+<div class="note" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_note89491041763"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p14665194817559">在标定验证时，建议选择3～5个坐标点进行验证，分别验证抓拍图的近处、远处、侧边位置。</p>
+<p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p1754620426610">只有当上述的坐标点都验证通过时，才表明该摄像机的标定验证通过；否则，请重新选点标定。</p>
+</div></div>
+</li><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li1884311316245">自动验证。<ol type="a" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ol11843931102414"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li584303142416">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol2084363120249">“自动验证”</span>，自动标定验证功能。<ul id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_ul684393113247"><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li18843331142413">若显示标定通过，表明验证通过。<p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p1584315316249"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li18843331142413"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li18843331142413"></a>此时，您可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol58431231112417">“确定”</span>后选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_uicontrol208432031142415">“完成”</span>，重复<a href="zh-cn_topic_0000001217876406.html#ZH-CN_TOPIC_0000001217876406">标定摄像机</a>，标定路口其他方向的摄像机。</p>
+</li><li id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li48431931142415">若显示表明验证失败，表明验证不通过。<p id="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_p1784319316241"><a name="ZH-CN_TOPIC_0000001217556442__zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li48431931142415"></a><a name="zh-cn_topic_0000001253554387_zh-cn_topic_0000001153941850_li48431931142415"></a>请参考<a href="zh-cn_topic_0000001217876406.html#ZH-CN_TOPIC_0000001217876406">标定摄像机</a>重新进行标定摄像机。</p>
+</li></ul>
+</li></ol>
+</li></ul>
+</p></li></ol>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001261996281.html">附录
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001262356221.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001262396283.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

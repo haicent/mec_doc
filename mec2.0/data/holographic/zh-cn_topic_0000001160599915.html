@@ -1,0 +1,60 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何查看设备电子标签、电子条码和制造日期">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001114080004.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001160479927.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001160599915">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>如何查看设备电子标签、电子条码和制造日期</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001160599915"></a><a name="ZH-CN_TOPIC_0000001160599915"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何查看设备电子标签、电子条码和制造日期</h1>
+<div id="body0000001160599915"><div class="section" id="ZH-CN_TOPIC_0000001160599915__section14794285242"><h4 class="sectiontitle">现象描述</h4><p id="ZH-CN_TOPIC_0000001160599915__p1301055112420">如何查看设备电子标签、电子条码和制造日期？</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001160599915__section11740132514256"><h4 class="sectiontitle">解决方法</h4><p id="ZH-CN_TOPIC_0000001160599915__p15711193614238"><span>以<strong id="ZH-CN_TOPIC_0000001160599915__zh-cn_topic_0258959834_zh-cn_topic_0203265088_b78801195302">root</strong>用户登录操作系统<span>（<span><img id="ZH-CN_TOPIC_0000001160599915__zh-cn_topic_0258959834_zh-cn_topic_0203265088_image1647516447536" src="zh-cn_image_0000001113933614.png"></span> <span><a href="zh-cn_topic_0204804176.html">如何通过网口登录操作系统</a></span>）。</span></span>再分别执行以下命令。</p>
+<ul id="ZH-CN_TOPIC_0000001160599915__ul8121547141210"><li id="ZH-CN_TOPIC_0000001160599915__li18333948101213">执行以下命令查看设备电子标签。<pre class="screen" id="ZH-CN_TOPIC_0000001160599915__screen572513481172">elabel get 0x10</pre>
+<p id="ZH-CN_TOPIC_0000001160599915__p10662174111715"><span><img id="ZH-CN_TOPIC_0000001160599915__image17485642181717" src="zh-cn_image_0000001160491037.png"></span></p>
+<p id="ZH-CN_TOPIC_0000001160599915__p2676201910181">如果查询不到设备电子标签，则需要联系400热线返厂维修。</p>
+</li><li id="ZH-CN_TOPIC_0000001160599915__li924936121617">执行以下命令查看设备电子条码。<pre class="screen" id="ZH-CN_TOPIC_0000001160599915__screen1227443151815">elabel get 0x11</pre>
+<p id="ZH-CN_TOPIC_0000001160599915__p12272837171819"><span><img id="ZH-CN_TOPIC_0000001160599915__image77661637171810" src="zh-cn_image_0000001114091804.png"></span></p>
+</li><li id="ZH-CN_TOPIC_0000001160599915__li9339161341712">执行以下命令查看设备制造日期。<pre class="screen" id="ZH-CN_TOPIC_0000001160599915__screen2018645915189">elabel get 0x14</pre>
+<p id="ZH-CN_TOPIC_0000001160599915__p38361527121814">如果查询不到，那么也可以通过设备电子条码知道设备制造的时间点。</p>
+<p id="ZH-CN_TOPIC_0000001160599915__p6300952101819"><span><img id="ZH-CN_TOPIC_0000001160599915__image139535318186" src="zh-cn_image_0000001114091864.png"></span></p>
+</li></ul>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001114080004.html">ITS800问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001160479927.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+</body>
+</html>

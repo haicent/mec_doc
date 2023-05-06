@@ -1,0 +1,139 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="雷达调试">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0245358079.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0243727163.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001192438132.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001237078113">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>雷达调试</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001237078113"></a><a name="ZH-CN_TOPIC_0000001237078113"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">雷达调试</h1>
+<div id="body0000001237078113"><div class="section" id="ZH-CN_TOPIC_0000001237078113__section177731444164117"><h4 class="sectiontitle">前提条件</h4><ul id="ZH-CN_TOPIC_0000001237078113__ul43551381455"><li id="ZH-CN_TOPIC_0000001237078113__li143552083458">已获取雷达调试软件“交通场景雷达通用软件鉴权加密版V2.1.5<span><img id="ZH-CN_TOPIC_0000001237078113__image1096815518382" src="zh-cn_image_0000001236939563.png" width="37.923753" height="34.476127000000005" title="点击放大" class="imgResize"></span>”和“交通场景雷达参数配置软件鉴权加密版V3.0.10<span><img id="ZH-CN_TOPIC_0000001237078113__image7627105714420" src="zh-cn_image_0000001237219581.png" width="30.206561" height="30.832858" title="点击放大" class="imgResize"></span>”，并准备好调试笔记本电脑等。</li><li id="ZH-CN_TOPIC_0000001237078113__li735514818454">如果调试电脑和雷达不是网线直连，需要设置二者IP地址为同一网段。<div class="note" id="ZH-CN_TOPIC_0000001237078113__note36031419912"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001237078113__ul238495015910"><li id="ZH-CN_TOPIC_0000001237078113__li122012910533">若雷达版本和版本配套表不匹配，需要对雷达进行升级。可以参考<a href="zh-cn_topic_0000001279587737.html">雷达调试</a>。</li><li id="ZH-CN_TOPIC_0000001237078113__li13843503593">对于调试笔记本电脑，请勿使用USB-NET转接卡。在调试笔记本电脑中打开<span class="wintitle" id="ZH-CN_TOPIC_0000001237078113__wintitle62012484248">“交通场景雷达通用”</span>软件，填写雷达默认IP地址、端口号。</li><li id="ZH-CN_TOPIC_0000001237078113__li148651756019">雷达的检测范围为30~250米，调试的时候关注车辆最远的跟踪距离有没有达到250米。在道路正常的情况下，如果有大量车辆行驶到150消失，可能是因为雷达照射角度偏低。</li></ul>
+</div></div>
+</li></ul>
+</div>
+<ol id="ZH-CN_TOPIC_0000001237078113__ol49312504187"><li id="ZH-CN_TOPIC_0000001237078113__li20331431114111"><span id="ZH-CN_TOPIC_0000001237078113__">填写默认用户名和密码，并单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001237078113__uicontrol692195012182">“连接雷达”</span>，如<a href="#ZH-CN_TOPIC_0000001237078113__fig10921150121813">图1</a>所示。</span><p><p id="ZH-CN_TOPIC_0000001237078113__p17371013132">雷达每次上电后，需等待一分钟才能连接“交通场景雷达通用软件鉴权加密版V2.1.5<span><img id="ZH-CN_TOPIC_0000001237078113__image9906529142910" src="zh-cn_image_0000001192301578.png" width="37.923753" height="34.476127000000005" title="点击放大" class="imgResize"></span>”。成功连接后，可根据需要修改雷达的IP地址、用户密码。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001237078113__note140175351211"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001237078113__ul929111266585"><li id="ZH-CN_TOPIC_0000001237078113__li18798818116"><span id="ZH-CN_TOPIC_0000001237078113__ph778015279182">雷达默认用户名为<span class="parmvalue" id="ZH-CN_TOPIC_0000001237078113__parmvalue992105041815">“administrator”</span>，密码为<span class="parmvalue" id="ZH-CN_TOPIC_0000001237078113__parmvalue7921850111819">“tsmtc123456”</span>。</span></li><li id="ZH-CN_TOPIC_0000001237078113__li22911726165818">如果ITS800中已运行路口雷视拟合任务（即非首次配置雷达参数），请单击<span class="parmname" id="ZH-CN_TOPIC_0000001237078113__parmname11471248165613">“工作模式”</span>右侧的<span class="uicontrol" id="ZH-CN_TOPIC_0000001237078113__uicontrol02704041310">“停止运行”</span>。同时打开“交通场景雷达参数配置软件鉴权加密版V3.0.10<span><img id="ZH-CN_TOPIC_0000001237078113__image164081535854" src="zh-cn_image_0000001191979706.png" width="30.206561" height="30.832858" title="点击放大" class="imgResize"></span>”并登录，于30s内设置<span class="parmname" id="ZH-CN_TOPIC_0000001237078113__parmname1616210551598">“输出模式”</span>为<span class="parmvalue" id="ZH-CN_TOPIC_0000001237078113__parmvalue33573587918">“1”</span>。</li></ul>
+</div></div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001237078113__fig10921150121813"><a name="ZH-CN_TOPIC_0000001237078113__fig10921150121813"></a><a name="fig10921150121813"></a><span class="figcap"><b>图1 </b>交通场景雷达通用软件主界面</span><br><span><img id="ZH-CN_TOPIC_0000001237078113__image124611296187" src="zh-cn_image_0000001192441484.png"></span></div>
+</p></li></ol><ol start="2" id="ZH-CN_TOPIC_0000001237078113__ol59125019180"><li id="ZH-CN_TOPIC_0000001237078113__li199175010187"><span id="ZH-CN_TOPIC_0000001237078113__">配置雷达参数，如<a href="#ZH-CN_TOPIC_0000001237078113__fig1170541171317">图2</a>、<a href="#ZH-CN_TOPIC_0000001237078113__fig13234151781315">图3</a>所示，具体的参数说明如<a href="#ZH-CN_TOPIC_0000001237078113__table198905441276">表1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001237078113__fig1170541171317"><a name="ZH-CN_TOPIC_0000001237078113__fig1170541171317"></a><a name="fig1170541171317"></a><span class="figcap"><b>图2 </b>配置雷达常规参数</span><br><span><img id="ZH-CN_TOPIC_0000001237078113__image171718316346" src="zh-cn_image_0000001191961550.png"></span></div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001237078113__fig13234151781315"><a name="ZH-CN_TOPIC_0000001237078113__fig13234151781315"></a><a name="fig13234151781315"></a><span class="figcap"><b>图3 </b>配置雷达车道参数</span><br><span><img id="ZH-CN_TOPIC_0000001237078113__image81181858138" src="zh-cn_image_0000001237081461.png"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001237078113__table198905441276"></a><a name="table198905441276"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001237078113__table198905441276" frame="border" border="1" rules="all"><caption><b>表1 </b>参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001237078113__row389018442273"><th align="left" class="cellrowborder" valign="top" width="19.220000000000002%" id="mcps1.3.3.1.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001237078113__p20891124422715">配置项</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="80.78%" id="mcps1.3.3.1.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001237078113__p118918444275">说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001237078113__row17891154462720"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p38911544162719">安装高度</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p789154482718">雷达安装位置距离地面的高度，根据现场实际情况填写，单位为m。例如，6m。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row1489194432714"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p08919445273">角度修正</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p14891124411275">水平方向雷达波束角偏转修正，单位为&deg;。如果安装施工导致雷达存在在水平方向的偏差时，可以通过配置此参数值修正雷达波束方向。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row19891124420278"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p19891184413277">坐标修正</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p989117440277">以单向车道中间点为原点，雷达安装位置与坐标原点之间在X轴方向距离偏差值，单位为m。例如，单向三车道场景，雷达安装在道路中间绿化带时，此处应配置为1.5个车道宽度。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row989154410270"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p7891744102718">车道数</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p989164416277">待检测车道的数量，设置上限12个。例如，单向三车道场景，此处应配置为3。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row9891344102714"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p1889119445277">车道长度</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p889174416271">待检测车道的长度，根据现场实际情况填写，单位为m。例如，300m。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row148911441277"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p1689164414277">测距下限</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p178913448271">雷达检测区域的最小距离值，该值不能超过测距上限，根据现场实际情况设置，单位m。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row11612945163216"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p166125451325">测距上限</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p161364593212">雷达检测区域的最大距离值。该值不能超过车道长度，根据现场实际情况设置，单位m。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row445935811323"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p1445915812324">隔离带车道</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p14459758203213">设置某个车道为隔离带，隔离带位置屏蔽逆行、停车的目标。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row372745013212"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p107281250173211">车道设置模式</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p1328820246497">对车道宽度进行统一或者分别自定义设置，取值及含义如下。</p>
+<ul id="ZH-CN_TOPIC_0000001237078113__ul103752491494"><li id="ZH-CN_TOPIC_0000001237078113__li63753499491">0：表示所有车道宽度一致。</li><li id="ZH-CN_TOPIC_0000001237078113__li13375204915494">1：表示所有车道宽度可任意设置。此时，需要配置每个车道宽度值，即以下参数值“<em id="ZH-CN_TOPIC_0000001237078113__i17262104817512">X</em>车道宽度”。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001237078113__row1825917125412"><td class="cellrowborder" valign="top" width="19.220000000000002%" headers="mcps1.3.3.1.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001237078113__p4259912144119"><em id="ZH-CN_TOPIC_0000001237078113__i8100143485814">X</em>车道宽度</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.78%" headers="mcps1.3.3.1.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001237078113__p1826051224117"><em id="ZH-CN_TOPIC_0000001237078113__i156154115810">X</em>代表车道序号，根据现场实际情况设置各个车道宽度值。上限为单位m。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001237078113__li6754213489"><span id="ZH-CN_TOPIC_0000001237078113__">单击“保存”。</span></li><li id="ZH-CN_TOPIC_0000001237078113__li98051814111411"><span id="ZH-CN_TOPIC_0000001237078113__">在软件左侧观察车辆的运动路径与实际情况是否有偏差，如<a href="#ZH-CN_TOPIC_0000001237078113__fig12361617151613">图4</a>所示。</span><p><div class="p" id="ZH-CN_TOPIC_0000001237078113__p27599159143">如果车辆的运动路径与实际情况有偏差，您需要适当调整雷达参数。例如，增大或减小雷达的角度修正、坐标修正或车道宽度。<div class="fignone" id="ZH-CN_TOPIC_0000001237078113__fig12361617151613"><a name="ZH-CN_TOPIC_0000001237078113__fig12361617151613"></a><a name="fig12361617151613"></a><span class="figcap"><b>图4 </b>实时路况</span><br><span><img id="ZH-CN_TOPIC_0000001237078113__image1661414017158" src="zh-cn_image_0000001237201461.png"></span></div>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001237078113__li182452057"><span id="ZH-CN_TOPIC_0000001237078113__">配置雷达的时间同步参数以及IP地址，具体操作过程请参见<a href="zh-cn_topic_0000001198893836.html#ZH-CN_TOPIC_0000001198893836__section15455165412217">ACC7320（CSR）雷达配置</a>。</span></li><li id="ZH-CN_TOPIC_0000001237078113__li6531151519408"><span id="ZH-CN_TOPIC_0000001237078113__">打开“交通场景雷达参数配置软件鉴权加密版V3.0.10<span><img id="ZH-CN_TOPIC_0000001237078113__image1058924782816" src="zh-cn_image_0000001237101505.png" width="30.206561" height="30.832858" title="点击放大" class="imgResize"></span>”并登录。</span><p><p id="ZH-CN_TOPIC_0000001237078113__p7195825124018">登录过程与“交通场景雷达通用软件鉴权加密版V2.1.5<span><img id="ZH-CN_TOPIC_0000001237078113__image18751542162912" src="zh-cn_image_0000001192301576.png" width="37.923753" height="34.476127000000005" title="点击放大" class="imgResize"></span>”类似。</p>
+</p></li><li id="ZH-CN_TOPIC_0000001237078113__li023052383515"><span id="ZH-CN_TOPIC_0000001237078113__">单击工具栏<span class="uicontrol" id="ZH-CN_TOPIC_0000001237078113__uicontrol169141908363">“心跳包信息”</span>设置雷达心跳包信息，如<a href="#ZH-CN_TOPIC_0000001237078113__fig5495443103414">图5</a>所示。</span><p><div class="p" id="ZH-CN_TOPIC_0000001237078113__p179358133361">推荐心跳包<span class="parmname" id="ZH-CN_TOPIC_0000001237078113__parmname1291721010374">“刷新间隔”</span>设置为<span class="parmvalue" id="ZH-CN_TOPIC_0000001237078113__parmvalue16530413123711">“10”</span>s。如非首次设置，您也可以单击查询刷新间隔查看参数值。<div class="fignone" id="ZH-CN_TOPIC_0000001237078113__fig5495443103414"><a name="ZH-CN_TOPIC_0000001237078113__fig5495443103414"></a><a name="fig5495443103414"></a><span class="figcap"><b>图5 </b>设置心跳包</span><br><span><img id="ZH-CN_TOPIC_0000001237078113__image1154493813417" src="zh-cn_image_0000001192281480.png"></span></div>
+</div>
+</p></li></ol>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0245358079.html">安装ACC7320（CSR）雷达
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0243727163.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001192438132.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

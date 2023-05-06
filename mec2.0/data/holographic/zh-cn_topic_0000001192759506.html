@@ -1,0 +1,193 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="1400对接">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001237719467.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238027213.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001192599536.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001192759506">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>1400对接</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001192759506"></a><a name="ZH-CN_TOPIC_0000001192759506"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">1400对接</h1>
+<div id="body0000001192759506"><p id="ZH-CN_TOPIC_0000001192759506__p22493451383">ITS800通过GA/T 1400协议可接入图盟应用平台。ITS800向图盟推送结构化数据（车辆、非机动车和行人），在图盟平台上呈现交通参与者信息。</p>
+<div class="section" id="ZH-CN_TOPIC_0000001192759506__section179981768386"><h4 class="sectiontitle">准备材料</h4><p id="ZH-CN_TOPIC_0000001192759506__p611773154211">（可选）对接前导入证书，详细参考<a href="zh-cn_topic_0000001081634835.html">证书导入（可选）</a>。</p>
+<p id="ZH-CN_TOPIC_0000001192759506__p168171150104712">图盟提供默认对接配置信息，如<a href="zh-cn_topic_0000001081912459.html#ZH-CN_TOPIC_0000001081912459__table1871615404531">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001192759506__table1871615404531"></a><a name="table1871615404531"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001192759506__table1871615404531" frame="border" border="1" rules="all"><caption><b>表1 </b>视图库对接准备</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001192759506__row9716204011536"><th align="left" class="cellrowborder" valign="top" width="29.86%" id="mcps1.3.2.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001192759506__p771634012537">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="70.14%" id="mcps1.3.2.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001192759506__p4716124095315">对接要求或示例值</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001192759506__row2671351414"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p156823517112">启用证书</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p26815351615">勾选</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row44381726163413"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p18439152610348">传输协议类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p2043910262348">HTTPS</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row157161240155320"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p2716204010536">图盟平台地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p107166405538">192.168.1.10</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row1717204005318"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p252192344">端口号</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p1271713404539">18192</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row157174401539"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p8717204055317">用户名</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p8717740115311">mapabc</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row5717104055317"><td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.3.2.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__p37176401535">密码</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.14%" headers="mcps1.3.2.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__p2717940125316">Mapabc&amp;2016</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">对接操作</a></li><li><a href="#" onclick="return showCurrent($$(this));">参数说明</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001192759506__section42101520124117"><h4 class="sectiontitle">对接操作</h4><ol id="ZH-CN_TOPIC_0000001192759506__ol3189345132218"><li id="ZH-CN_TOPIC_0000001192759506__li81191922287"><span id="ZH-CN_TOPIC_0000001192759506__">以<strong id="ZH-CN_TOPIC_0000001192759506__b37491034191510">admin</strong>用户登录OMU Portal 界面。</span></li><li id="ZH-CN_TOPIC_0000001192759506__li986814263819"><span id="ZH-CN_TOPIC_0000001192759506__">选择“对接管理 &gt; GA/T1400对接”。</span></li><li id="ZH-CN_TOPIC_0000001192759506__li6153753686"><span id="ZH-CN_TOPIC_0000001192759506__">单击<span><img id="ZH-CN_TOPIC_0000001192759506__image18238154712813" src="zh-cn_image_0000001241086695.png"></span>，创建新的视图库配置。根据<a href="#ZH-CN_TOPIC_0000001192759506__table1871615404531">表1</a>中的内容填写。配置如下<a href="#ZH-CN_TOPIC_0000001192759506__fig166245441912">图1</a></span><p><div class="fignone" id="ZH-CN_TOPIC_0000001192759506__fig166245441912"><a name="ZH-CN_TOPIC_0000001192759506__fig166245441912"></a><a name="fig166245441912"></a><span class="figcap"><b>图1 </b>配置第三方平台对接信息</span><br><span><img id="ZH-CN_TOPIC_0000001192759506__image13694155941418" src="zh-cn_image_0000001240766733.png" width="997.5" height="686.61117" title="点击放大" class="imgResize"></span></div>
+<div class="note" id="ZH-CN_TOPIC_0000001192759506__note148411533365"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001192759506__p689913361663">如当没有在视图库对接处导入1400证书，则无需选择启用证书。</p>
+</div></div>
+</p></li><li id="ZH-CN_TOPIC_0000001192759506__li1026151717162"><span id="ZH-CN_TOPIC_0000001192759506__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__uicontrol166644130168">“保存”</span>，创建完成。</span></li><li id="ZH-CN_TOPIC_0000001192759506__li106813952619"><span id="ZH-CN_TOPIC_0000001192759506__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__uicontrol1455854211714">“维护管理”</span>，<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__uicontrol1193644411719">“对接链路状态”</span>查看对接是否成功。如<a href="#ZH-CN_TOPIC_0000001192759506__fig126514393269">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001192759506__fig126514393269"><a name="ZH-CN_TOPIC_0000001192759506__fig126514393269"></a><a name="fig126514393269"></a><span class="figcap"><b>图2 </b>对接链路状态</span><br><span><img id="ZH-CN_TOPIC_0000001192759506__image01281739141918" src="zh-cn_image_0000001196326786.png" width="997.5" height="177.26279900000003" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0000001192759506__p1374813295226"></p>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001192759506__section430965712215"><h4 class="sectiontitle">参数说明</h4>
+<div class="tableBorder"><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001192759506__table866527341" frame="border" border="1" rules="all"><caption><b>表2 </b>参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001192759506__row76612217343"><th align="left" class="cellrowborder" colspan="2" valign="top" id="mcps1.3.4.2.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p55991420016">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" id="mcps1.3.4.2.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p125991620217">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001192759506__row266112153417"><td class="cellrowborder" rowspan="6" valign="top" width="23.962396239623963%" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p1532074384116">视图库配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.67206720672067%" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p8372581558">启用证书</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.36553655365536%" headers="mcps1.3.4.2.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p1037125818517">启用1400服务器证书。</p>
+<ul id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_ul10351711124720"><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li11352161117477">当在视图库对接处已导入1400证书，则选择启用证书。<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p14481629181119"><a name="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li11352161117477"></a><a name="zh-cn_topic_0000001191247533_li11352161117477"></a>如何导入1400证书，请参考<a href="zh-cn_topic_0000001081634835.html">证书导入（可选）</a>。</p>
+</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li6352131112476">当没有在视图库对接处导入1400证书。则无需选择启用证书。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row1167320345"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p7599820419">传输协议类型</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p65991207111">根据实际情况，选择传输协议类型。</p>
+<ul id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_ul0574337145216"><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li6574173715219">HTTP</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li185117287547">HTTPS<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p96441936155016"><a name="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li185117287547"></a><a name="zh-cn_topic_0000001191247533_li185117287547"></a>当使用1400协议对接图盟视图库时，<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_uicontrol16905113415018">“协议传输类型”</span>请选择<span class="parmvalue" id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_parmvalue1390523495014">“HTTPS”</span>。</p>
+</li></ul>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p13747532185415"><strong id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_b11926824125415">HTTP为非安全协议，使用过程中请注意数据安全，建议第三方提供HTTPS安全协议。</strong></p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row8675217341"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p12599220912">平台地址</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p1259916207116">根据实际情况，配置第三方视图库平台的IP地址和端口号。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row19671210343"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p659912012119">端口号</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row8706627113419"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p360072011117">用户名</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p5672152418593">根据实际情况，配置第三方视图库平台对接的用户名和密码。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row20149152512348"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p960018201412">密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row89887341350"><td class="cellrowborder" rowspan="3" valign="top" width="23.962396239623963%" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p698751417106">推送规则配置</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.67206720672067%" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p153871586114">开启缓存补录</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.36553655365536%" headers="mcps1.3.4.2.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p0669143914719">根据用户选择是否开启缓存补录功能。</p>
+<ul id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_ul827013333016"><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li827083310010">YES</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li13151123917017">NO</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row1817393043511"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p875216217216">补录时刻</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p137521528219">开启缓存补录的时间点，范围[0,23]。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001192759506__row10942103273513"><td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p78055305214">补录天数</p>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p20871317101014">元数据类型</p>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p198721317171016">图片推动模式</p>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p15961181764">设备编码模式</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.4.2.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p4928643217">缓存补录的天数，范围[1,7]。</p>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p1087219176107">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_uicontrol587221714107">“动向拟合”</span>。</p>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p3984172014318">系统默认选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_uicontrol248312277152">“默认模式”</span>。</p>
+<ul id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_ul35988492158"><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li202652171910">默认模式<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p57311821141917"><a name="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li202652171910"></a><a name="zh-cn_topic_0000001191247533_li202652171910"></a>选择默认模式，ITS800推送的图片包括小图和大图。</p>
+</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li9599449191517">小图模式</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li1599149191520">大图模式</li><li id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_li25991749151512">无图片模式</li></ul>
+<p id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_p1296141810613">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001192759506__zh-cn_topic_0000001191247533_uicontrol101263843817">“设备编码”</span>。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001237719467.html">图盟应用平台
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001238027213.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0000001192599536.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="背光和顺光问题">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745884.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745907.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745909.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252745908">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>背光和顺光问题</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252745908"></a><a name="ZH-CN_TOPIC_0252745908"></a>
+
+<div class="articleBoxWithoutHead">
+
+  <h1 class="topicTitle-h1">背光和顺光问题</h1>
+
+  <div id="body1591600387960"><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_zh-cn_topic_0128176049_p8060118">典型场景如<a href="#ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_f8aab2c2722d244b8ba5a66683d031305">图1</a>和<a href="#ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_fd51516d7433b4bfc8029cc6202d13323">图2</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_f8aab2c2722d244b8ba5a66683d031305"><a name="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_f8aab2c2722d244b8ba5a66683d031305"></a><a name="zh-cn_topic_0252597735_f8aab2c2722d244b8ba5a66683d031305"></a><span class="figcap"><b>图1 </b>逆光时车牌模糊</span><br><span><img id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_i4bb9f2ad55ab4921a77b61d5664977b0" src="zh-cn_image_0252597659.png"></span></div>
+<div class="fignone" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_fd51516d7433b4bfc8029cc6202d13323"><a name="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_fd51516d7433b4bfc8029cc6202d13323"></a><a name="zh-cn_topic_0252597735_fd51516d7433b4bfc8029cc6202d13323"></a><span class="figcap"><b>图2 </b>顺光时车牌模糊</span><br><span><img id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_i799a652cb0394d43a150f291aaf23550" src="zh-cn_image_0252597646.png" width="342.14250000000004" height="191.81925" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a2beb93cd7a6242699dfe9c51a55ac366">问题现象及调试方案推荐，如<a href="#ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ta7cb1bf1d7e04c909bee67fb766b57f5">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ta7cb1bf1d7e04c909bee67fb766b57f5"></a><a name="zh-cn_topic_0252597735_ta7cb1bf1d7e04c909bee67fb766b57f5"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ta7cb1bf1d7e04c909bee67fb766b57f5" frame="border" border="1" rules="all"><caption><b>表1 </b>问题现象及调试方案推荐</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_r488a3541000540a28c23d3b4d43a8de8"><th align="left" class="cellrowborder" valign="top" width="28.000000000000004%" id="mcps1.3.5.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a903773440f274c93975e41800d7d3bf6">问题现象</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="72%" id="mcps1.3.5.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a35a6efd92c6e4ac781ae1b4caff183fe">调试方案推荐</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_r54f4836f05eb447097001db4eb2e4c55"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.3.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a652ffd1dfc7a4f1992f625565e38b2e0">逆光情况下，车牌偏暗</p>
+</td>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.3.5.2.3.1.2 "><div class="p" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_zh-cn_topic_0128176049_p142566322277">开启车牌亮度补偿，如果效果不理想，则提高曝光补偿系数。<ul id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u41164b93d7d84d18b9c8f128c0ab7c6b"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_l46bf1142d7b64467b05c96e1f991f7d5">开启车牌亮度补偿。<ol id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ob3b9cc416bfb43949540a69b8a0d5b87"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_li35471232135010">选择“智能交通  &gt; 智能图像增强”，进入<span class="wintitle" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_wda9fe206a39e42e2bfc99700061009ef">“智能图像增强”</span>页面。</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_lfe3e3f3ef7c64f38b6b1bbb8ef1e2b93">在<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_parmname812353811524">“车牌亮度补偿”</span>中下拉选择<span class="parmvalue" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_p5172e7b9b1384aef85aff8532f91ccc5">“打开模式”</span>。</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_li1738274515110">调节<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_parmname1201824145414">“车牌亮度补偿级别”</span>数值。</li></ol>
+</li></ul>
+</div>
+<ul id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u802f8a09d8434603911d15419de89484"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_lab9e7113798b4322ad33f4f98a3595ce">调大曝光补偿系数<ol id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_o6168e59ad84240a38670e037700efa11"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ld2e862a3477741b483bd28d4623a5442">选择<span class="menucascade" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_m2b2c9a09d40240d0b3240124cad483f7">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u84362964660247e78f4415e4a93f6b57">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u6787cb5dfe094fe4a821980f99063948">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u8cb68ea9d6b143f0b1ea4c8104cdc693">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u1a31edb0f1a3410aabd3ba2e481feb04">曝光</span>”</span></li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_zh-cn_topic_0128176049_li95794564320">调大<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_pd6330c49ed6e4c3fa67be4a4fb95ec81">“曝光补偿系数”</span>。</li></ol>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_r028dac0ef17841188d41d6bdea8780b4"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.3.5.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a46b77d21bf274e978007cc8a98431386">顺光，后车车灯影响或太阳光影响，车牌偏亮</p>
+</td>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.3.5.2.3.1.2 "><p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a6765bb3fabcd408f8a6731b7f59ebf7b">开启车牌亮度补偿，如果效果不理想，则调小曝光补偿系数。</p>
+<ul id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u0a7d308b78cc476aa7fbd4ccf7399e2b"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_le816200218f547ce93343558096929c3">开启车牌亮度补偿<ol id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ol189415145516"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_li774141219283">选择“智能交通  &gt; 智能图像增强”，进入<span class="wintitle" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_wintitle48944125512">“智能图像增强”</span>页面。</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_li2712725172811">在<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_parmname1471202514283">“车牌亮度补偿”</span>中下拉选择<span class="parmvalue" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_parmvalue1771322502811">“打开模式”</span>。</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_li189413113556">调节<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_parmname1290019542543">“车牌亮度补偿级别”</span>数值。</li></ol>
+</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_zh-cn_topic_0128176049_li07170155813">降低曝光补偿系数<ol id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_obe864152b2134a6186691988650ce1e6"><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_lca985c41749f4910b171232676a323b3">选择<span class="menucascade" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_m191e20404b984e8bacf2d027678bcfe3">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u274b60dc561745f381b449c4254a3fa1">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_uc001b3b1c27f432f8845cd7a7de6fd6a">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_u526f9f9687b44908b733c914acdf55a1">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_ua285654985654d4da5e8288df208a083">曝光</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_l7ad5ec3a280644dfa258ba54a5128dae">调小<span class="parmname" id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_p7c93e2ab934340809483d3d078118ddc">“曝光补偿系数”</span>。</li></ol>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_abf642b14ec6e46ac9a517caef512f04f">建议开启车牌亮度补偿功能。</p>
+<p id="ZH-CN_TOPIC_0252745908__zh-cn_topic_0252597735_a4e00f7bc17c441f495605a9c15e3b681">相应参数的具体数值，不同环境情况不一，可实时观测画面效果，依据车牌显示清晰情况而定。</p>
+</div>
+
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252745884.html">摄像机及外设问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252745907.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0252745909.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

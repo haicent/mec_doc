@@ -1,0 +1,147 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="高精地图制作标准">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001261996281.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001217876408.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001218036378">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>高精地图制作标准</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001218036378"></a><a name="ZH-CN_TOPIC_0000001218036378"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">高精地图制作标准</h1>
+<div id="body8662426"><div class="note" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_zh-cn_topic_0219754796_zh-cn_topic_0219607887_note1559081951010"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p2087356174611">详细制作规范可查询<a href="resource/Document%20Description.zip">路口和路段高精地图文件说明</a>。</p>
+</div></div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">文件说明</a></li><li><a href="#" onclick="return showCurrent($$(this));">点云数据要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">栅格数据（摄像机标定）要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">栅格数据（雷达标定）要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">栅格数据（雷达标定验证）要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">传感器数据要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">高精度地图数据要求</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section2101627151415"><h4 class="sectiontitle">文件说明</h4><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p722821617168">标定工具输入文件后缀名与说明如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_table87421355181513">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_table87421355181513"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_table87421355181513"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_table87421355181513" frame="border" border="1" rules="all"><caption><b>表1 </b>文件说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row1974335517152"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p97431555121519">文件后缀名</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p11743165510152">说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row18743155514155"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p1774319552155">las、xml</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p5743155591518">点云数据</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row15743125541517"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p127431155161517">tif、tfw、geojson</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p10743255201515">栅格数据（摄像机标定）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row1274310555156"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p7743175511158">tif、tfw</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p37431855121513">栅格数据（雷达标定）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row3743955111518"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p1743655161513">tif、tfw</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p1874395514153">栅格数据（雷达标定验证）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row1574345571520"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p27431955121513">senjson</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p1774316559153">传感器数据（摄像机、雷达）</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_row167431557157"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p18743055161512">json</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p187431155161511">高精度地图数据（矢量地图）</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section152986246153"><h4 class="sectiontitle">点云数据要求</h4><div class="p" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p09365231015">点云数据要求如下：<ul id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_ul868611126191"><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li1586123024912">以四个方向的进口道电警杆为数据范围，如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig3905115094915">图1</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig3905115094915"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig3905115094915"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig3905115094915"></a><span class="figcap"><b>图1 </b>数据范围一</span><br><span><img id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_image13879153818322" src="zh-cn_image_0000001208794606.png" width="388.02058400000004" height="357.09116800000004" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p21435326496">对于不规则路口，适当扩大范围，确保数据的完整性。</p>
+</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li10426153314341">xml文件需包含坐标系编号、原点坐标。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li562134312475">las文件数据的密度为平均间隔3cm（近似均匀分布）。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li10686141218195">点云数据的海拔值必须是路面表层的数值，且不能有超过3cm的噪声分布。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li20745152241912">文件名称必须为英文。</li></ul>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section12488155919197"><h4 class="sectiontitle">栅格数据（摄像机标定）要求</h4><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p1890113320311">栅格数据（摄像机标定）要求如下：</p>
+<ul id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_ul1334204372014"><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li43532458506">以四个方向的进口道待行区为数据范围，如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig183538456509">图2</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig183538456509"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig183538456509"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig183538456509"></a><span class="figcap"><b>图2 </b>数据范围二</span><br><span><img id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_image208381309564" src="zh-cn_image_0000001253434553.png" width="405.97904200000005" height="442.883084" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p135313452504">tif文件的宽高尽量相等。对于不规则路口，适当扩大范围，确保数据的完整性。</p>
+</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li11559590579">tif文件地图内标志线清晰可见，无重影，不能有较多的遮挡。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li14631162618587">tif文件数据的间隔尺寸为1cm。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li1631094012587">geojson文件数据的间隔尺寸为10cm，海拔值取区域平均值。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li163424312204">文件中坐标字段不能有双引号。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li18150195010201">文件名称必须为英文。</li></ul>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section5135172200"><h4 class="sectiontitle">栅格数据（雷达标定）要求</h4><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p2044113291638">栅格数据（雷达标定）要求如下：</p>
+<ul id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_ul1344113291535"><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li1244115291317">以四个方向的进口道电警杆后延20m为数据范围，如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig74411929931">图3</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig74411929931"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig74411929931"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig74411929931"></a><span class="figcap"><b>图3 </b>数据范围三</span><br><span><img id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_image165511251944" src="zh-cn_image_0000001253754513.png"></span></div>
+</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li154422291437">tif文件数据的间隔尺寸为3cm。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li1044212291036">无需输出geojson文件。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li844869112116">文件名称必须为英文。</li></ul>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section1563187202016"><h4 class="sectiontitle">栅格数据（雷达标定验证）要求</h4><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p188033181863">栅格数据（雷达标定验证）要求如下：</p>
+<ul id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_ul198692012111"><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li7803418163">以四个方向的进口道电警杆后延100m为数据范围，如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig2803151810619">图4</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig2803151810619"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig2803151810619"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig2803151810619"></a><span class="figcap"><b>图4 </b>数据范围四</span><br><span><img id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_image1872923511613" src="zh-cn_image_0000001208954578.png"></span></div>
+</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li108049181361">tif文件数据的间隔尺寸为5cm。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li5268831152110">无需输出geojson文件。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li89869209215">文件名称必须为英文。</li></ul>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section164236286502"><h4 class="sectiontitle">传感器数据要求</h4><p id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_p33146431229">必须包含电警杆、红绿灯杆和摄像机、雷达等各类设备，且位置可见。</p>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_section962504229"><h4 class="sectiontitle">高精度地图数据要求</h4><ul id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_ul41312505225"><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li18131250112214">每个路口必须对应一个高精度地图json文件。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li1769217436254">每个json文件必须有该路口的所有车道的中心线（包含进出口车道、待转待行车道）、停止线。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li198345312275">路口字段命名格式为crossName的英文缩写，不能有下划线。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li24554454282">坐标值使用double，其他字段类型与图盟数据保持一致。</li><li id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_li12274818290">每个json文件格式如<a href="#ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig1158348192919">图5</a>所示。<div class="fignone" id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig1158348192919"><a name="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig1158348192919"></a><a name="zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_fig1158348192919"></a><span class="figcap"><b>图5 </b>json文件格式</span><br><span><img id="ZH-CN_TOPIC_0000001218036378__zh-cn_topic_0000001253754387_zh-cn_topic_0000001114125864_image5521744142912" src="zh-cn_image_0000001209114562.png"></span></div>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001261996281.html">附录
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001217876408.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

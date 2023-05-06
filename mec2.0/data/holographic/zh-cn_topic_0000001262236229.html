@@ -1,0 +1,199 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="生成融合文件">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001262396281.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001218036376.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001262236229">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>生成融合文件</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001262236229"></a><a name="ZH-CN_TOPIC_0000001262236229"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">生成融合文件</h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section152401615155617"><h4 class="sectiontitle">前提条件</h4><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p3319819125612">已完成路口所有摄像机和雷达的标定，并验证标定准确无误。</p>
+</div>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">操作步骤</a></li><li><a href="#" onclick="return showCurrent($$(this));">参数说明</a></li><li><a href="#" onclick="return showCurrent($$(this));">标定融合文件示例</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section135517614528"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ol7246844175217"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li268019457528"><span id="ZH-CN_TOPIC_0000001262236229__">在<span class="wintitle" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_wintitle1568012458527">“设备列表”</span>界面中单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol768014453527">“生成融合文件”</span>。</span></li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li206801745115216"><span id="ZH-CN_TOPIC_0000001262236229__">在弹出的界面中设置融合参数，如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig280364915556">图1 设置融合参数</a>所示，参数说明如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table191622193616">表1</a>所示。</span><p><ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul6298313103511"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_li1820819118426">选择标定摄像机所关联的ITS800设备。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li829871393514">设置省份简称：根据具体路口所在城市设置。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li9230193011358">勾选<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol549632353515">“算法支持自动调参”</span>。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li726514417351">根据<span class="filepath" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_filepath102661733193510">“数据规划表.xlsx”</span>填写每个摄像机和雷达的IP地址。<div class="fignone" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig280364915556"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig280364915556"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig280364915556"></a><span class="figcap"><b>图1 </b>设置融合参数</span><br><span><img id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_image56247371838" src="zh-cn_image_0000001254561873.png" width="468.82500000000005" height="307.37364" title="点击放大" class="imgResize"></span><div class="note" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_note4828911121515"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p2828811191520">如果是三方摄像机，标定融合界面帧率需要和摄像机配置一致：</p>
+<ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul10239194431814"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li6239844171813">摄像机配置为25fps：  此处帧率25  ，跳帧  1  （默认配置不改）</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li781922512195">摄像机配置为12fps： 此处帧率改为12 ， 跳帧改为0</li></ul>
+</div></div>
+</div>
+</li></ul>
+</p></li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li161631516532"><span id="ZH-CN_TOPIC_0000001262236229__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol13616191513531">“开始融合”</span>，生成后可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol361651519536">“导出”</span>，指定路径进行保存。生成的文件详细信息，请参见<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section185683118913">标定融合文件示例</a>。</span><p><div class="p" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p363912537551">也可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_uicontrol12481912135612">“融合后导入”</span>，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_uicontrol0754436135715">“确定”</span>后自动导入配置文件。<div class="notice" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_note77423298515"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p37427291155">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_uicontrol524618311708">“融合后导入”</span>、选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_uicontrol626019516110">“确定”</span>，将覆盖旧标定融合文件，且无法回退。</p>
+</div></div>
+</div>
+<div class="note" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_note5616201517531"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p1090518381959">如果系统提示某方向雷达照射个数超过1，可单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol196161415145310">“确定”</span>继续生成融合文件。</p>
+</div></div>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section1389184313576"><h4 class="sectiontitle">参数说明</h4>
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table191622193616"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table191622193616"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table191622193616" frame="border" border="1" rules="all"><caption><b>表1 </b>融合参数说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row61642119362"><th align="left" class="cellrowborder" valign="top" width="25%" id="mcps1.3.3.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p181612215369">配置项</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="75%" id="mcps1.3.3.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p20161521163613">说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_row7397104093410"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p1631718321205">关联ITS800设备</p>
+</td>
+<td class="cellrowborder" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p231733218209">配置标定摄像机或雷达所关联的ITS800设备。</p>
+<div class="note" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_note31441452102510"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_p51448525256">关联正确的ITS800设备并生成融合文件后，将自动导入配置文件至对应的ITS800设备，未正确关联则需手动导入配置文件。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row5161621183610"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p2167217363">雷达通道</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p115661427184020">配置雷达或视频通道（即摄像机）的时间同步方式，取值及含义如下：</p>
+<ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul6510902412"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1551010104117">UTC：使用网络时间同步方案。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1251019084113">LOCAL：使用雷达或摄像机本地时间同步方案。</li></ul>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p14841365419">在全息路口解决方案中，摄像机和雷达都采用NTP时间同步方案。因此，此处雷达通道、视频通道的时间同步方式取值都选用<span class="parmvalue" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_parmvalue574419025511">“UTC”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row71652123612"><td class="cellrowborder" valign="top" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p41622116368">视频通道</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row3161521173613"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p1116132123615">省份简称</p>
+</td>
+<td class="cellrowborder" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p416621143613">配置路口所属的省份简称，请根据现场实际情况配置。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row62581533171116"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p525819331111">雷达优化</p>
+</td>
+<td class="cellrowborder" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p6107194420477">如果启用雷达优化，由摄像机视频流拟合路口车辆动向时，ITS800同时根据雷达数据优化车辆动向。</p>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p14258183351116">请根据现场实际需要配置，推荐选择<span class="parmvalue" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_parmvalue4536163892912">“否”</span>不启用优化。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row39011214266"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p6901111419612">EPSG</p>
+</td>
+<td class="cellrowborder" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p19029141268">EPSG是在高精地图的.xml文件中，EPSG为空请联系地图供应商获取。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row02589335118"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p192595336118">衔接距离</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><div class="p" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p1947825710519">以进、出口道停止线（即进口道停止线的延长线）为衔接位置基准线，如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356">图2</a>中的红色实线。在停止线以内路口区域的目标，由摄像机视频检测；在停止线以外路段中的目标，由雷达信号检测。参数含义如下，取值如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table10711858164912">表2</a>所示。请根据现场实际需要配置，推荐使用默认值。<ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul648881761020"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li103265411299">衔接距离<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p18852134222912"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li103265411299"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li103265411299"></a>出口道摄像机视频与雷达信号的衔接位置。X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub16618451885">1</sub>表示衔接位置与停止线的垂直距离。X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub1396342113813">1</sub>值为正表示衔接位置处于停止线以内的路口区域，如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356">图2</a>所示的蓝色实线；X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub1882212241789">1</sub>值为负表示衔接位置处于停止线以外的路段中，如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356">图2</a>所示的青色虚线。</p>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p17141012132910">例如，示例值（-2，-2，6，6）表示东西方向衔接位置由东西方向的停止线往路口外侧偏移2m，南北方向衔接位置由南北方向的停止线往路口内侧偏移6m。</p>
+</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li936945253013">进口道雷达/视频分界线距离<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p22761954103018"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li936945253013"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li936945253013"></a>进口道雷达信号与摄像机视频的衔接位置，如<a href="#ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356">图2</a>所示的紫色实线。X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub818418569812">2</sub>表示衔接位置（即雷达与视频分界线）与停止线的垂直距离。推荐分界线处于摄像机检测画面下边缘1/12处，即分界线与进口道停止线的距离约为两辆车的长度。</p>
+</li></ul>
+</div>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p12277145318816">通过调整摄像机视频与雷达信号的衔接位置，使检测视频与探测信号无缝对接，形成完整的车辆行驶动向。对于出口道， 如果衔接位置处于摄像机视频的有效区域外，将会导致视频目标提前消失，无法在ITS800中拟合形成完整的动向；对于进口道，如果衔接位置太靠近路口，将会使车辆动向堆叠。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row1911161015194"><td class="cellrowborder" valign="top" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p189121610151910">进口道雷达/视频分界线距离</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row10162212366"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.3.3.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p1325883712240">平台编码或IP</p>
+</td>
+<td class="cellrowborder" valign="top" width="75%" headers="mcps1.3.3.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p26183521402">配置雷达、摄像机（即视频）的平台编码或设备IP地址。</p>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p29397190344">如果标定工具已导入平台编码或IP地址Excel文件，在生成融合文件时工具将自动填充设备的平台编码或IP地址；否则，需要参考该Excel文件手动填写平台编码或IP地址。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p7751115534019">您也可以在iClient ME中查看摄像机、雷达的平台编码。查看方式如下：<ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul7604191412358"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li160411417358">雷达<ol id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ol16488204212217"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li744825415223">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_menucascade74471454142215">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol16736105212116">系统功能</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol550015622113">设备配置</span>”</span></li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li14199195812212">单击接入雷达的ITS800设备。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li163021620162315">双击需要查看编码的雷达，查看雷达<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol1560528132415">“平台编码”</span>。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li6964164942319">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_menucascade461311582412">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol761317514245">系统参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol142641104243">网络设置</span>”</span>，查看雷达<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol149172422410">“IP地址”</span>。</li></ol>
+</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1153815019361">摄像机<ol id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ol17411103916247"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li19411139172412">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_menucascade041133922416">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol1941133962415">系统功能</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol14111139102416">设备配置</span>”</span></li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1141143982411">单击接入摄像机的ITS800设备。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li184118391242">双击需要查看编码的摄像机，点击视频通道，查看摄像机<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol44115393244">“平台编码”</span>。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li5411113952410">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_menucascade15411163913244">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol18411183952419">系统参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol9411339202413">网络设置</span>”</span>，查看摄像机<span class="uicontrol" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_uicontrol184111739142413">“IP地址”</span>。</li></ol>
+</li></ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignone" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig13605216356"></a><span class="figcap"><b>图2 </b>进/出口道衔接位置及路口宽度示意</span><br><span><img id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_image181681839770" src="zh-cn_image_0000001209114536.png" width="380.0475" height="374.957324" title="点击放大" class="imgResize"></span></div>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table10711858164912"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table10711858164912"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_table10711858164912" frame="border" border="1" rules="all"><caption><b>表2 </b>衔接距离取值</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row1671175812495"><th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.4.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p0711175815497">路口宽度Y</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.4.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p1871113584499">出口道衔接距离X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub3594194016">1</sub></p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.3.3.4.2.4.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p162417232345">进口道衔接距离X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub0962915604">2</sub></p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row16711165812492"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.3.3.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p11711658194919">Y&#8805;70m</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.3.3.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p6711125813498">X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub105123589595">1</sub>=6m</p>
+</td>
+<td class="cellrowborder" rowspan="5" valign="top" width="33.33333333333333%" headers="mcps1.3.3.4.2.4.1.3 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p966708174819">默认X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub677519195017">2</sub>=5m</p>
+<p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p17949134111414">推荐X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub21502225020">2</sub>=10m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row147111458164910"><td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p12711458104911">60m&#8804;Y&lt;70m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p871185818496">X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub134484112015">1</sub>=2m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row1771212582491"><td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p17121558114915">50m&#8804;Y&lt;60m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p871285813491">X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub18251728010">1</sub>=-2m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row18712658114915"><td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p14712185820491">Y&lt;50m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p9712658204911">X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub125597420013">1</sub>=-6m</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_row571225817498"><td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p87121058204917">不确定Y值（无进口道停止线的特殊路口）</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.3.4.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p9712185864912">X<sub id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_sub449395216595">1</sub>=-2m</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section185683118913"><a name="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section185683118913"></a><a name="zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_section185683118913"></a><h4 class="sectiontitle">标定融合文件示例</h4><p id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p14422173651315">S市某路口共有4个摄像机、4个雷达，工具一共生成18个文件。</p>
+<div class="p" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_p11938112864120">文件类型、数量与设备的关系如下：<ul id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_ul2938828194114"><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li2010242816146">每台雷达：1个标定文件（.lut）和1个通道配置文件（.xml），即<i><span class="varname" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_varname53366499424">radar</span></i>开头的文件。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1620411284216">每部摄像机：1个标定文件（.lut）和1个通道配置文件（.xml），即<i><span class="varname" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_varname19680162194316">video</span></i>开头的文件。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li210213283144">高精地图：1个高精地图配置文件（.json），例如<span class="filepath" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_filepath31702354443">“XXX_map.json”</span>。</li><li id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_li1211120521057">路口：1个融合通道配置文件（.xml），例如<span class="filepath" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_filepath858953084419">“fusion_XXX_channel.xml”</span>。<div class="fignone" id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_fig19109115216519"><span class="figcap"><b>图3 </b>标定融合文件示例图</span><br><span><img id="ZH-CN_TOPIC_0000001262236229__zh-cn_topic_0000001208954444_zh-cn_topic_0245521132_image146412296612" src="zh-cn_image_0000001253634541.png" width="296.2575" height="382.0425" title="点击放大" class="imgResize"></span></div>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001262396281.html">标定融合
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001218036376.html"><span class="font-st">&lt; </span>上一节</a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="车牌模糊问题">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745884.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252745906.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252745905">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>车牌模糊问题</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252745905"></a><a name="ZH-CN_TOPIC_0252745905"></a>
+
+<div class="articleBoxWithoutHead">
+
+  <h1 class="topicTitle-h1">车牌模糊问题</h1>
+
+  <div id="body1591600387959"><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p8060118">典型场景如<a href="#ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_ff2a8f94c8c5f40a3b914ebde77f15525">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_ff2a8f94c8c5f40a3b914ebde77f15525"><a name="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_ff2a8f94c8c5f40a3b914ebde77f15525"></a><a name="zh-cn_topic_0252597761_ff2a8f94c8c5f40a3b914ebde77f15525"></a><span class="figcap"><b>图1 </b>车牌模糊</span><br><span><img id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_i4ad03c6126ef4b5eb45e89335dca6009" src="zh-cn_image_0252597469.png"></span></div>
+<p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_a0eeed13cbbed4a6da34651abe3052c6c">问题现象及调试方案推荐，如<a href="#ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_t8b093771a9634ace94946958e775d14a">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_t8b093771a9634ace94946958e775d14a"></a><a name="zh-cn_topic_0252597761_t8b093771a9634ace94946958e775d14a"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_t8b093771a9634ace94946958e775d14a" frame="border" border="1" rules="all"><caption><b>表1 </b>问题现象及调试方案推荐</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_r4c3acfb09e01415b86f8141646545adb"><th align="left" class="cellrowborder" valign="top" width="20.04%" id="mcps1.3.4.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p358451216395">问题现象</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="79.96%" id="mcps1.3.4.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_a805e80e23f5b40e68ae64c0d1a8e56ba">调试方案推荐</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_r19c1ee0a85aa4488a08774d9da3bdb85"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_a1d2438a7abef4eeeb267672aee41ec2f">画面中下方不清晰，聚焦在其他地方</p>
+</td>
+<td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.3.4.2.3.1.2 "><div class="p" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_a4c46fa0a77354fe293aacf62b41ebea0">重新对焦。对焦的具体步骤如下：<ol id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_ol16544285815"><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_l0cedb198ce4344f3aeef988f794ebda8">登录摄像机Web页面，选择<span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u507fb95288534632b77467f5d469bc73">“预览配置”</span>，在实况窗口，单击<span><img id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_i0e9e8914ffe84082b30833fe021624a9" src="zh-cn_image_0252597468.png" width="27.93" height="27.93" title="点击放大" class="imgResize"></span>按钮，弹出<span class="wintitle" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_wadb4e23134ca4fb08812e138346884af">“PTZ控制”</span>窗口。</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_l0af0cb1bf20348368bf25335f2de4d2a">通过<span><img id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_i56b48bd1e76149ccb8e7be2d448152ba" src="zh-cn_image_0252597694.png" width="28.551375999999998" height="19.466811" title="点击放大" class="imgResize"></span>和<span><img id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_id8f189628168493baf7ea48ec635bc8f" src="zh-cn_image_0252597766.png" width="31.026506" height="20.464311" title="点击放大" class="imgResize"></span>图标进行对焦。</li></ol>
+</div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_r6504002574a248c3a818c0f0b85df097"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p925784943116">静止物体清晰，运动物体模糊</p>
+</td>
+<td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_abfd250b2cc034c4795ba571e973535a5">调小快门限制值，具体步骤如下：</p>
+<ol id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_o5dda9ffb53c148d0bd57f302fac9dbeb"><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_la890ed473d8d47fbbaa482b05c2521c4">选择<span class="menucascade" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_mc749fd3a0f974a3f919e35e14ffa3f29">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u397fb19c787d463690c066d403299f9b">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_uf395d294720040febacfb97dd88de550">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u02f3a9d4e7714188a5233df8dc22fab9">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_ub65fafb0c98743d0af74de3abc6dbc76">曝光</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_li5882399335">调小<span class="parmname" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_p244eefaeaa4e4752808b5c806480460a">“快门限制值”</span>。</li></ol>
+<p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_af8cb132436814180bf2cbb32451269cc">若车速整体在60km/h以内时，采用默认值1/250； 若车速整体在60Km/h以上，则推荐设置为1/350。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_rcf152767c4db429cb1022d5737253ddf"><td class="cellrowborder" valign="top" width="20.04%" headers="mcps1.3.4.2.3.1.1 "><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p080865412311">静止物体和运动物体均模糊</p>
+</td>
+<td class="cellrowborder" valign="top" width="79.96%" headers="mcps1.3.4.2.3.1.2 "><p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p358513128398">开启专家模式降噪，减小空域降噪。如果效果不理解则提高锐化强度。</p>
+<ul id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_ue3a0c27a7a1b4550878f50d085791605"><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_l6c56ea25eda64fe4a66145296e8cc758">减小空域降噪。<ol id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_oa9de8d2fa0484d828cb8e33a1d7a05d2"><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_lbdf05421d7c24859994ab09e6b55b7db">选择<span class="menucascade" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_m6bd89de82f07427ea517ad7718981f2b">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_uicontrol1979711985415">配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u7a5c8036fb9b431fa31c2b8be9fa7d2a">音视图</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u2a352e5658c24fafb1ac775f58952853">图像参数</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u9fda2e76b6d64de599fef144677a9f8b">图像增强</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_l3d9016eec52341a0af47faa46a385790"><span class="parmname" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_p52dd5d956da44286a2491c08a54ab6ed">“降噪开关”</span>选择<span class="parmvalue" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_pcc444090a0bd4aca951ae3b4b2d61ec0">“专家模式”</span>。</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_lc1565462abdc40dc9370399ebe4655be">调小<span class="parmvalue" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_p44844db32fb44d59aa7287477074ddb0">“空域降噪阶数”</span>。<p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_p168501571669">空域降噪大，噪声颗粒小，但容易造成画面模糊；空域降噪小，画面细节保留好，但容易噪声颗粒多。</p>
+</li></ol>
+</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_lbcbe4360bcbf4c8a846ccf3fd0fa7072">提高锐化强度。<ol id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_oaeaca360f6fb4b0290fc12d22d048850"><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_zh-cn_topic_0128176222_li73226173408">选择<span class="menucascade" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_m4372168a314d49e5b7cd003e23ed86c7">“<span class="uicontrol" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_u083f7d5c5bc34aa089e750d4a921d37d">配置 &gt; 音视图 &gt; 图像参数 &gt; 图像调节</span>”</span>。</li><li id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_l0b176ba0cbd14270aa337fced3014f4a">调高<span class="parmname" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_p7a2032fb18d34c239cc16b76491a20d8">“锐度”</span>。</li></ol>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_aaa31297330264e9eb2ec3465c230632c">相应参数的具体数值，不同环境情况不一，可实时观测画面效果，依据车牌显示清晰情况而定。</p>
+<p id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_a5ca20369db64486c9fed0fd2feae3b02">调试参考目标，如<a href="#ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_f43de17af000c4f01918e11fdfe78b690">图2</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_f43de17af000c4f01918e11fdfe78b690"><a name="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_f43de17af000c4f01918e11fdfe78b690"></a><a name="zh-cn_topic_0252597761_f43de17af000c4f01918e11fdfe78b690"></a><span class="figcap"><b>图2 </b>调试参考目标</span><br><span><img id="ZH-CN_TOPIC_0252745905__zh-cn_topic_0252597761_i514945fa99d0400791a9d0d954127755" src="zh-cn_image_0252597652.png"></span></div>
+</div>
+
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252745884.html">摄像机及外设问题
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252745906.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

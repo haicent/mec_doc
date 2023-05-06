@@ -1,0 +1,146 @@
+[
+  {
+    "id": "0ef9ac70dc112edf",
+    "type": "tab",
+    "label": "生成0180规范 - 事件上报javabean代码",
+    "disabled": false,
+    "info": "# 用nodered将pdf中的表格生成javabean的小例子\n\n## 准备\n1. 安装nodejs\n2. `npm i -g node-red`\n3. `node-red`\n4. 浏览器打开[http://localhost:1880/](http://localhost:1880/)\n5. 将flows.json导入\n\n## 运行\n\n0. cmd：`cd 你的全局node_modules目录/node-red`，`npm i chance`\n1. 用程序提前提取pdf中的表格到txt（我已经提前处理好），cmd：`cd 0180`\n2. cmd：`npm i -g live-server`\n3. cmd：`ipconfig`，记住你的ip\n4. 双击注入参数节点\n5. 配置url中的ip部分\n6. cmd：`live-server`，回车\n7. 点击注入前面的小方块\n8. 点击右侧“瓢虫”🐞按钮，可以看到打印出的javabean\n\n",
+    "env": []
+  },
+  {
+    "id": "4e1c72e9c6ca23f3",
+    "type": "inject",
+    "z": "0ef9ac70dc112edf",
+    "name": "",
+    "props": [
+      {
+        "p": "structName",
+        "v": "EventUp",
+        "vt": "str"
+      },
+      {
+        "p": "structComment",
+        "v": "0180-交通事件信息",
+        "vt": "str"
+      },
+      {
+        "p": "fields",
+        "v": "",
+        "vt": "str"
+      },
+      {
+        "p": "url",
+        "v": "http://192.168.1.100:8080/交通事件列表.txt",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "x": 270,
+    "y": 240,
+    "wires": [["32171e3b702b05b2"]]
+  },
+  {
+    "id": "ce280541edd82615",
+    "type": "http request",
+    "z": "0ef9ac70dc112edf",
+    "name": "获取交通事件信息表格",
+    "method": "GET",
+    "ret": "txt",
+    "paytoqs": "ignore",
+    "url": "",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "authType": "",
+    "senderr": false,
+    "x": 920,
+    "y": 240,
+    "wires": [["a12961130f261a4d"]]
+  },
+  {
+    "id": "32171e3b702b05b2",
+    "type": "function",
+    "z": "0ef9ac70dc112edf",
+    "name": "注入工具函数",
+    "func": "const chance = new Chance();\nfunction getFieldType(fn, ft) {\n  var fieldType = \"\";\n  switch (ft) {\n    case \"Long\":\n    case \"Integer\":\n    case \"String\":\n    case \"Double\":\n      fieldType = ft;\n      break;\n    case \"ENUMERATED\":\n      fieldType = \"Integer\";\n      break;\n    case \"SEQUENCE\":\n      fn = fn.replace(\"list\", \"\");\n      fn = fn.replace(\"List\", \"\");\n      fieldType = \"List<\" + fn + \"_t>\";\n      break;\n    case \"Boolean\":\n      fieldType = \"boolean\";\n      break;\n    default:\n      break;\n  }\n  return fieldType;\n}\n\n\nfunction getComment(c) {\n  if (c && c.indexOf(\"\\n\") != -1) {\n    return \"/* \" + c + \" */\";\n  } else {\n    return \"// \" + c;\n  }\n}\n\nfunction getRequired(c) {\n  return \"// 必填否：\" + c;\n}\n\nfunction getTestValue(ft) {\n  var value = \"\";\n  switch (ft) {\n    case \"Long\":\n      value = chance.integer({ min: 1000000, max: 10000000000000 });\n      break;\n    case \"Integer\":\n      value = chance.integer({ min: 0, max: 1000 });\n      break;\n    case \"String\":\n      value = '\"' + chance.word() + '\"';\n      break;\n    case \"Double\":\n      value = chance.floating({ min: 0, max: 10000, fixed: 2 });\n      break;\n    case \"ENUMERATED\":\n      value = chance.integer({ min: 0, max: 10 });\n      break;\n    case \"SEQUENCE\":\n      value = \"nullptr\";\n      break;\n    case \"Boolean\":\n      value = chance.bool();\n      break;\n    default:\n      break;\n  }\n  return value;\n}\n\n\nfunction textToFields(content) {\n  let lines = content.toString().split(\"\\n\");\n\n  var i = 1;\n  var fields = [];\n  var obj = {};\n\n  for (const li in lines) {\n    let line = lines[li];\n    try {\n      const reg = /^[0-9]*$/;\n      if (reg.test(line)) {\n        i = 1;\n        obj = {};\n      }\n      switch (i) {\n        case 1:\n          obj.id = line;\n          break;\n        case 2:\n          obj.fieldName = line;\n          break;\n        case 3:\n          obj.fieldRequired = line;\n          break;\n        case 4:\n          obj.fieldType = line;\n          break;\n        case 5:\n          obj.fieldComment = line;\n          fields.push(obj);\n          break;\n        default:\n          break;\n      }\n    } catch (e) {}\n    i++;\n  }\n  for (const fi in fields) {\n    var f = fields[fi];\n    f.testValue = getTestValue(f.fieldType);\n    f.fieldComment = getComment(f.fieldComment);\n    f.fieldRequired = getRequired(f.fieldRequired);\n    f.fieldType = getFieldType(f.fieldName, f.fieldType);\n  }\n  return fields;\n}\n\n// msg.payload =  chance.word() ;\nmsg.getFieldType = getFieldType;\nmsg.textToFields = textToFields;\n\nnode.status({fill:\"green\",shape:\"dot\",text:\"成功注入自定义方法\"});\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "Chance",
+        "module": "chance"
+      }
+    ],
+    "x": 560,
+    "y": 240,
+    "wires": [["ce280541edd82615"]]
+  },
+  {
+    "id": "a12961130f261a4d",
+    "type": "function",
+    "z": "0ef9ac70dc112edf",
+    "name": "增加字段",
+    "func": "\nmsg.fields = msg.textToFields(msg.payload);\nmsg.filename = msg.structName + '.java';\n\nnode.status({fill:\"green\",shape:\"dot\",text:\"获取到\"+msg.fields.length+\"个字段\"});\n\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 280,
+    "y": 380,
+    "wires": [["282afe70d1f1315c"]]
+  },
+  {
+    "id": "282afe70d1f1315c",
+    "type": "template",
+    "z": "0ef9ac70dc112edf",
+    "name": "JavaBean模板",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "// 你的包\n// 你需要的导入\n// 语法教程，5分钟包会：http://mustache.github.io/mustache.5.html\n\n/**\n * {{structComment}}\n */\n@Data\nclass {{structName}}{\n\n{{#fields}}\n    {{{fieldComment}}}\n    private {{{fieldType}}} {{fieldName}};\n{{/fields}}\n}",
+    "output": "str",
+    "x": 600,
+    "y": 380,
+    "wires": [["3784ae10a59227dc", "4f784cc58afe9d42"]]
+  },
+  {
+    "id": "3784ae10a59227dc",
+    "type": "debug",
+    "z": "0ef9ac70dc112edf",
+    "name": "打印到调试窗口",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 920,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "4f784cc58afe9d42",
+    "type": "file",
+    "z": "0ef9ac70dc112edf",
+    "d": true,
+    "name": "保存文件",
+    "filename": "",
+    "appendNewline": true,
+    "createDir": false,
+    "overwriteFile": "true",
+    "encoding": "none",
+    "x": 710,
+    "y": 500,
+    "wires": [[]]
+  }
+]

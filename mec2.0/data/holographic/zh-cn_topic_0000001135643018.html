@@ -1,0 +1,55 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何修改docker0的IP网段地址">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001135643018">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<title>如何修改docker0的IP网段地址</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001135643018"></a><a name="ZH-CN_TOPIC_0000001135643018"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何修改docker0的IP网段地址</h1>
+<div id="body0000001135643018"><div class="section" id="ZH-CN_TOPIC_0000001135643018__section597918492012"><h4 class="sectiontitle">背景信息</h4><p id="ZH-CN_TOPIC_0000001135643018__p98905531719">docker0默认占用172.17.0.0/16网段地址，摄像机如果也位于该网段内，则设备将无法发现该网段内的摄像机设备。</p>
+<p id="ZH-CN_TOPIC_0000001135643018__p763135243013">如果摄像机IP地址段无法修改，则可以参考本章节修改docker0的IP网段地址。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001135643018__section11937055185414"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001135643018__ol147341041021"><li id="ZH-CN_TOPIC_0000001135643018__li1278915402178"><span id="ZH-CN_TOPIC_0000001135643018__"><span>以<strong id="ZH-CN_TOPIC_0000001135643018__zh-cn_topic_0203265088_b8624101631310">admin</strong>用户登录OMU Portal（<span><img id="ZH-CN_TOPIC_0000001135643018__zh-cn_topic_0203265088_zh-cn_topic_0203265088_image13678257365" src="zh-cn_image_0257331811.png"></span> <a href="zh-cn_topic_0215538442.html">如何登录OMU Portal</a>）。</span></span></li><li id="ZH-CN_TOPIC_0000001135643018__li12938195161713"><span id="ZH-CN_TOPIC_0000001135643018__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001135643018__menucascade7475131218181">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001135643018__uicontrol8475121251817">对接管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001135643018__uicontrol229741671819">IEF对接</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001135643018__li1442616252209"><span id="ZH-CN_TOPIC_0000001135643018__">修改docker0网段地址，如<a href="#ZH-CN_TOPIC_0000001135643018__fig134131254207">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001135643018__fig134131254207"><a name="ZH-CN_TOPIC_0000001135643018__fig134131254207"></a><a name="fig134131254207"></a><span class="figcap"><b>图1 </b>修改docker0网段</span><br><span><img id="ZH-CN_TOPIC_0000001135643018__image134141258205" src="zh-cn_image_0000001135895520.png"></span></div>
+
+<div class="tableBorder"><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001135643018__table2028519552220" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001135643018__row728525112218"><th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.3.2.2.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001135643018__p77596365225">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="50%" id="mcps1.3.2.2.3.2.2.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001135643018__p1722144216222">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001135643018__row5285551222"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.3.2.2.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001135643018__p92851058226">Docker0所在网段</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.3.2.2.3.2.2.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001135643018__p1285657223">请根据实际填写docker0网段。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="ZH-CN_TOPIC_0000001135643018__p15130104117289">系统会自动重启docker。</p>
+</p></li></ol>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+</body>
+</html>

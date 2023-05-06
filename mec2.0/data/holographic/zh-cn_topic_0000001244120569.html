@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="添加华为摄像机">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001193244474.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001199040726.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001244120569">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>添加华为摄像机</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001244120569"></a><a name="ZH-CN_TOPIC_0000001244120569"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">添加华为摄像机</h1>
+<div id="body0000001244120569"><ul id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_ul3882217126"><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li17891421181215">本章节介绍在<span id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_ph83932962517">iClient ME</span>中使用HWSDK协议，通过自动批量方式添加摄像机的配置步骤。</li></ul>
+<div class="section" id="ZH-CN_TOPIC_0000001244120569__section516971993613"><h4 class="sectiontitle">前提条件</h4><p id="ZH-CN_TOPIC_0000001244120569__p459173765116">1、接入摄像机已开启HWSDK，参考<a href="zh-cn_topic_0000001090320380.html">配置摄像机SDK协议参数</a></p>
+<p id="ZH-CN_TOPIC_0000001244120569__p1929475223615">2、ITS800与摄像机网络连接正常。</p>
+</div>
+<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_p7745945204">如何验证<span>ITS800</span>与摄像机网络连接是否正常，请参考<a href="zh-cn_topic_0298342602.html">如何检查ITS800与目标网络环境连接是否正常</a>。</p>
+<p id="ZH-CN_TOPIC_0000001244120569__p169814308513"></p>
+<ol id="ZH-CN_TOPIC_0000001244120569__ol3613132318431"><li id="ZH-CN_TOPIC_0000001244120569__li66131523114315"><span id="ZH-CN_TOPIC_0000001244120569__"><span>登录iClient ME<span>（<span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0258249723_image21391327171319" src="zh-cn_image_0000001244120619.png"></span> <a href="zh-cn_topic_0000001191167383.html">如何登录iClient ME</a>）。</span></span></span></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li12139111525414"><span id="ZH-CN_TOPIC_0000001244120569__">选择<span class="menucascade" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0251850162_menucascade4632153319489">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0251850162_uicontrol2632193384819">系统功能</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0251850162_uicontrol196321233124817">设备配置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0251850162_uicontrol126911852114917">设备管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0251850162_uicontrol45816586491">微边缘</span>”</span>。</span></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li1426114424010"><span id="ZH-CN_TOPIC_0000001244120569__">鼠标右键单击某个<span>ITS800</span>设备，选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol19538540174112">“摄像机接入”</span>。</span></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li1724063471"><span id="ZH-CN_TOPIC_0000001244120569__">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol10805173618471">“发现设备”</span>，单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol836501013484">“开始”</span>。</span></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li149971463554"><span id="ZH-CN_TOPIC_0000001244120569__">设置IP地址段，如<a href="#ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig050763703014">图1</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig050763703014"><a name="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig050763703014"></a><a name="zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig050763703014"></a><span class="figcap"><b>图1 </b>设置IP地址段</span><br><span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_image1450816377305" src="zh-cn_image_0000001199360740.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p195931116165420">参数解释如<a href="#ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table117932655419">表1</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table117932655419"></a><a name="zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table117932655419"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table117932655419" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row682326205419"><th align="left" class="cellrowborder" valign="top" width="25.89%" id="mcps1.3.5.5.2.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p4821026135419">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="74.11%" id="mcps1.3.5.5.2.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p782132615416">如何设置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row58262610543"><td class="cellrowborder" valign="top" width="25.89%" headers="mcps1.3.5.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p168272695410">驱动</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.11%" headers="mcps1.3.5.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1384110219711">选择<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol217336975">“HWSDK”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row18210263548"><td class="cellrowborder" valign="top" width="25.89%" headers="mcps1.3.5.5.2.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1783142655420">IP段</p>
+</td>
+<td class="cellrowborder" valign="top" width="74.11%" headers="mcps1.3.5.5.2.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p38312260541">输入摄像机的启始IP地址和终止IP地址，建议精准（实际的IP地址范围）设置IP段，减少搜索时间。</p>
+<ul id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_ul173291446595"><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li733018435918">系统支持设置多个IP段（包括不同VLAN）。</li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li73548242596">如果不设置IP段，系统只能搜索到和本服务器IP地址同个网段的摄像机，不能够搜索到其他IP地址段或者其他VLAN的摄像机。</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li39091431205519"><span id="ZH-CN_TOPIC_0000001244120569__">账号验证，如<a href="#ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig11686725161417">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig11686725161417"><a name="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig11686725161417"></a><a name="zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_fig11686725161417"></a><span class="figcap"><b>图2 </b>账号验证</span><br><span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_image1211717317154" src="zh-cn_image_0000001199040778.png"></span></div>
+<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p660411558185">参数解释如<a href="#ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table15519533131912">表2</a>所示。</p>
+
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table15519533131912"></a><a name="zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table15519533131912"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_table15519533131912" frame="border" border="1" rules="all"><caption><b>表2 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row145200338198"><th align="left" class="cellrowborder" valign="top" width="22.12%" id="mcps1.3.5.6.2.3.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p10520123318192">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="39.54%" id="mcps1.3.5.6.2.3.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1052003314194">如何设置</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="38.34%" id="mcps1.3.5.6.2.3.2.4.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p197823311263">备注</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row565520488305"><td class="cellrowborder" valign="top" width="22.12%" headers="mcps1.3.5.6.2.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p26568485304">端口</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.54%" headers="mcps1.3.5.6.2.3.2.4.1.2 "><ul id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_ul18801519142310"><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_li163131732152419">如果摄像机使用TLS加密传输协议，端口请设置为<span class="parmvalue" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_parmvalue13999145952413">“6061”</span>。</li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_li116216219258">如果摄像机使用非加密传输协议，端口请设置为<span class="parmvalue" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_parmvalue2114151812269">“6060”</span>。<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_p135331559152618">非加密传输协议在使用过程中可能会存在风险，建议使用加密传输协议。</p>
+</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="38.34%" headers="mcps1.3.5.6.2.3.2.4.1.3 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p67811926174817">摄像机接入失败场景时，请参考<a href="zh-cn_topic_0204804123.html">向导式添加摄像机验证失败</a>排查故障。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row1352083319198"><td class="cellrowborder" valign="top" width="22.12%" headers="mcps1.3.5.6.2.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p9520833101915">账户</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="39.54%" headers="mcps1.3.5.6.2.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p193062571264">输入摄像机的HWSDK协议的注册用户名和密码。</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="38.34%" headers="mcps1.3.5.6.2.3.2.4.1.3 "><ul id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_ul14989152614112"><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_li1298918269113">摄像机版本为820及之后版本。<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_p18635050151317"><a name="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_li1298918269113"></a><a name="zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_zh-cn_topic_0204358614_li1298918269113"></a>华为摄像机为出厂状态且首次接入，输入用户名和密码进行验证。</p>
+<p id="ZH-CN_TOPIC_0000001244120569__p104118159559">若忘记SDK密码，可参考<a href="zh-cn_topic_0000001137456535.html">配置密码</a>修改密码。</p>
+</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row252013313191"><td class="cellrowborder" valign="top" headers="mcps1.3.5.6.2.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1452010336197">密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row1352103331910"><td class="cellrowborder" valign="top" width="22.12%" headers="mcps1.3.5.6.2.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p552116336193">批量验证</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.54%" headers="mcps1.3.5.6.2.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1415084320208">批量验证摄像机与输入的<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol69701638152214">“账户”</span>和<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol134621342152210">“密码”</span>是否匹配。</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="38.34%" headers="mcps1.3.5.6.2.3.2.4.1.3 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p7608112015271">验证通过显示为<span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_image116222912226" src="zh-cn_image_0000001244160619.png" width="12.967500000000001" height="12.967500000000001" title="点击放大" class="imgResize"></span>，不通过显示为<span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_image1616232962212" src="zh-cn_image_0000001199520716.png"></span>。</p>
+<p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p495518211782">如果显示为<span><img id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_image24771854383" src="zh-cn_image_0000001244280589.png"></span>，请确认<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol32742309914">“账号”</span>和<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol8602435896">“密码”</span>是否正确。修改信息后单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol47315110103">“验证”</span>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_row15521153318195"><td class="cellrowborder" valign="top" headers="mcps1.3.5.6.2.3.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p55211233161920">验证</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.5.6.2.3.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_p1152113316190">单个验证摄像机与输入的<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol10284445132218">“账户”</span>和<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol23781448192213">“密码”</span>是否匹配。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_li63242046705"><span id="ZH-CN_TOPIC_0000001244120569__">单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001244120569__zh-cn_topic_0000001206003181_zh-cn_topic_0000001191167369_uicontrol1657310561506">“完成”</span>。</span></li></ol>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001193244474.html">接入摄像机
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001199040726.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

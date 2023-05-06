@@ -1,0 +1,94 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="清晰度">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744897.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744898.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0279516302.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252744899">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<script type="text/javascript" src="public_sys-resources/jquery.min.idp.js"></script>
+<script type="text/javascript" src="public_sys-resources/tabSection.js"></script>
+
+<title>清晰度</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252744899"></a><a name="ZH-CN_TOPIC_0252744899"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">清晰度</h1>
+<div id="body8662426"><p id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_p149285032411">画面是否清晰，受多方面影响，例如是否对焦、像素大小等。</p>
+<div class="sectionTitleTab">
+<ul class="clearfix">
+<li class="active"><a href="#" onclick="return showCurrent($$(this));">调试对焦</a></li><li><a href="#" onclick="return showCurrent($$(this));">像素值大小要求</a></li><li><a href="#" onclick="return showCurrent($$(this));">像素值大小检查方法一</a></li><li><a href="#" onclick="return showCurrent($$(this));">像素值大小检查方法二</a></li></ul>
+</div><div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_sc7d1ba6c651e4e8aa0721b3eb93c687b"><h4 class="sectiontitle">调试对焦</h4><ol id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_od04103b75566493cb6a42251e44a68c6"><li id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_li510510592401"><span id="ZH-CN_TOPIC_0252744899__"><span>登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0176661643_i1093752272">IP地址</em>）。</span></span></li><li id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_li8241641306"><span id="ZH-CN_TOPIC_0252744899__">确保摄像机聚焦在画面中央位置。对焦的过程中，可将实况预览画面的比例调至1:1，如下<a href="#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_fig4946024560">图1</a>所示操作样例。</span><p><div class="fignone" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_fig4946024560"><a name="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_fig4946024560"></a><a name="zh-cn_topic_0252597687_zh-cn_topic_0128167417_fig4946024560"></a><span class="figcap"><b>图1 </b>调整画面比例</span><br><span><img id="ZH-CN_TOPIC_0252744899__image98731450161916" src="zh-cn_image_0000001082505276.png"></span></div>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s4be15044714d46ff80e9cfcef80ead24"><h4 class="sectiontitle">像素值大小要求</h4><p id="ZH-CN_TOPIC_0252744899__p17251557173719"><strong id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_b9298883280">车牌水平像素大小要求</strong></p>
+<p id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_abd32afa2476f4f4790c59c6db5c84ffe">安装完成后，画面检测区域内的车牌，水平像素大小应在120pix及以上。同时应避免画面中因运动出现的模糊现象。安装完成之后，开启过车抓拍功能，参考<a href="#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870">像素值大小检查方法一</a>，检查抓拍图片中车牌的像素值是否满足要求，若不满足，适当调整焦距或者安装的高度和角度。</p>
+<div class="notice" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_note61086282293"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0176478737_p2753115732713">车牌水平像素达到80pix才能被有效识别。由于受天气、光照、车速等因素影响，建议在工勘和调试中车牌水平像素需达到120pix。本文的后续章节均以120pix为例说明。</p>
+</div></div>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870"><a name="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870"></a><a name="zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870"></a><h4 class="sectiontitle">像素值大小检查方法一</h4><p id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_p31371327317">以车牌像素值为例，可通过以下步骤来检查。</p>
+<ol id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_oc2151429f40441e3863590c484cdbeb3"><li id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_l3904f85ba59f4b2e97cd41608f2d2af0"><span id="ZH-CN_TOPIC_0252744899__">在摄像机预览界面，当有车辆经过画面中央时，点击预览框左下角的“抓拍”按钮，如下<a href="#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f1cbe36c4e3424fe887da30c1b8d0df9f">图2</a>所示：</span><p><div class="fignone" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f1cbe36c4e3424fe887da30c1b8d0df9f"><a name="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f1cbe36c4e3424fe887da30c1b8d0df9f"></a><a name="zh-cn_topic_0252597687_f1cbe36c4e3424fe887da30c1b8d0df9f"></a><span class="figcap"><b>图2 </b>抓拍图片</span><br><span><img id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_image119721539185419" src="zh-cn_image_0000001125167269.png" height="252.3675" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_l10f9e3059fe448a7ba4732abd37d56bc"><span id="ZH-CN_TOPIC_0252744899__">在右下角弹出的“提示”框中显示的文件路径下，找到该抓拍图片。</span></li><li id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_la8acaf09ef2e4c21bc41ce5e2422561d"><span id="ZH-CN_TOPIC_0252744899__">用Windows系统中的“画图”软件打开该抓拍图片，然后使用矩形选择，框出图中车牌，软件左下角会显示出该矩形框所包含的像素大小，如下<a href="#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f6e9530b669d74380bff9ddb2219007ec">图3</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f6e9530b669d74380bff9ddb2219007ec"><a name="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_f6e9530b669d74380bff9ddb2219007ec"></a><a name="zh-cn_topic_0252597687_f6e9530b669d74380bff9ddb2219007ec"></a><span class="figcap"><b>图3 </b>查看车牌像素大小</span><br><span><img id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_image1089419213314" src="zh-cn_image_0000001125167271.png" width="523.6875" height="309.80062399999997" title="点击放大" class="imgResize"></span></div>
+<p id="ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_zh-cn_topic_0128167417_p913973253110">可见，该图片中车牌水平像素值仅为23pix，这个数值小于水平分辨率最小值，摄像机无法准确识别出车牌，画面本身也无法用肉眼看清楚车牌。需要重新调整安装高度、角度、距离或者焦距等，来确保车牌的清晰度。</p>
+</p></li></ol>
+</div>
+</div>
+<div class="sectionTab">
+<div class="section" id="ZH-CN_TOPIC_0252744899__section1142502193214"><h4 class="sectiontitle">像素值大小检查方法二</h4><ol id="ZH-CN_TOPIC_0252744899__ol16150173819329"><li id="ZH-CN_TOPIC_0252744899__li14150163810325"><span id="ZH-CN_TOPIC_0252744899__">登录摄像机的Web界面。</span></li><li id="ZH-CN_TOPIC_0252744899__li14150123810320"><span id="ZH-CN_TOPIC_0252744899__">在<span class="wintitle" id="ZH-CN_TOPIC_0252744899__wintitle19150203813323">“预览配置”</span>页面单击<span><img id="ZH-CN_TOPIC_0252744899__image11150438143214" src="zh-cn_image_0000001165348721.png"></span>，在实况中框选车牌后，右下角显示车牌像素大小，如<a href="#ZH-CN_TOPIC_0252744899__fig121501038183211">图4</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0252744899__fig121501038183211"><a name="ZH-CN_TOPIC_0252744899__fig121501038183211"></a><a name="fig121501038183211"></a><span class="figcap"><b>图4 </b>实况像素查看</span><br><span><img id="ZH-CN_TOPIC_0252744899__image1915043815323" src="zh-cn_image_0000001118388968.png"></span></div>
+</p></li></ol>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252744897.html">图像要求
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252744898.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0279516302.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

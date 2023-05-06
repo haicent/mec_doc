@@ -1,0 +1,73 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="摄像机角度">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744893.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252744895.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252744894">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>摄像机角度</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252744894"></a><a name="ZH-CN_TOPIC_0252744894"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">摄像机角度</h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0252744894__section12552184218912"><h4 class="sectiontitle">短焦摄像机</h4><p id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597719_zh-cn_topic_0128167344_p198206314392">在满足<a href="zh-cn_topic_0252744892.html#ZH-CN_TOPIC_0252744892__zh-cn_topic_0252597679_tc7ab103a8cee4743914b3728b2d224bd">表1</a>中的高度和距离要求的情况下，调整摄像机的角度，确保摄像机画面清晰且满足以下要求，如<a href="#ZH-CN_TOPIC_0252744894__fig4762144815020">图1</a>所示。</p>
+<ul id="ZH-CN_TOPIC_0252744894__ul8471144113111"><li id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597679_ld8ccf9c2ab9d46a09b9dfdcd233242e1">在摄像机画面中能清晰看到车辆车牌、对面红绿灯。</li><li id="ZH-CN_TOPIC_0252744894__li63331434133213">红绿灯杆顶部距离画面上边缘2cm～3cm，防止红绿灯杆或相机轻微晃动时，发生红绿灯出画面的情况。</li><li id="ZH-CN_TOPIC_0252744894__li6736928133615">在水平方向上，摄像机画面能完整覆盖停止线前所需检测的车道。</li><li id="ZH-CN_TOPIC_0252744894__li25451577437">在竖直方向上，摄像机画面能完整覆盖右侧道路的斑马线，可主视角检测右转车辆及斑马线是否在画面中。同时，摄像机画面尽可能的覆盖其他三个方向的斑马线、左转掉头区域。</li><li id="ZH-CN_TOPIC_0252744894__li6577558185112">摄像机画面下边缘与停止线保持平行，二者之间距离1.5～2个轿车车长。</li></ul>
+<ul id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597719_ul1463012313221"><li id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597719_li463133102213">在确保L值满足前提下，调焦使车牌像素尽量大，停止线前机动车车牌的水平像素值至少80pix。<div class="notice" id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597719_note185722613415"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0252744894__zh-cn_topic_0252597719_p2753115732713">车牌水平像素达到80pix才能被有效识别。由于受天气、光照、车速等因素影响，建议在工勘和调试中车牌水平像素需达到120pix。本文的后续章节均以120pix为例说明。（像素检查方式见<a href="zh-cn_topic_0252744899.html#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870">像素值大小检查方法一</a>）</p>
+</div></div>
+</li></ul>
+<div class="fignone" id="ZH-CN_TOPIC_0252744894__fig4762144815020"><a name="ZH-CN_TOPIC_0252744894__fig4762144815020"></a><a name="fig4762144815020"></a><span class="figcap"><b>图1 </b>角度要求</span><br><span><img id="ZH-CN_TOPIC_0252744894__image1259093711508" src="zh-cn_image_0000001234549520.png" width="523.6875" height="275.650214" title="点击放大" class="imgResize"></span></div>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0252744894__section6607132818104"><h4 class="sectiontitle">长焦摄像机</h4><p id="ZH-CN_TOPIC_0252744894__p768965414435">在满足<a href="zh-cn_topic_0252744892.html#ZH-CN_TOPIC_0252744892__zh-cn_topic_0252597679_tc7ab103a8cee4743914b3728b2d224bd">表1</a>中的高度和距离要求的情况下，调整摄像机的角度，确保摄像机画面清晰且满足以下要求，如<a href="#ZH-CN_TOPIC_0252744894__fig186895541433">图2</a>所示。</p>
+<ul id="ZH-CN_TOPIC_0252744894__ul1668915454312"><li id="ZH-CN_TOPIC_0252744894__li9689165494314">在摄像机画面中能清晰看到车辆车牌、对面红绿灯/电警杆。</li><li id="ZH-CN_TOPIC_0252744894__li1368995494313">红绿灯杆/电警杆顶部距离画面上边缘5cm～6cm，防止红绿灯杆或相机轻微晃动时，发生红绿灯出画面的情况。</li><li id="ZH-CN_TOPIC_0252744894__li8689175411434">在水平方向上，摄像机画面能完整覆盖所照射区域车道（如进口车道或出口车道）。</li><li id="ZH-CN_TOPIC_0252744894__li868925444315">在竖直方向上，摄像机画面下边缘需覆盖照射区域斑马线，且尽量与道路方向保持垂直。<div class="notice" id="ZH-CN_TOPIC_0252744894__note3689105494316"><span class="noticetitle"><img src="public_sys-resources/notice_3.0-zh-cn.png"> </span><div class="noticebody"><p id="ZH-CN_TOPIC_0252744894__p13689654174314">车牌水平像素达到80pix才能被有效识别。由于受天气、光照、车速等因素影响，建议在工勘和调试中车牌水平像素需达到120pix。本文的后续章节均以120pix为例说明。（像素检查方式见<a href="zh-cn_topic_0252744899.html#ZH-CN_TOPIC_0252744899__zh-cn_topic_0252597687_s1d303d7a802e4484b7095bb0a6acd870">像素值大小检查方法一</a>）</p>
+</div></div>
+</li></ul>
+<div class="fignone" id="ZH-CN_TOPIC_0252744894__fig186895541433"><a name="ZH-CN_TOPIC_0252744894__fig186895541433"></a><a name="fig186895541433"></a><span class="figcap"><b>图2 </b>角度要求</span><br><span><img id="ZH-CN_TOPIC_0252744894__image142611334474" src="zh-cn_image_0000001235880334.png" height="265.33500000000004" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252744893.html">安装角度要求
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252744895.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

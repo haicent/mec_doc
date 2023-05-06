@@ -1,0 +1,69 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="如何通过串口登录操作系统">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0281346945">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>如何通过串口登录操作系统</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0281346945"></a><a name="ZH-CN_TOPIC_0281346945"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">如何通过串口登录操作系统</h1>
+<div id="body1601448580268"><div class="section" id="ZH-CN_TOPIC_0281346945__section10912168133513"><h4 class="sectiontitle">前提条件</h4><ul id="ZH-CN_TOPIC_0281346945__ul1114241613355"><li id="ZH-CN_TOPIC_0281346945__li514241611354">准备好RS232串口线。</li><li id="ZH-CN_TOPIC_0281346945__li9148928133512">PC机安装有PuTTY软件。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0281346945__section41028515012"><h4 class="sectiontitle">背景信息</h4><p id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0204804176_p25287251">操作系统登录时，需要先以<strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0204804176_b1716318511521">admin</strong>用户登录，然后才能切换到<strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0204804176_b1549218178527">root</strong><strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0204804176_b205271723406">/ivsoper</strong>用户；不能直接以<strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0204804176_b168464361504">root/ivsoper</strong>用户登录。</p>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0281346945__section2358164112816"><h4 class="sectiontitle">接口说明</h4><p id="ZH-CN_TOPIC_0281346945__p871912444587"><span><img class="imgResize" id="ZH-CN_TOPIC_0281346945__image1250635443915" src="zh-cn_image_0281365397.png" width="744.135" height="323.19" title="点击放大"></span></p>
+<ul id="ZH-CN_TOPIC_0281346945__ul20719114425811"><li id="ZH-CN_TOPIC_0281346945__li4512093819">仅RS232-2接口可以用于串口登录；RS232-1接口不能用于串口登录。</li><li id="ZH-CN_TOPIC_0281346945__li1871913446587">串口功能使用时。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0281346945__section12367154016367"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0281346945__ol555374553614"><li id="ZH-CN_TOPIC_0281346945__li1455344503615"><span id="ZH-CN_TOPIC_0281346945__">使用RS232串口线连接设备和PC机。</span><p><p id="ZH-CN_TOPIC_0281346945__p19667165584914">设备侧连接位置如<a href="#ZH-CN_TOPIC_0281346945__fig1218122825515">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0281346945__fig1218122825515"><a name="ZH-CN_TOPIC_0281346945__fig1218122825515"></a><a name="fig1218122825515"></a><span class="figcap"><b>图1 </b>设备连接位置</span><br><span><img class="vsd" id="ZH-CN_TOPIC_0281346945__image1899072195711" src="zh-cn_image_0281346947.png"></span></div>
+<p id="ZH-CN_TOPIC_0281346945__p428825372417">本示例仅讲解串口线连接ITS800时的接线要求，串口线用于连接PC端的接口请根据实际使用。</p>
+</p></li><li id="ZH-CN_TOPIC_0281346945__li186931571106"><span id="ZH-CN_TOPIC_0281346945__">双击<span><img id="ZH-CN_TOPIC_0281346945__image106901760214" src="zh-cn_image_0281346949.png" width="23.783725" height="33.19813" title="点击放大" class="imgResize"></span>图标，运行PuTTY。</span></li><li id="ZH-CN_TOPIC_0281346945__li1310783217418"><span id="ZH-CN_TOPIC_0281346945__">通过串口连接设备，如<a href="#ZH-CN_TOPIC_0281346945__fig924033117911">图2</a>所示。</span><p><p id="ZH-CN_TOPIC_0281346945__p1879312544315">实际使用的端口可在<span class="menucascade" id="ZH-CN_TOPIC_0281346945__menucascade15860163324412">“<span class="uicontrol" id="ZH-CN_TOPIC_0281346945__uicontrol10860833174413">计算机管理</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0281346945__uicontrol127316361448">设备管理器</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0281346945__uicontrol7777164594410">端口（COM和LPT）</span>”</span>路径下查看；波特率输入<span class="uicontrol" id="ZH-CN_TOPIC_0281346945__uicontrol614183624512">“115200”</span>。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0281346945__fig924033117911"><a name="ZH-CN_TOPIC_0281346945__fig924033117911"></a><a name="fig924033117911"></a><span class="figcap"><b>图2 </b>通过串口连接</span><br><span><img class="vsd" id="ZH-CN_TOPIC_0281346945__image12409317912" src="zh-cn_image_0281346950.png"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0281346945__li181008174211"><span id="ZH-CN_TOPIC_0281346945__">输入<strong id="ZH-CN_TOPIC_0281346945__b12872016204913">admin</strong>用户名和密码，按“Enter”键。</span><p><pre class="screen" id="ZH-CN_TOPIC_0281346945__screen16608163753814">Authorized users only. All activities may be monitored and reported.
+Euler login: admin
+Password:
+Last login: Wed Feb 26 15:58:10 from 192.168.1.100
+Authorized users only. All activities may be monitored and reported.
+Euler:<font style="font-size:8pt" Face="Courier New" >~</font> #</pre>
+</p></li><li id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0100788852_zh-cn_topic_0092329128_li37980190"><span id="ZH-CN_TOPIC_0281346945__">切换到<strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0100788852_zh-cn_topic_0092329128_b56496584">root</strong>用户。</span><p><p id="ZH-CN_TOPIC_0281346945__p38134209577"><strong id="ZH-CN_TOPIC_0281346945__zh-cn_topic_0100788852_zh-cn_topic_0092329128_b41072245">su - root</strong></p>
+<p id="ZH-CN_TOPIC_0281346945__p734420235911">切换过程中需要输入<strong id="ZH-CN_TOPIC_0281346945__b188911462593">root</strong>用户的密码。</p>
+</p></li><li id="ZH-CN_TOPIC_0281346945__li1461115933210"><span id="ZH-CN_TOPIC_0281346945__">首次登录操作系统，需要设置root和admin用户的登录密码。</span><p><p id="ZH-CN_TOPIC_0281346945__p16198910323">如何修改密码，请参见<a href="zh-cn_topic_0000001194224074.html#ZH-CN_TOPIC_0000001194224074__section1121634219561">修改密码（命令行方式）</a>。</p>
+</p></li></ol>
+</div>
+</div>
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="copyrightBottomBarNoParentLink">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

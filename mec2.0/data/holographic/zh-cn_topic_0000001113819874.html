@@ -1,0 +1,161 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="登录OMU Portal">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001159920399.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0000001238297615.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0000001113819874">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>登录OMU Portal</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0000001113819874"></a><a name="ZH-CN_TOPIC_0000001113819874"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">登录<span>OMU Portal</span></h1>
+<div id="body8662426"><div class="section" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_section183018391085"><h4 class="sectiontitle">应用限制</h4><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_ul946344618217"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_li3463446723">浏览器：Chrome 7.0.276及以上版本。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_li34631546021">操作系统：32/64位Windows 7、32/64位Windows 10。</li></ul>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_section17205750888"><h4 class="sectiontitle">操作步骤</h4><ol id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_ol12658552083"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li56607337219"><span id="ZH-CN_TOPIC_0000001113819874__">检查用于登录OMU Portal的PC机与<span><span class="keyword" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0217559150_keyword9907321537">ITS800</span></span>网络连接是否正常。</span><p><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul25131916134"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li13513131616315">如果设备已经修改过网络参数，需确保用于登录OMU Portal的PC机与<span id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ph19683147372"><span class="keyword" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0217559150_keyword9907321537_1">ITS800</span></span>网络连接正常。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li45146161031">如果设备是刚出厂或者刚执行过恢复出厂设置，需确保用于登录OMU Portal的PC机与<span id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ph13903511179"><span class="keyword" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0217559150_keyword9907321537_2">ITS800</span></span>直连，且和<span id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ph126081855878"><span class="keyword" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0217559150_keyword9907321537_3">ITS800</span></span>在同一个网段（192.168.3.111/24）才能连到OMU Portal。<div class="p" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p65145169315">其中，刚出厂或者刚执行过恢复出厂设置的设备，其网络相关信息如下：<ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul251401610317"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li2051471611314">IP地址：192.168.3.111</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li2051415161930">子网掩码：255.255.255.0</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li851471612317">网关地址：192.168.0.1</li></ul>
+</div>
+</li></ul>
+</p></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li84251814143919"><span id="ZH-CN_TOPIC_0000001113819874__">打开Chrome浏览器，设置浏览器参数。</span><p><ol type="a" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ol11823204944016"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li3358349174019">打开浏览器，在地址栏输入<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol693218391423">“chrome://flags/”</span>，按下回车键。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li1496272144413">在搜索框输入<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol156664014314">“TLS”</span>，查看TLS1.2或TLS1.3协议是否启用，若未启用，则需要设置为启用状态。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li4602135513715">关闭代理服务器。<ol class="substepthirdol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ol1712172610447"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li10208027174019">按下<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol187701072117">“Alt”</span>和<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol6253410101118">“F”</span>组合键或者点击浏览器右上角的<span><img id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_image9549115513105" src="zh-cn_image_0000001190459448.png"></span>，选择<span class="menucascade" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_menucascade7873151513916">“<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol887312151394">设置</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1389111595411">高级</span> &gt; <span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1750792017425">系统 &gt; 打开您计算机的代理设置</span>”</span>。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li16517114843811">关闭<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol56506368437">“手动设置代理”</span>中<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1060541315247">“使用代理服务器”</span>开关按钮。</li></ol>
+</li></ol>
+</p></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_li5653551182"><span id="ZH-CN_TOPIC_0000001113819874__">在浏览器地址栏中输入“https://<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b23021194012"><em id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_i133941950024">IP地址</em></strong>:8443”，按“Enter”键。</span><p><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p13194539115114">其中，<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b1652813219458"><em id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_i2083015418220">IP地址</em></strong>表示ITS800设备的IP地址。</p>
+</p></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li139697381919"><span id="ZH-CN_TOPIC_0000001113819874__">首次登录需要设置业务系统和操作系统帐号密码，如<a href="#ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig159705479368">图1</a>所示。</span><p><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul1482819018112"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_li24601646104711">勾选<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_uicontrol146021219194917">“密码应用到所有账号”</span>。<p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p432315613492">密码一次性应用到业务<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b1391912406486">admin</strong>用户、操作系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b698113437482">admin</strong>用户和操作系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b6977125513488">root</strong>用户。</p>
+</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_li8796149104910">未勾选<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_uicontrol179594964918">“密码应用到所有账号”</span>。<p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p4612115116497">此处以介绍如何设置业务系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b8948124210378">admin</strong>用户密码为例。</p>
+<p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p9341161712479">操作系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b12643101118259">admin</strong>用户和<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b189641516254">root</strong>用户密码请单击<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_uicontrol23528185374">“下一步”</span>依次配置。</p>
+</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_li482820018118">自定义设置用户密码，出于安全考虑，建议使用复杂度高的密码，密码复杂度建议请参考<a href="zh-cn_topic_0000001159883809.html#ZH-CN_TOPIC_0000001159883809">密码维护建议</a>。</li></ul>
+<div class="fignone" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig159705479368"><a name="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig159705479368"></a><a name="zh-cn_topic_0215538442_fig159705479368"></a><span class="figcap"><b>图1 </b>设置业务系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b6938155143618">admin</strong>用户密码</span><br><span><img id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_image7970194753620" src="zh-cn_image_0000001098774734.png" width="523.6875" height="208.25645400000002" title="点击放大" class="imgResize"></span></div>
+<div class="p" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p1935313113231">业务系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b1041719581416">admin</strong>用户、操作系统<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b14868911656">admin</strong>用户及<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_b0612512519">root</strong>用户的参数解释如<a href="#ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table9912910194215">表1</a>所示。
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table9912910194215"></a><a name="zh-cn_topic_0215538442_table9912910194215"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table9912910194215" frame="border" border="1" rules="all"><caption><b>表1 </b>参数解释</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row75991759165118"><th align="left" class="cellrowborder" colspan="2" valign="top" id="mcps1.3.2.2.4.2.3.5.2.5.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p173381536521">参数名称</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" id="mcps1.3.2.2.4.2.3.5.2.5.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p8599105925115">应用场景</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" id="mcps1.3.2.2.4.2.3.5.2.5.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p1259935975110">应用说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row1359919592519"><td class="cellrowborder" rowspan="2" valign="top" width="10.58%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p17251646105215">业务系统</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p1934216528520">用户名：<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b19342152185218">admin</strong></p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="39.85%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.2 "><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_ul244112995416"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_li182571919115720">该<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b94510465710">admin</strong>用户是业务系统用户，可用于登录OMU Portal和<span id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_ph83932962517">iClient ME</span>客户端等。</li></ul>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="34%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.3 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p645712208420"><strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b1532717014531">admin</strong>用户为系统预定义用户，拥有系统所有权限。该用户的权限和名称均无法修改。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row6599125985110"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p3342752155217">密码/确认密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row5600165916518"><td class="cellrowborder" rowspan="4" valign="top" width="10.58%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p8725346145220">操作系统</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p63427524522">用户名：<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b1234225225210">admin</strong></p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="39.85%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.2 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p26021341124014"><strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b135062115574">admin</strong>用户是操作系统用户，可用于远程和本地登录操作系统，并对一部分文件、目录或进程进行操作。</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="34%" headers="mcps1.3.2.2.4.2.3.5.2.5.1.3 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p1770517165710">以<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b3328110165318">admin</strong>用户首次登录操作系统，需要修改登录密码。</p>
+<p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p143288019535">如何修改登录密码请参见<a href="zh-cn_topic_0204804176.html">如何通过网口登录操作系统</a>。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row1260013597511"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p8342155219523">密码/确认密码</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row46008593517"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p193421552115214">用户名：<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b934215225218">root</strong></p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p182631052155314"><strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b2404122215817">root</strong>用户是操作系统最高权限用户，可对任何文件、目录或进程进行操作。</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.2 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p552017101585">登录操作系统时，需要先以<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b183288055314">admin</strong>用户登录，然后才能切换到<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b8328303531">root</strong>用户；不能直接以<strong id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_b12328140105318">root</strong>用户登录。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_row1060005965120"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.4.2.3.5.2.5.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0204290107_p103421852135213">密码/确认密码</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li93049211342"><span id="ZH-CN_TOPIC_0000001113819874__">使用设置好的业务系统密码，重新登录<span>OMU Portal</span>。</span></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li0604921933"><span id="ZH-CN_TOPIC_0000001113819874__">首次登录OMU Portal，请设置密码保护方式，如<a href="#ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig65514819916">图2</a>所示。</span><p><div class="fignone" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig65514819916"><a name="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig65514819916"></a><a name="zh-cn_topic_0215538442_fig65514819916"></a><span class="figcap"><b>图2 </b>首次登录设置密码保护</span><br><span><img id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_image269703072018" src="zh-cn_image_0000001218177880.png" width="523.6875" height="208.7036" title="点击放大" class="imgResize"></span><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul37457476192"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li13745124771915">点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1789637151919">“跳过”</span>按钮，跳过当前设置密码保护设置页面，后续设置请参考<a href="zh-cn_topic_0000001238215228.html">如何修改安全问题</a>。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li177410509196">选择密码保护方式并设置。<ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul1529315514222"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li7721457236">勾选<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1547089172718">“安全问题”</span>复选框，设置安全问题与答案。<div class="note" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_note16451248192912"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul146667180171"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li966610187179">可以选择已有问题，或自定义问题。自定义问题长度1~80个字节，不能包含如下特殊字符：~`!^={}|\[]&lt;&gt;'</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li666610188172">自定义问题答案，去除首位空格后长度不少于2个字节，不超过128个字节。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li26671718121717">需要设置三个安全问题与答案，所有安全问题、问题答案、安全问题与答案均不能相同，且修改完成后，需要进行admin账号认证才能生效。</li></ul>
+</div></div>
+</li></ul>
+<p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p176619475283">点击<span class="uicontrol" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_uicontrol1614825102919">“完成”</span>按钮，并跳转到主界面。</p>
+</li></ul>
+</div>
+</p></li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li17110420102719"><span id="ZH-CN_TOPIC_0000001113819874__">首次登录OMU Portal，请确认网络安全设置信息，具体内容查看<a href="#ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table996833218161">表2</a>。</span><p>
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table996833218161"></a><a name="zh-cn_topic_0215538442_table996833218161"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_table996833218161" frame="border" border="1" rules="all"><caption><b>表2 </b>网络安全设置模式说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_row99685324164"><th align="left" class="cellrowborder" valign="top" width="12.591259125912593%" id="mcps1.3.2.2.7.2.1.2.4.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p3968532191615">安全模式</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="38.553855385538554%" id="mcps1.3.2.2.7.2.1.2.4.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p1796893291611">模式说明</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="48.85488548854885%" id="mcps1.3.2.2.7.2.1.2.4.1.3" liSelected="liSelected"><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p12968143221615">备注</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_row9968143212167"><td class="cellrowborder" valign="top" width="12.591259125912593%" headers="mcps1.3.2.2.7.2.1.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p14968532171612">高级模式</p>
+</td>
+<td class="cellrowborder" valign="top" width="38.553855385538554%" headers="mcps1.3.2.2.7.2.1.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p1496823217163">支持用户按需手动启用算法或协议。</p>
+</td>
+<td class="cellrowborder" rowspan="3" valign="top" width="48.85488548854885%" headers="mcps1.3.2.2.7.2.1.2.4.1.3 "><ul id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_ul151275313182"><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li4512155315184">MD5算法存在一定的网络安全风险，系统默认不启用。如果对接的设备仅支持MD5算法，那么不启用MD5算法会导致对接失败，请根据您的需求谨慎选择。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li175063341286">Basic认证存在安全风险，系统默认不启用。若摄像机的RTSP协议只支持Basic认证，则本设备需要开启Basic认证，才能使用RTSP协议进行媒体流传输，请根据您的需求谨慎选择。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li188015291911">使用HTTP存在网络安全风险，系统默认不启用。但是因为支持HTTPS协议上传抓拍图片的摄像机较少，选择HTTPS可能会导致抓拍功能不可用，请谨慎选择。</li><li id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_li178321340113115">对接的设备是否仅支持MD5算法和Basic鉴权认证、是否支持HTTPS协议，请和设备提供商确认。</li></ul>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_row13968193231619"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.7.2.1.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p17968173214168">安全模式</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.2.2.7.2.1.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p16968123215161">不启用MD5、Basic等不安全的算法和协议，可能影响摄像机及其他平台对接的兼容性。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_row2968113216161"><td class="cellrowborder" valign="top" headers="mcps1.3.2.2.7.2.1.2.4.1.1 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p1246464018175">兼容模式</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.3.2.2.7.2.1.2.4.1.2 "><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_p209681232101612">启用MD5、Basic等不安全的算法或协议，存在网络安全风险。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_section201652153912"><h4 class="sectiontitle">结果验证</h4><p id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_zh-cn_topic_0203265749_p1937915773917"><span>OMU Portal</span>登录成功主界面如<a href="#ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig5319429184516">图3</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig5319429184516"><a name="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_fig5319429184516"></a><a name="zh-cn_topic_0215538442_fig5319429184516"></a><span class="figcap"><b>图3 </b>OMU Portal主界面</span><br><span><img id="ZH-CN_TOPIC_0000001113819874__zh-cn_topic_0215538442_image125036128258" src="zh-cn_image_0000001171793139.png" width="523.6875" height="223.89791900000003" title="点击放大" class="imgResize"></span></div>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0000001159920399.html">附录
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0000001238297615.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>

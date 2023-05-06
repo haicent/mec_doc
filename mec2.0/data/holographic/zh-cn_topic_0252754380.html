@@ -1,0 +1,162 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn" xml:lang="zh-cn">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="DC.Type" content="topic">
+<meta name="DC.Title" content="配置IP地址">
+<meta name="abstract" content="介绍通过Web页面修改摄像机IP地址方法。">
+<meta name="description" content="介绍通过Web页面修改摄像机IP地址方法。">
+<meta name="product" content="">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252754378.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0252754379.html">
+<meta name="DC.Relation" scheme="URI" content="zh-cn_topic_0239450952.html">
+<meta name="prodname" content="">
+<meta name="version" content="解决方案10.0.0">
+<meta name="brand" content="机器视觉">
+<meta name="DC.Publisher" content="20220316">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="ZH-CN_TOPIC_0252754380">
+<meta name="DC.Language" content="zh-cn">
+<link rel="stylesheet" type="text/css" href="public_sys-resources/commonltr.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/browseVersion.js"></script>
+<link rel="stylesheet" type="text/css" href="public_sys-resources/thickbox.css">
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/imageResize.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-migrate-1.2.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/jquery.mousewheel.min.js"></script>
+<script language="javascript" type="text/javascript" src="public_sys-resources/thickbox.js"></script>
+<title>配置IP地址</title>
+</head>
+<body><a name="ZH-CN_TOPIC_0252754380"></a><a name="ZH-CN_TOPIC_0252754380"></a>
+
+<div class="articleBoxWithoutHead">
+<h1 class="topicTitle-h1">配置IP地址</h1>
+<div id="body8662426"><p id="shortdesc10479163622213">介绍通过Web页面修改摄像机IP地址方法。</p>
+<div class="note" id="ZH-CN_TOPIC_0252754380__note232843310359"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0252754380__p13328163314351">智能交通摄像机支持双网口，本文以<span class="parmvalue" id="ZH-CN_TOPIC_0252754380__parmvalue1228822872514">“ETH0”</span>网口为例，说明摄像机IP地址的配置过程。</p>
+</div></div>
+<div class="section" id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_s3ed0c92af0ba40579a4cdca9ca89ae83"><h4 class="sectiontitle">配置IPv4地址</h4><ol id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_ofcd4dfe4068e49b597bcc3f13a82ec28"><li id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_li510510592401"><span id="ZH-CN_TOPIC_0252754380__"><span>登录摄像机的Web界面（https://<em id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_zh-cn_topic_0176661643_i1093752272">IP地址</em>）。</span></span></li><li id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_lf0eaef1e0ac34d7aae3302b2d0cfa20f"><span id="ZH-CN_TOPIC_0252754380__">选择“配置 &gt; 网络 &gt; TCP/IP”。</span><p><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a2614d9e8c97e4f9d9b8c69a968869483">系统显示如<a href="#ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_f8b74c66152794c7a9243249111284288">图1</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_f8b74c66152794c7a9243249111284288"><a name="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_f8b74c66152794c7a9243249111284288"></a><a name="zh-cn_topic_0252597457_f8b74c66152794c7a9243249111284288"></a><span class="figcap"><b>图1 </b>IPv4地址配置页面</span><br><span><img id="ZH-CN_TOPIC_0252754380__image124643813019" src="zh-cn_image_0000001198182362.png"></span></div>
+<div class="note" id="ZH-CN_TOPIC_0252754380__note206641731163620"><img src="public_sys-resources/note_3.0-zh-cn.png"><span class="notetitle"> </span><div class="notebody"><p id="ZH-CN_TOPIC_0252754380__p06641031103618">优先接入并配置ETH0网卡。</p>
+</div></div>
+</p></li><li id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_lc9a84055a6ed4ce08b460379ff1f2363"><span id="ZH-CN_TOPIC_0252754380__">根据项目数据规划，修改摄像机IP地址。各参数解释如<a href="#ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_t994818943f444171a49d8327df498a4e">表1</a>所示。</span><p>
+<div class="tableBorder"><a name="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_t994818943f444171a49d8327df498a4e"></a><a name="zh-cn_topic_0252597457_t994818943f444171a49d8327df498a4e"></a><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_t994818943f444171a49d8327df498a4e" frame="border" border="1" rules="all"><caption><b>表1 </b>IP地址说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_rbde986b54f7c4bd5a77590d91bf1a133"><th align="left" class="cellrowborder" valign="top" width="17.169999999999998%" id="mcps1.4.2.2.3.2.1.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a3eac31d6560c4f49a0b7fac380125f8d">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="82.83%" id="mcps1.4.2.2.3.2.1.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a44d9e757f352463091e8ff642cece3f2">如何配置</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_rc1817307b8bf4eb8beddb60471562846"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a1d5c1764369d474292466f6bbe4ef4eb">MAC地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_af5403c98fa52462480748bf6e1fd2c5d">显示摄像机的MAC地址，不可配置。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_r3cbe757e1e0341af80895ee9cf13211c"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a5558fd4166fe48d4b53d2b8410d53271">获取IPv4方式</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_adfe6de6e1da044ffa0328ac54d087758">您可以根据需要选择获取IP地址的方式。获取IPv4类IP地址方式包括“自动获取IP地址”和“使用下面的IP地址”，系统默认为“自动获取IP地址”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_rd87aad6203f848eb87f8e093b50c8280"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_ab4eaf384d24149dea1215b480d18c31b">IPv4地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_ae0d6d20655ea418897ea2a32ccc94073">摄像机IP地址。当“获取IP方式”为“使用下面的IP地址”时可设置。</p>
+<p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a208dc724049b49e9b769efe72a691cce">输入规划的IP地址，以“192.168.135.161”为例进行介绍，127开头的IP地址无效，请输入介于1和223之间的其他数值。默认为“192.168.0.120”。</p>
+<div class="note" id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_n12a46c9f66eb43d3975946a3cea8c3b1"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_aab97663cd60f4f54a948ceff59233922">单击放大镜图标，可以检测当前IP是否可用。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_rffa96bf3d3e24f768b09bf8fc186e717"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a707bed5adb7e476a8419bf220b31f285">IPv4网关地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_ab936828ddec54234a91baf2030bfacff">摄像机所在网络的网关IP地址。默认为“192.168.0.1”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_r4092e94f70864583aac414b99e8d98fa"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a79cb9111f3354f03bffe1103d1419548">IPv4子网掩码</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a6d8c9efdc88b4644823d7bc7fac66f3f">摄像机所在网络的子网掩码地址。默认为“255.255.255.0”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_r69858c4f9e5c491a978bf2e546710dd4"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_ac2234ad68c7840e091fddc739c314fbc">首选DNS</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a7e4a9354b7be4fed8b353951e17c5f57">主用域名服务器地址。默认为“0.0.0.0”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_r6f19f64f7b2a421e895b6310cc2cd409"><td class="cellrowborder" valign="top" width="17.169999999999998%" headers="mcps1.4.2.2.3.2.1.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a59bf060632504cfc9fde4cc4f1f78e9e">备选DNS</p>
+</td>
+<td class="cellrowborder" valign="top" width="82.83%" headers="mcps1.4.2.2.3.2.1.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__zh-cn_topic_0252597457_a8687ff8e3ad64672adc3defdcbb4aae8">备用域名服务器地址。默认为“0.0.0.0”。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p></li></ol>
+</div>
+<div class="section" id="ZH-CN_TOPIC_0252754380__section3331182412441"><h4 class="sectiontitle">配置IPV6地址</h4><p id="ZH-CN_TOPIC_0252754380__a878799607ace4393aac04752d54e777c">IPv6地址采用十六进制符号编写，并用冒号将地址分成八块，每个地址块16位，例如：fe80:0da8:65b4:05d3:1315:7c1f:0461:7847。</p>
+<p id="ZH-CN_TOPIC_0252754380__aa975ee211cd74c24b37d77016b7632df">以本地PC直连摄像机为例介绍，首先修改本地PC机IP地址，保证和摄像机IP地址在同一网段。</p>
+<ol id="ZH-CN_TOPIC_0252754380__o53964902e5aa4c04b870ae73cd7edfb6"><li id="ZH-CN_TOPIC_0252754380__l5fc0bfa8f7f84b66ad6190ebb0ef3176"><span id="ZH-CN_TOPIC_0252754380__">设置本地PC机的IPV6地址。</span><p><ol type="a" id="ZH-CN_TOPIC_0252754380__o2be42ba5e2d04ee68aeb4f9860c856d7"><li id="ZH-CN_TOPIC_0252754380__l0eaf560bd0104e01bd09f3710f4b8804">在本地PC机运行regedit，选择“HKEY_LOCAL_MACHINE &gt; SYSTEM &gt; CurrentControlSet &gt; services &gt; TCPIP6 &gt; Parameters”，删除“DisabledComponents”，重启本地PC机。</li><li id="ZH-CN_TOPIC_0252754380__l819199de85d54835bcda3485014cf36a">打开“控制面板”，选择“网络和Internet  &gt; 网络和共享中心”，进入网络和共享中心页面。</li><li id="ZH-CN_TOPIC_0252754380__la755362f123c41debb222813fe18786d">打开本地链接进入本地链接状态页面，打开“属性”，双击“Internet 协议版本（TCP/IPv6）”，进入<a href="#ZH-CN_TOPIC_0252754380__f1de9593968e44e06acd79f87216217f9">图2</a>所示页面，修改本地PC机IP地址、子网掩码和默认网关信息，保证与摄像机IP地址在同一网段，文中以PC机IPv6地址设置为2001:DB80:0:0:0:0:0:3为例介绍。</li></ol>
+<div class="fignone" id="ZH-CN_TOPIC_0252754380__f1de9593968e44e06acd79f87216217f9"><a name="ZH-CN_TOPIC_0252754380__f1de9593968e44e06acd79f87216217f9"></a><a name="f1de9593968e44e06acd79f87216217f9"></a><span class="figcap"><b>图2 </b>设置IPv6地址</span><br><span><img id="ZH-CN_TOPIC_0252754380__i4405922b332841878020b06a27b5cc5c" src="zh-cn_image_0000001266402325.png" height="454.86" width="523.6875" title="点击放大" class="imgResize"></span></div>
+</p></li><li id="ZH-CN_TOPIC_0252754380__l1686a892113b47789d43e6b49b1720a5"><span id="ZH-CN_TOPIC_0252754380__">设置摄像机IPV6地址。</span><p><ol type="a" id="ZH-CN_TOPIC_0252754380__o26c3137519b9432ca650152220b587cf"><li id="ZH-CN_TOPIC_0252754380__l1ad02b20b635451b9b0815e1811222e2">登录摄像机Web，选择“配置 &gt; 网络 &gt; TCP/IP &gt; IP地址”。<p id="ZH-CN_TOPIC_0252754380__aeb98f3ffa95b4ae8a352de04f8ef835c"><a name="ZH-CN_TOPIC_0252754380__l1ad02b20b635451b9b0815e1811222e2"></a><a name="l1ad02b20b635451b9b0815e1811222e2"></a>系统显示如<a href="#ZH-CN_TOPIC_0252754380__fbdf23efe55c14102b02e52d44473934a">图3</a>所示。</p>
+<div class="fignone" id="ZH-CN_TOPIC_0252754380__fbdf23efe55c14102b02e52d44473934a"><a name="ZH-CN_TOPIC_0252754380__fbdf23efe55c14102b02e52d44473934a"></a><a name="fbdf23efe55c14102b02e52d44473934a"></a><span class="figcap"><b>图3 </b>IPv6地址配置</span><br><span><img id="ZH-CN_TOPIC_0252754380__image53371815151919" src="zh-cn_image_0000001221522232.png"></span></div>
+
+<div class="tableBorder"><table cellpadding="4" cellspacing="0" summary="" id="ZH-CN_TOPIC_0252754380__t2ddb00edf1214e8ebe776cbb56acc95f" frame="border" border="1" rules="all"><caption><b>表2 </b>IP地址说明</caption><thead align="left"><tr id="ZH-CN_TOPIC_0252754380__r68287af0c52e475d8a7182ab24e4b034"><th align="left" class="cellrowborder" valign="top" width="35.99%" id="mcps1.4.3.4.2.2.1.1.3.2.3.1.1" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252754380__a45b74e96d03c4fc6becb3fd5b293af3d">参数</p>
+</th>
+<th align="left" class="cellrowborder" valign="top" width="64.01%" id="mcps1.4.3.4.2.2.1.1.3.2.3.1.2" liSelected="liSelected"><p id="ZH-CN_TOPIC_0252754380__a7c7c528f83db44078d6ffb6d72afcf3d">如何获取</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="ZH-CN_TOPIC_0252754380__r34038c5d1ffb41ac9cc3c08fbdde1a5a"><td class="cellrowborder" valign="top" width="35.99%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__af0af301c7e394d7c8a866713d613e7be">获取IPv6方式</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.01%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__a925b8dd106b740b5ba9c2b7cb20af5be">您可以根据需要选择获取IPv6地址的方式。包括“自动获取IP地址”、“使用下面的IP地址”和“路由公告”。</p>
+<div class="note" id="ZH-CN_TOPIC_0252754380__nd808d21a40314cf492c2f54187773d5c"><span class="notetitle"> 说明： </span><div class="notebody"><p id="ZH-CN_TOPIC_0252754380__a1fd6959751334044b4131c4f2f30983d">若MTU设置值小于1280，启用IPV6地址后MTU值将变为1500; 若MTU设置值大于1280，启用IPV6地址后MTU的值保持不变。</p>
+</div></div>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__r62ba5f26641a488a881dad1d7dc8eff9"><td class="cellrowborder" valign="top" width="35.99%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__ae918db8be4ed4c8eb418281d0fea673d">IPv6地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.01%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__a05a4877c8d1d487b9e685ce75d0ea259">摄像机IP地址。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__r08ecf818b7514dd1b63add037d56eb0b"><td class="cellrowborder" valign="top" width="35.99%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__ab9c7281395f0468c9160d499b9c12e2e">IPv6子网前缀</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.01%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__ab24e4d87b4bd4274ba59ffd695b2e291">摄像机IPv6子网前缀。设置为“64”。</p>
+</td>
+</tr>
+<tr id="ZH-CN_TOPIC_0252754380__rd6838475f60244718d46359e8073c2b6"><td class="cellrowborder" valign="top" width="35.99%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.1 "><p id="ZH-CN_TOPIC_0252754380__ae780c23fe29f4c5d895963645194d583">IPv6网关地址</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.01%" headers="mcps1.4.3.4.2.2.1.1.3.2.3.1.2 "><p id="ZH-CN_TOPIC_0252754380__a641d75727c0d495582644d2bcebd31aa">摄像机IPv6网关地址。设置为“2001:DB80:0:0:0:0:0:1”。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li id="ZH-CN_TOPIC_0252754380__l42d44dc1e1bd4d079f5a27261851de8d">在浏览器中输入摄像机的IP地址，进入摄像机登录页面。</li></ol>
+</p></li></ol>
+</div>
+</div>
+
+</div>
+<div class="footerNavBar clearfix">
+
+<div class="parentlink">
+父主题：
+<a href="zh-cn_topic_0252754378.html">初始配置
+</a>
+</div>
+<div class="copyrightBottomBar">
+版权所有 &copy; 华为技术有限公司</div>
+<div class="bottomNavBtn clearfix">
+<a href="zh-cn_topic_0252754379.html"><span class="font-st">&lt; </span>上一节</a>
+<a href="zh-cn_topic_0239450952.html">下一节<span class="font-st"> &gt;</span></a>
+</div>
+</div>
+
+<script language="JavaScript">
+<!--
+image_size('.imgResize');
+var msg_imageMax = "查看原图";
+var msg_imageClose = "关闭";
+//--></script></body>
+</html>
